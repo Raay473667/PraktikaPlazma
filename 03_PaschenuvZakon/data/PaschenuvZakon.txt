@@ -1,0 +1,13 @@
+Paschenuv Zakon
+
+pro dva tlaky doutnavý výboj, metoda stálého proudu 1 mA?
+změním vzdálenost, a naladím napětí aby byl konst. proud
+jedu dokud nenajdu katodový spád (vrstva se ztenšuje s rostoucím tlakem)
+
+měním odpor, mění se proud, napětí vyčtu na zdroji, zdroj - RI = napětí na výboji
+
+
+prava strana 2-3 body, leva strana více, rozumně uprostřed
+100 Pa
+měníme vzdálenost, hledáme zápalné napětí
+
