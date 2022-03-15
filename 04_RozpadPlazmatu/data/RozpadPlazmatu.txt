@@ -1,0 +1,6 @@
+10 20 50 100 200, pak 5 a 500 Pa jako extrém
+
+při nastavení tlaku změříme f0 -- naladit nejvyšší plochý pík, napsat frekvenci
+
+naměřit max a min měřitelné píky, zjistit časy, rozdělit si interval na asi 15 hodnot logaritmicky
+naladím frekvenci, zapíšu, zapíšu čas
