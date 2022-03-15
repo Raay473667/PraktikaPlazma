@@ -1,0 +1,9 @@
+﻿Townsend
+
+(450997 pro míšu)
+
+Argon - Piranni, přepočítat, 50 Pa
+
+Udržujeme konstantní elektrické pole: nastavíme voltage, pohneme katodou a pohneme UV lampou, tak abychom udrželi konstantní E
+Následně zapíšeme tři hodnoty pA (zprůměrujeme)
+Před každou změnou E naladíme iris clonu, tak abychom na pA byli max na 1800 pA (1999 je maximum přístroje)
