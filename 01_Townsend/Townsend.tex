@@ -58,32 +58,39 @@ Teorie lavin popsaná Townsendem vysvětluje základní ionizační mechanismus 
 	\label{1}
 \end{equation}
 
-kde $\alpha$ je označení pro první Townsendův, někdy nazývaný i ionizační koeficient. Ten vyjadřuje počet ionizačních srážek jednoho elektronu na jednotkové délce. Integrací a následnou úpravou dostáváme vztah
+kde $\alpha$ je označení pro první Townsendův, někdy nazývaný i ionizační koeficient. Ten vyjadřuje počet ionizačních srážek jednoho elektronu na jednotkové délce. Integrací získáme
+
+\begin{equation}
+	\ln n = \alpha x + konst.
+	\label{2}
+\end{equation}
+
+a následnou úpravou dostáváme vztah
 
 \begin{equation}
 	n = n_0 e^{\alpha x}
-	\label{2}
+	\label{3}
 \end{equation}
 
 kde $n_0$ je počet elektronů v počátečním bodě $x$ = 0. Ionizační koeficient závisí na intenzitě elektrického pole $E$ a na tlaku plynu v aparatuře $p$. Je li $E/p$ dáno, můžeme psát $\alpha$
 
 \begin{equation}
 	\alpha = p f \frac{E}{p}
-	\label{3}
+	\label{4}
 \end{equation}
 
 tedy ionizační koeficient je úměrný počtu srážek na jednotku délky. Experimentální výsledky ukazují, že konkrétní závislost $\alpha$ na $E/p$ je ve tvaru
 
 \begin{equation}
 	\frac{\alpha}{p} = A e^{-\frac{Bp}{E}} 
-	\label{4}
+	\label{5}
 \end{equation}
 
 kde $A$ a $B$ jsou konstanty, pro které platí
 
 \begin{equation}
 	U_i = B/A
-	\label{5}
+	\label{6}
 \end{equation}
 
 kde $U_i$ je ionizační potenciál plynu v aparatuře. Hodnotu konstant A a B lze určit experimentálně.
@@ -94,7 +101,9 @@ Aparatura použitá v tomto praktiku schematicky znázorněná na obr. \ref{apar
 
 Při měření musíme dbát na to, aby ve výbojce nevznikl samostatný výboj, tedy měříme pro hodnoty intenzity elektrického pole 80-120~V/cm. To v praxi udržujeme nastavením napětí na zdroji a přizpůsobením vzájemné vzdálenost katody a UV výbojky. Výstupem z měření je poloha katody $x$, hodnota napětí $U$ a proud $i$ pro několik hodnot konstantní intenzity elektrického pole. Pro každou změnu intenzity pole naladíme irisovou clonu UV výbojky tak, abychom měli maximální proud okolo 1800 pA z důvodu rozsahu na přístroji do 1999 pA. Proud je tedy řádově pA až nA, pro zlepšení přesnosti měření z ampérmetru odečítáme vždy 3 hodnoty a dále budeme pracovat s průměrem z nich.
 
-V rovnici (\ref{2}) lze nahradit počet elektronů proudem. Z naměřených dat můžeme sestavit graf závislosti $i = i_0 f(x)$, viz obr. \ref{ifx} a ln$i$ = ln$i_0$ + $\alpha x$, viz obr. 
+V rovnicích (\ref{2}) a (\ref{3}) lze nahradit počet elektronů proudem. Z naměřených dat můžeme sestavit graf závislosti $i = i_0 f(x)$, viz obr. \ref{ifx}. Body jsou proložené exponenciální funkcí $i = i_0 e^{\alpha x}$. Získané $i_0$ a $\alpha$ z tohoto fitu jsou uvedené v tabulce %\ref{}.
+
+Dále můžeme vytvořit graf závislosti ln$i$ = ln$i_0$ + $\alpha x$, viz obr. 
 
 
 
@@ -107,9 +116,16 @@ V rovnici (\ref{2}) lze nahradit počet elektronů proudem. Z naměřených dat 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=130mm]{i=f(x).png}
+	\includegraphics[width=130mm]{ifx.png}
 	\caption{Schéma použité aparatury}
 	\label{ifx}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=130mm]{lni.png}
+	\caption{Schéma použité aparatury}
+	\label{lni}
 \end{figure}
 
 
