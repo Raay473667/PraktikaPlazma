@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  23 MAR 2022 19:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  24 MAR 2022 19:35
 entering extended mode
 **./Townsend.tex
 (Townsend.tex
@@ -735,39 +735,52 @@ na jed-notku delky. Ex-pe-ri-mentaln vysledky
 <img//aparatura.png, id=16, 433.62pt x 193.47281pt>
 File: img//aparatura.png Graphic file (type png)
 <use img//aparatura.png>
-Package pdftex.def Info: img//aparatura.png  used on input line 114.
+Package pdftex.def Info: img//aparatura.png  used on input line 130.
 (pdftex.def)             Requested size: 369.88582pt x 165.04309pt.
-<plots//i=f(x).png, id=18, 774.7344pt x 592.8549pt>
-File: plots//i=f(x).png Graphic file (type png)
-<use plots//i=f(x).png>
-Package pdftex.def Info: plots//i=f(x).png  used on input line 121.
-(pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./img//aparatura.png>] [3 <./plots//i=f(x).png (PNG copy)>] (Townsend.aux) 
-) 
+<plots//ifx.png, id=18, 774.7344pt x 592.8549pt>
+File: plots//ifx.png Graphic file (type png)
+<use plots//ifx.png>
+Package pdftex.def Info: plots//ifx.png  used on input line 137.
+(pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<plots//lni.png, id=19, 774.7344pt x 592.8549pt>
+File: plots//lni.png Graphic file (type png)
+<use plots//lni.png>
+Package pdftex.def Info: plots//lni.png  used on input line 144.
+(pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2] [3 <./img//aparatura.png> <./plots//ifx.png (PNG copy)>] [4 <./plots//lni.p
+ng (PNG copy)>] (Townsend.aux) ) 
 Here is how much of TeX's memory you used:
- 19681 strings out of 478681
- 413510 string characters out of 2846534
- 678544 words of memory out of 3000000
- 37458 multiletter control sequences out of 15000+600000
+ 19691 strings out of 478681
+ 413648 string characters out of 2846534
+ 682571 words of memory out of 3000000
+ 37468 multiletter control sequences out of 15000+600000
  411075 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,7n,91p,831b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmmi6.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lukas/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/lukas/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukas/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Townsend.pdf (3 pages, 218790 bytes).
+ 88i,10n,91p,831b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/lukas/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lukas/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lukas/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lukas/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/luk
+as/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
+sers/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.p
+fb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb>
+Output written on Townsend.pdf (4 pages, 322804 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

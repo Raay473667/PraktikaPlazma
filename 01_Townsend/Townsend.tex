@@ -99,13 +99,31 @@ kde $U_i$ je ionizační potenciál plynu v aparatuře. Hodnotu konstant A a B l
 
 Aparatura použitá v tomto praktiku schematicky znázorněná na obr. \ref{aparatura}. Její hlavní komponenty jsou zdroj napětí, rotační olejová vývěva, výbojka, jehlový ventil, Piraniho manometr, ampérmetr a voltmetr. Je založená na principu fotoelektrického jevu, pomocí rtuťové výbojky osvětlujeme hliníkovou rovinnou katodu UV zářením a produkujeme tak fotoelektrony. Ty jsou urychlovány homogenním elektrickým polem na mřížkovou anodu. Katodu můžeme posouvat a tím měnit dráhu, po níž dochází k ionizaci neutrálů. Do výbojky, kterou čerpáme vakuovou vývěvou, je vpuštěný argon. Tlak se nastavuje jehlovým ventilem a měří Piraniho manometrem. Jedná se o nepřímý manometr, pro argon je tedy tlak potřeba vynásobit faktorem 1,59.
 
-Při měření musíme dbát na to, aby ve výbojce nevznikl samostatný výboj, tedy měříme pro hodnoty intenzity elektrického pole 80-120~V/cm. To v praxi udržujeme nastavením napětí na zdroji a přizpůsobením vzájemné vzdálenost katody a UV výbojky. Výstupem z měření je poloha katody $x$, hodnota napětí $U$ a proud $i$ pro několik hodnot konstantní intenzity elektrického pole. Pro každou změnu intenzity pole naladíme irisovou clonu UV výbojky tak, abychom měli maximální proud okolo 1800 pA z důvodu rozsahu na přístroji do 1999 pA. Proud je tedy řádově pA až nA, pro zlepšení přesnosti měření z ampérmetru odečítáme vždy 3 hodnoty a dále budeme pracovat s průměrem z nich.
+Při měření musíme dbát na to, aby ve výbojce nevznikl samostatný výboj, tedy měříme pro hodnoty intenzity elektrického pole 80-120~V/cm. To v praxi udržujeme nastavením napětí na zdroji a přizpůsobením vzájemné vzdálenost katody a UV výbojky. Výstupem z měření je poloha katody $x$, hodnota napětí $U$ a proud $i$ pro několik hodnot konstantní intenzity elektrického pole. Pro každou změnu intenzity pole naladíme irisovou clonu UV výbojky tak, abychom měli maximální proud okolo 1800 pA z důvodu rozsahu na přístroji do 1999 pA. Proud je tedy řádově pA až nA, pro zlepšení přesnosti měření z ampérmetru odečítáme vždy 3 hodnoty a dále budeme pracovat s průměrem z nich. Tlak je konstantní o hodnotě $p$ = 79,5 Pa.
 
-V rovnicích (\ref{2}) a (\ref{3}) lze nahradit počet elektronů proudem. Z naměřených dat můžeme sestavit graf závislosti $i = i_0 f(x)$, viz obr. \ref{ifx}. Body jsou proložené exponenciální funkcí $i = i_0 e^{\alpha x}$. Získané $i_0$ a $\alpha$ z tohoto fitu jsou uvedené v tabulce %\ref{}.
+V rovnicích (\ref{2}) a (\ref{3}) lze nahradit počet elektronů proudem. Z naměřených dat můžeme sestavit graf závislosti $i = i_0 f(x)$, viz obr. \ref{ifx}. Body jsou proložené exponenciální funkcí $i = i_0 e^{\alpha x}$, z toho získané $i_0$ a $\alpha$ jsou uvedené v levé části tabulky \ref{tab1}.
 
-Dále můžeme vytvořit graf závislosti ln$i$ = ln$i_0$ + $\alpha x$, viz obr. 
+Dále můžeme vytvořit graf závislosti ln$i$ = ln$i_0$ + $\alpha x$, viz obr. \ref{lni}. Závislost je proložená lineární funkcí $i$ = $i_0$ + $\alpha x$, získané $i_0$ a $\alpha$ jsou uvedené v pravé části tabulky \ref{tab1}.
 
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\caption{}
+		\label{tab1}
+		\begin{tabular}{|c|c|c|c|c|} \hline
+			\multicolumn{1}{|c|}{}  & \multicolumn{2}{c|}{$i = i_0 e^{\alpha x}$}& \multicolumn{2}{c|}{$i$ = $i_0$ + $\alpha x$}  \\ \hline
+			$E$ [Vcm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] \\ \hline
+			80 & 64 $\pm$ 7 & 1,60 $\pm$ 0,06 & 45 $\pm$ 1 & 1,83 $\pm$ 0,04\\ \hline
+			90 & 45 $\pm$ 3 & 1,85 $\pm$ 0,03& 30 $\pm$ 1 & 2,12 $\pm$ 0,08\\ \hline
+			100 & 27 $\pm$ 2 & 2,07 $\pm$ 0,03 & 15 $\pm$ 1 & 2,43 $\pm$ 0,09\\ \hline
+			110 & 20 $\pm$ 1 & 2,23 $\pm$ 0,03 & 12 $\pm$ 1 & 2,60 $\pm$ 0,09 \\ \hline
+			120 & 7,1 $\pm$ 0,5 & 2,80 $\pm$ 0,03 & 4 $\pm$ 1 & 3,2 $\pm$ 0,2 \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{center}
 
+%v obou případech roste alpha a klesá i0 komentář
 
 \begin{figure}[h]
 	\centering
