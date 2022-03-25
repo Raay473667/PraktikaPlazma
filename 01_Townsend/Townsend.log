@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  25 MAR 2022 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  25 MAR 2022 18:15
 entering extended mode
 **./Townsend.tex
 (Townsend.tex
@@ -563,20 +563,20 @@ Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
  (Townsend.aux)
 \openout1 = `Townsend.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 (D:\Programy\Miktex\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -603,7 +603,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package translations Info: no dictionary file `translations-basic-dictionary-cz
-ech.trsl' found. on input line 35.
+ech.trsl' found. on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -646,17 +646,17 @@ File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 LaTeX Font Info:    Trying to load font information for U+esvect on input line 
-46.
+49.
 
 (D:\Programy\Miktex\tex/latex/esvect\uesvect.fd
 File: uesvect.fd 
 )
-Overfull \hbox (2.61108pt too wide) in paragraph at lines 44--51
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 47--54
  [] 
  []
 
 
-Overfull \hbox (8.74954pt too wide) in paragraph at lines 82--83
+Overfull \hbox (8.74954pt too wide) in paragraph at lines 87--88
 []\OT1/cmr/m/n/12 tedy io-nizacn koe-fi-ci-ent je umerny poctu srazek 
 na jed-notku delky. Ex-pe-ri-mentaln vysledky
  []
@@ -667,12 +667,12 @@ na jed-notku delky. Ex-pe-ri-mentaln vysledky
 <img//aparatura.png, id=17, 433.62pt x 193.47281pt>
 File: img//aparatura.png Graphic file (type png)
 <use img//aparatura.png>
-Package pdftex.def Info: img//aparatura.png  used on input line 104.
+Package pdftex.def Info: img//aparatura.png  used on input line 120.
 (pdftex.def)             Requested size: 369.88582pt x 165.04309pt.
 <plots//ifx.png, id=19, 774.7344pt x 592.8549pt>
 File: plots//ifx.png Graphic file (type png)
 <use plots//ifx.png>
-Package pdftex.def Info: plots//ifx.png  used on input line 119.
+Package pdftex.def Info: plots//ifx.png  used on input line 150.
 (pdftex.def)             Requested size: 412.56496pt x 315.71327pt.
 
 
@@ -681,7 +681,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <plots//lni.png, id=20, 774.7344pt x 592.8549pt>
 File: plots//lni.png Graphic file (type png)
 <use plots//lni.png>
-Package pdftex.def Info: plots//lni.png  used on input line 126.
+Package pdftex.def Info: plots//lni.png  used on input line 157.
 (pdftex.def)             Requested size: 412.56496pt x 315.71327pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -697,19 +697,19 @@ LaTeX Warning: Text page 3 contains only floats.
 <plots//exp.png, id=28, 774.7344pt x 592.8549pt>
 File: plots//exp.png Graphic file (type png)
 <use plots//exp.png>
-Package pdftex.def Info: plots//exp.png  used on input line 155.
+Package pdftex.def Info: plots//exp.png  used on input line 196.
 (pdftex.def)             Requested size: 412.56496pt x 315.71327pt.
 <plots//lin.png, id=29, 774.7344pt x 592.8549pt>
 File: plots//lin.png Graphic file (type png)
 <use plots//lin.png>
-Package pdftex.def Info: plots//lin.png  used on input line 162.
+Package pdftex.def Info: plots//lin.png  used on input line 204.
 (pdftex.def)             Requested size: 412.56496pt x 315.71327pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (13.2225pt too wide) in paragraph at lines 172--179
+Overfull \hbox (13.2225pt too wide) in paragraph at lines 216--223
  [][] 
  []
 
@@ -721,11 +721,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Here is how much of TeX's memory you used:
  19259 strings out of 478927
  390176 string characters out of 2864768
- 675771 words of memory out of 3000000
+ 675777 words of memory out of 3000000
  36787 multiletter control sequences out of 15000+600000
  411075 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,10n,92p,858b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,12n,92p,545b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 <D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/Mikte
 x/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programy/Miktex/fonts/type1/pub
@@ -734,7 +734,7 @@ mi8.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Progra
 my/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Programy/Miktex/fonts/ty
 pe1/public/amsfonts/cm/cmr8.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts
 /cm/cmsy10.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Townsend.pdf (5 pages, 460157 bytes).
+Output written on Townsend.pdf (5 pages, 459254 bytes).
 PDF statistics:
  78 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

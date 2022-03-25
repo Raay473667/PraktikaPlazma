@@ -20,6 +20,9 @@
 	{plots/}
 }
 
+\newcommand{\e}{\text{e}}
+
+
 \MakeSorted{figure}
 \newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
 \newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
@@ -54,25 +57,27 @@
 Teorie lavin popsaná Townsendem vysvětluje základní ionizační mechanismus elektrického výboje. Mějme dvě paralelní kovové desky a mezi nimi homogenní elektrické pole $E$. Elektrony jsou v~poli urychlovány a sráží se s~neutrálními částicemi, přičemž může docházet k~nepružným srážkám vedoucím k~excitaci nebo ionizaci neutrálů. Pokud počet elektronů v~místě $x$ označíme $n$, pak podél dráhy d$x$ vznikne ionizačními srážkami d$n$ nových elektronů a platí
 
 \begin{equation}
-	dn = n \alpha dx
+	\text{d}n = n \alpha \text{d}x
 	\label{1}
 \end{equation}
 
 kde $\alpha$ je označení pro první Townsendův, někdy nazývaný i ionizační koeficient. Ten vyjadřuje počet ionizačních srážek jednoho elektronu na jednotkové délce. Integrací získáme
 
 \begin{equation}
-	\ln n = \alpha x + konst.
+	\ln n = \alpha x + \text{konst}
 	\label{2}
 \end{equation}
 
 a následnou úpravou dostáváme vztah
 
 \begin{equation}
-	n = n_0 e^{\alpha x}
+	n = n_0 \e^{\alpha x}
 	\label{3}
 \end{equation}
 
-kde $n_0$ je počet elektronů v~počátečním bodě $x$ = 0. Ionizační koeficient závisí na intenzitě elektrického pole $E$ a na tlaku plynu v~aparatuře $p$. Je li $E/p$ dáno, můžeme psát $\alpha$
+kde $n_0$ je počet elektronů v~počátečním bodě $x = 0$. Ionizační koeficient 
+závisí na intenzitě elektrického pole $E$ a na tlaku plynu v~aparatuře $p$. 
+Je-li dán podíl $E/p$, můžeme psát
 
 \begin{equation}
 	\alpha = p f \left( \frac {E}{p} \right) 
@@ -82,7 +87,7 @@ kde $n_0$ je počet elektronů v~počátečním bodě $x$ = 0. Ionizační koefi
 tedy ionizační koeficient je úměrný počtu srážek na jednotku délky. Experimentální výsledky ukazují, že konkrétní závislost $\alpha$ na $E/p$ je ve tvaru
 
 \begin{equation}
-	\frac{\alpha}{p} = A~e^{-\frac{Bp}{E}} 
+	\frac{\alpha}{p} = A\,\e^{-\frac{Bp}{E}} 
 	\label{5}
 \end{equation}
 
@@ -93,11 +98,22 @@ kde $A$ a $B$ jsou konstanty, pro které platí
 	\label{6}
 \end{equation}
 
-kde $U_i$ je ionizační potenciál plynu v~aparatuře. Hodnotu konstant A~a B lze určit experimentálně.
+kde $U_i$ je ionizační potenciál plynu v~aparatuře. Hodnotu konstant $A$~a $B$ 
+lze určit experimentálně.
 
 \section{Měření a výsledky}
 
-Aparatura použitá v~tomto praktiku schematicky znázorněná na obr. \ref{aparatura}. Její hlavní komponenty jsou zdroj napětí, rotační olejová vývěva, výbojka, jehlový ventil, Piraniho manometr, ampérmetr a voltmetr. Je založená na principu fotoelektrického jevu, pomocí rtuťové výbojky osvětlujeme hliníkovou rovinnou katodu UV zářením a produkujeme tak fotoelektrony. Ty jsou urychlovány homogenním elektrickým polem na mřížkovou anodu. Katodu můžeme posouvat a tím měnit dráhu, po níž dochází k~ionizaci neutrálů. Do výbojky, kterou čerpáme vakuovou vývěvou, je vpuštěný argon. Tlak se nastavuje jehlovým ventilem a měří Piraniho manometrem. Jedná se o~nepřímý manometr, pro argon je tedy tlak odečítaný z~manometru potřebné vynásobit faktorem 1,59.
+Aparatura použitá v~tomto praktiku je schematicky znázorněna na 
+obr.~\ref{aparatura}. Jejími hlavními komponenty jsou zdroj napětí, rotační 
+olejová vývěva, výbojka, jehlový ventil, Piraniho manometr, ampérmetr a 
+voltmetr. Je založena na principu fotoelektrického jevu. Pomocí rtuťové výbojky 
+osvětlujeme hliníkovou rovinnou katodu UV zářením a produkujeme tak 
+fotoelektrony. Ty jsou urychlovány homogenním elektrickým polem na mřížkovou 
+anodu. Katodu můžeme posouvat, a tím měnit dráhu, po níž dochází k~ionizaci 
+neutrálů. Do výbojky, kterou čerpáme vakuovou vývěvou, je vpuštěný argon. Tlak 
+se nastavuje jehlovým ventilem a měří Piraniho manometrem. Jedná se o~nepřímý 
+manometr, pro argon je tedy tlak odečítaný z~manometru potřebné vynásobit 
+faktorem 1,59.
 
 \begin{figure}[h]
 	\centering
@@ -106,11 +122,26 @@ Aparatura použitá v~tomto praktiku schematicky znázorněná na obr. \ref{apar
 	\label{aparatura}
 \end{figure}
 
-Při měření musíme dbát na to, aby ve výbojce nevznikl samostatný výboj, tedy měříme pro hodnoty intenzity elektrického pole 80-120~V/cm. To v~praxi udržujeme nastavením napětí na zdroji a přizpůsobením vzájemné vzdálenost katody a UV výbojky. Výstupem z~měření je poloha katody $x$, hodnota napětí $U$ a proud $i$ pro několik hodnot konstantní intenzity elektrického pole. Pro každou změnu intenzity pole naladíme irisovou clonu UV výbojky tak, abychom měli maximální proud okolo 1800 pA z~důvodu rozsahu na přístroji do 1999 pA. Proud je tedy řádově pA až nA, pro zlepšení přesnosti měření z~ampérmetru odečítáme vždy 3 hodnoty a dále budeme pracovat s~průměrem z~nich. Tlak je konstantní o~hodnotě $p$ = 79,5 Pa.
+Při měření musíme dbát na to, aby ve výbojce nevznikl samostatný výboj, tedy 
+měříme pro hodnoty intenzity elektrického pole 80-120\,V/cm. To v~praxi 
+udržujeme nastavením napětí na zdroji a přizpůsobením vzájemné vzdálenost 
+katody a UV výbojky. Výstupem z~měření je poloha katody $x$, hodnota napětí $U$ 
+a proud $i$ pro několik hodnot konstantní intenzity elektrického pole $E$. Pro 
+každou změnu intenzity pole naladíme irisovou clonu UV výbojky tak, abychom 
+měli maximální proud okolo 1800\,pA z~důvodu rozsahu na přístroji do 1999\,pA. 
+Proud je tedy řádově pA až nA, pro zlepšení přesnosti měření z~ampérmetru 
+odečítáme vždy 3 hodnoty a dále budeme pracovat s~jejich průměrem. Tlak je 
+konstantní o~hodnotě $p = 79,5$\,Pa.
 
-V~rovnicích (\ref{2}) a (\ref{3}) lze nahradit počet elektronů proudem. Z~naměřených dat můžeme sestavit graf závislosti $i = i_0 f(x)$, viz obr. \ref{ifx}. Body jsou proložené exponenciální funkcí $i = i_0 e^{\alpha x}$, z~toho získané $i_0$ a $\alpha$ jsou uvedené v~levé části tabulky \ref{tab1}.
+V~rovnicích (\ref{2}) a (\ref{3}) lze nahradit počet elektronů proudem. 
+Z~naměřených dat můžeme sestavit graf závislosti $i = i_0 f(x)$, viz 
+obr.~\ref{ifx}. Body jsou proložené exponenciální funkcí $i = i_0 \e^{\alpha 
+x}$, z~toho získané $i_0$ a $\alpha$ jsou uvedené v~levé části 
+tabulky~\ref{tab1}.
 
-Dále můžeme vytvořit graf závislosti ln$i$ = ln$i_0$ + $\alpha x$, viz obr. \ref{lni}. Závislost je proložená lineární funkcí $i$ = $i_0$ + $\alpha x$, získané $i_0$ a $\alpha$ jsou uvedené v~pravé části tabulky \ref{tab1}.
+Dále můžeme vytvořit graf závislosti $\ln i = \ln i_0 + \alpha x$, viz 
+obr.~\ref{lni}. Závislost je proložená lineární funkcí $i = i_0 + \alpha x$, 
+získané $i_0$ a $\alpha$ jsou uvedené v~pravé části tabulky~\ref{tab1}.
 
 V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ proud $i_0$ klesá a ionizační koeficient $\alpha$ roste.
 
@@ -124,7 +155,7 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=145mm]{lni.png}
-	\caption{Graf závislosti ln$i$ na $x$.}
+	\caption{Graf závislosti $\ln i$ na $x$.}
 	\label{lni}
 \end{figure}
 
@@ -135,7 +166,8 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 		\caption{Hodnoty proudů $i_0$ a ionizačních koeficientů $\alpha$ pro různé hodnoty $E$.}
 		\label{tab1}
 		\begin{tabular}{|c|c|c|c|c|} \hline
-			\multicolumn{1}{|c|}{}  & \multicolumn{2}{c|}{$i = i_0 e^{\alpha x}$}& \multicolumn{2}{c|}{$i$ = $i_0$ + $\alpha x$}  \\ \hline
+			\multicolumn{1}{|c|}{}  & \multicolumn{2}{c|}{$i = i_0 \e^{\alpha 
+			x}$}& \multicolumn{2}{c|}{$i = i_0 + \alpha x$}  \\ \hline
 			$E$ [Vcm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] \\ \hline
 			80 & 63,65 $\pm$ 6,62 & 1,60 $\pm$ 0,06 & 44,65 $\pm$ 1,06 & 1,83 $\pm$ 0,04\\ \hline
 			90 & 45,30 $\pm$ 2,79 & 1,85 $\pm$ 0,03& 30,15 $\pm$ 1,11 & 2,12 $\pm$ 0,08\\ \hline
@@ -148,26 +180,38 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 \end{center}
 
 \newpage
-Jelikož jsme provedli měření pro několik hodnot $E/p$, můžeme sestavit grafy závislosti ln$\alpha/p$ = $f(p/E)$ a proložit jej lineární funkcí ln$\alpha/p$ = ln$A$ - $\frac{Bp}{E}$, která vychází z~úpravy rovnice (\ref{5}). To provedeme jak pro $\alpha$ získané z~exponenciálního fitu v~grafu \ref{ifx}, viz obr. \ref{exp}, tak i pro $\alpha$ z~lineárního fitu v~grafu \ref{lni}, viz obr.\ref{lin}. Následně pomocí rovnice (\ref{6}) určíme ionizační potenciál argonu $U_i$, viz tab. \ref{tab2}. Tabulková hodnota pro argon je $U_i$ = 15,76 eV. Té se více přiblížil potenciál $U_i$ = (14,50 $\pm$  2,38) eV získaný po dosazení $\alpha$ z~lineárního fitu.
+Jelikož jsme provedli měření pro několik hodnot $E/p$, můžeme sestavit grafy 
+závislosti $\ln \alpha/p = f(p/E)$ a proložit jej lineární funkcí $\ln \alpha/p 
+= \ln A - \frac{Bp}{E}$, která vychází z~úpravy rovnice~(\ref{5}). To provedeme 
+jak pro $\alpha$ získané z~exponenciálního fitu v~grafu~\ref{ifx}, viz 
+obr.~\ref{exp}, tak i pro $\alpha$ z~lineárního fitu v~grafu~\ref{lni}, viz 
+obr.~\ref{lin}. Následně pomocí rovnice~(\ref{6}) určíme ionizační potenciál 
+argonu $U_i$, viz tab.~\ref{tab2}. Tabulková hodnota pro argon je $U_i = 
+15,76$\,eV. Té se více přiblížil potenciál $U_i$ = (14,50 $\pm$  2,38) eV 
+získaný po 
+dosazení $\alpha$ z~lineárního fitu.
  
  \begin{figure}[h]
  	\centering
  	\includegraphics[width=145mm]{exp.png}
- 	\caption{Graf závislosti ln$\alpha/p$ na $p/E$ pro $\alpha$ z~exponenciálního fitu.}
+ 	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ 
+ 	z~exponenciálního fitu.}
  	\label{exp}
  \end{figure}
 
  \begin{figure}[h]
 	\centering
 	\includegraphics[width=145mm]{lin.png}
-	\caption{Graf závislosti ln$\alpha/p$ na $p/E$ pro $\alpha$ z~lineárního fitu.}
+	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ z~lineárního 
+	fitu.}
 	\label{lin}
 \end{figure}
  
 \begin{center}
 	\begin{table}[h]
 		\centering
-		\caption{Hodnoty konstant $A$, $B$ a ionizačních potenciálů $U_i$ argonu z~ln$\alpha/p$ = ln$A$ - $\frac{Bp}{E}$.}
+		\caption{Hodnoty konstant $A$, $B$ a ionizačních potenciálů $U_i$ 
+		argonu z~$\ln \alpha/p = \ln A - \frac{Bp}{E}$.}
 		\label{tab2}
 		\begin{tabular}{|c|c|c|c|c|c|} \hline
 			\multicolumn{3}{|c|}{Dosazení $\alpha$ z~exponenciálního fitu} & \multicolumn{3}{c|}{Dosazení $\alpha$ z~lineárního fitu}  \\ \hline
