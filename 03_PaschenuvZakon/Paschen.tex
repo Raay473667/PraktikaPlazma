@@ -28,7 +28,7 @@
 \newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
 \newtoks\cisloulohy \newtoks\jmenoulohy
 \newtoks\tlak \newtoks\teplota \newtoks\vlhkost
-\jmenopraktika={Paschenův zákon, katodový spád potenciálu v plazmatu}  % nahradte jmenem vaseho predmetu
+\jmenopraktika={Paschenův zákon, katodový spád potenciálu v doutnavém výboji}  % nahradte jmenem vaseho predmetu
 \jmeno={Radek Horňák, Lukáš Vrána}            
 \datum={15. 3. 2022}        % nahradte datem mereni ulohy                           
 \rocnik={2.}                  
@@ -53,9 +53,79 @@
 	\end{tabular*}
 
 \section{Teorie}
+\subsection{Paschenův zákon}
 
+Z Townsendovy teorie lavin víme, že působením elektrického pole na zředěný plyn dochází k urychlování přítomných elektronů. Takto urychlené elektrony mohou ionizovat neutrální částice a vytvořit takzvanou Townsedovu lavinu. Počet elektronů vzniklých v důsledku Townsendovy laviny závisí exponenciálně na dráze $d$  
+
+\begin{equation}
+	n = n_0\,\e^{\alpha d}
+	\label{1}
+\end{equation}
+
+kde $n_0$ je počet elektronů v~počátečním bodě $d = 0$ a $\alpha$ je první Townsendův nebo také ionizační koeficient. Elektrické pole můžeme charakterizovat napětím $V$ přiloženým mezi dvě rovinné elektrody, dráha $d$ je vzdálenost mezi elektrodami. Elektronovou lavinu doprovází vznik iontů, jejichž počet lze vyjádřit jako
+
+\begin{equation}
+	 n_i = n_0\,[e^{\alpha d}-1]
+	\label{2}
+\end{equation}
+
+Ionty jsou polem urychlovány ke katodě, dopadají na ni a vyvolávají sekundární emisi elektronů. Tu popisuje Townsendův třetí koeficient neboli koeficient sekundární emise $\gamma$. Konkrétně udává průměrný počet elektronů emitovaných jedním iontem při jeho dopadu na katodu. Pomocí $\gamma$ lze vyjádřit podmínku zapálení výboje jako
+
+\begin{equation}
+	\gamma\,(e^{\alpha d } - 1) = 1
+	\label{3}
+\end{equation} 
+
+tedy že v lavině musí být jedním primárním elektronem vytvořeno tolik iontů, které dopadem na katodu způsobí emisi jednoho nového elektronu. Ionizační koeficient $\alpha$ závisí na intenzitě elektrického pole 
+
+\begin{equation}
+	\frac{\alpha}{p} = A\,\e^{-\frac{Bp}{E}} 
+	\label{4}
+\end{equation}
+
+kde $A = 1/\lambda_1$ a $B = U_i/\lambda_1$ jsou konstanty závislé na druhu plynu, $\lambda_1$ je střední volná dráha elektronů při jednotkovém tlaku. Dále lze (\ref{4}) přepsat jako
+
+\begin{equation}
+	\frac{\alpha}{p} = A\,\e^{-\frac{Bpd}{V}} 
+	\label{5}
+\end{equation}
+
+Logaritmováním a úpravou (\ref{5}) získáme
+
+\begin{equation}
+	V = \frac{B\,pd}{\ln A - \ln \frac{\alpha}{d}}
+	\label{6}
+\end{equation}
+
+Dosazením $\alpha\,d$ z (\ref{6}) do (\ref{3}), logaritmováním a dalšími úpravami dojdeme k tvaru
+
+\begin{equation}
+	A\,pd\,e^{-\frac{Bpd}{V_z}} = \ln \left(\frac{1}{\gamma} + 1\right)
+	\label{7}
+\end{equation}
+
+kde $V_z$ je zápalné napětí výboje. Pro daný plyn a materiál katody položme pravou stranu (\ref{7})
+
+\begin{equation}
+	\ln \left(\frac{1}{\gamma} + 1\right) = C
+	\label{8}
+\end{equation}
+
+Úpravami dostáváme
+
+\begin{equation}
+	V_z = \frac{B\,pd}{C' + \ln(pd)}
+	\label{9}
+\end{equation}
+
+kde $C' = \ln C - \ln A$. Závislost $V_z = f (pd))$ se nazývá Paschenův zákon. Má charakteristický tvar, včetně minima nazývaného Stoletowův bod.
+
+%odsazení zkontroluj
+
+\subsection{Katodový spád potenciálu v doutnavém výboji}
 
 \section{Měření a výsledky}
+
 
 
 \section{Závěr}
