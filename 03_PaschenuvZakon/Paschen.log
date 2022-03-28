@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  28 MAR 2022 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  28 MAR 2022 17:43
 entering extended mode
 **./Paschen.tex
 (Paschen.tex
@@ -731,48 +731,65 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 47--54
 [1
 
 {C:/Users/lukas/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<plots//tlakfixed.png, id=17, 774.7344pt x 592.8549pt>
+<img//glowdischarge.png, id=17, 652.68843pt x 293.59688pt>
+File: img//glowdischarge.png Graphic file (type png)
+<use img//glowdischarge.png>
+Package pdftex.def Info: img//glowdischarge.png  used on input line 126.
+(pdftex.def)             Requested size: 369.88582pt x 166.38876pt.
+ [2 <./img//glowdischarge.png>]
+<img//VA.png, id=24, 529.22719pt x 312.41719pt>
+File: img//VA.png Graphic file (type png)
+<use img//VA.png>
+Package pdftex.def Info: img//VA.png  used on input line 144.
+(pdftex.def)             Requested size: 369.88582pt x 218.35207pt.
+ [3 <./img//VA.png>]
+<plots//tlakfixed.png, id=29, 774.7344pt x 592.8549pt>
 File: plots//tlakfixed.png Graphic file (type png)
 <use plots//tlakfixed.png>
-Package pdftex.def Info: plots//tlakfixed.png  used on input line 132.
+Package pdftex.def Info: plots//tlakfixed.png  used on input line 162.
 (pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<plots//dfixed.png, id=18, 774.7344pt x 592.8549pt>
+<plots//dfixed.png, id=30, 774.7344pt x 592.8549pt>
 File: plots//dfixed.png Graphic file (type png)
 <use plots//dfixed.png>
-Package pdftex.def Info: plots//dfixed.png  used on input line 140.
+Package pdftex.def Info: plots//dfixed.png  used on input line 170.
+(pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<plots//KatodovySpad.png, id=31, 774.7344pt x 592.8549pt>
+File: plots//KatodovySpad.png Graphic file (type png)
+<use plots//KatodovySpad.png>
+Package pdftex.def Info: plots//KatodovySpad.png  used on input line 182.
 (pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2] [3 <./plots//tlakfixed.png (PNG copy)> <./plots//dfixed.png (PNG copy)>]
-(Paschen.aux) ) 
+[4 <./plots//tlakfixed.png (PNG copy)>] [5 <./plots//dfixed.png (PNG copy)> <./
+plots//KatodovySpad.png (PNG copy)>] (Paschen.aux) ) 
 Here is how much of TeX's memory you used:
- 19684 strings out of 478681
- 413549 string characters out of 2846534
- 679598 words of memory out of 3000000
- 37462 multiletter control sequences out of 15000+600000
+ 19716 strings out of 478681
+ 414173 string characters out of 2846534
+ 679664 words of memory out of 3000000
+ 37490 multiletter control sequences out of 15000+600000
  411075 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,7n,91p,1103b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lukas/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lukas/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukas/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/luk
-as/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/U
-sers/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb>
-Output written on Paschen.pdf (3 pages, 233266 bytes).
+ 88i,7n,91p,1277b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/lukas/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lukas/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users
+/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lukas/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukas/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Paschen.pdf (5 pages, 337035 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
