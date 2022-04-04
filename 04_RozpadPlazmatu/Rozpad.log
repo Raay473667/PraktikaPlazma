@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  4 APR 2022 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  4 APR 2022 16:20
 entering extended mode
 **./Rozpad.tex
 (Rozpad.tex
@@ -703,25 +703,25 @@ ou vets nez po-lomerem, dostavame
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 129.
+ine 142.
 
 <plots//graph1.png, id=18, 774.7344pt x 592.8549pt>
 File: plots//graph1.png Graphic file (type png)
 <use plots//graph1.png>
-Package pdftex.def Info: plots//graph1.png  used on input line 131.
+Package pdftex.def Info: plots//graph1.png  used on input line 144.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 131--132
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
 <plots//graph2.png, id=19, 774.7344pt x 592.8549pt>
 File: plots//graph2.png Graphic file (type png)
 <use plots//graph2.png>
-Package pdftex.def Info: plots//graph2.png  used on input line 136.
+Package pdftex.def Info: plots//graph2.png  used on input line 149.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 136--137
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 149--150
  [][] 
  []
 
@@ -731,25 +731,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 145.
+ine 158.
 
 <plots//graph3.png, id=20, 774.7344pt x 592.8549pt>
 File: plots//graph3.png Graphic file (type png)
 <use plots//graph3.png>
-Package pdftex.def Info: plots//graph3.png  used on input line 147.
+Package pdftex.def Info: plots//graph3.png  used on input line 160.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 147--148
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 160--161
  [][] 
  []
 
 <plots//graph4.png, id=21, 774.7344pt x 592.8549pt>
 File: plots//graph4.png Graphic file (type png)
 <use plots//graph4.png>
-Package pdftex.def Info: plots//graph4.png  used on input line 152.
+Package pdftex.def Info: plots//graph4.png  used on input line 165.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 152--153
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 165--166
  [][] 
  []
 
@@ -759,25 +759,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 161.
+ine 174.
 
 <plots//graph5.png, id=22, 774.7344pt x 592.8549pt>
 File: plots//graph5.png Graphic file (type png)
 <use plots//graph5.png>
-Package pdftex.def Info: plots//graph5.png  used on input line 163.
+Package pdftex.def Info: plots//graph5.png  used on input line 176.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 163--164
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 176--177
  [][] 
  []
 
 <plots//graph6.png, id=23, 774.7344pt x 592.8549pt>
 File: plots//graph6.png Graphic file (type png)
 <use plots//graph6.png>
-Package pdftex.def Info: plots//graph6.png  used on input line 168.
+Package pdftex.def Info: plots//graph6.png  used on input line 181.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 168--169
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
@@ -787,25 +787,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 177.
+ine 190.
 
 <plots//graph7.png, id=24, 774.7344pt x 592.8549pt>
 File: plots//graph7.png Graphic file (type png)
 <use plots//graph7.png>
-Package pdftex.def Info: plots//graph7.png  used on input line 179.
+Package pdftex.def Info: plots//graph7.png  used on input line 192.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 179--180
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 192--193
  [][] 
  []
 
 <plots//graph8.png, id=25, 774.7344pt x 592.8549pt>
 File: plots//graph8.png Graphic file (type png)
 <use plots//graph8.png>
-Package pdftex.def Info: plots//graph8.png  used on input line 184.
+Package pdftex.def Info: plots//graph8.png  used on input line 197.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 184--185
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
@@ -815,25 +815,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 193.
+ine 206.
 
 <plots//graph9.png, id=26, 774.7344pt x 592.8549pt>
 File: plots//graph9.png Graphic file (type png)
 <use plots//graph9.png>
-Package pdftex.def Info: plots//graph9.png  used on input line 195.
+Package pdftex.def Info: plots//graph9.png  used on input line 208.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 195--196
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 208--209
  [][] 
  []
 
 <plots//graph10.png, id=27, 774.7344pt x 592.8549pt>
 File: plots//graph10.png Graphic file (type png)
 <use plots//graph10.png>
-Package pdftex.def Info: plots//graph10.png  used on input line 200.
+Package pdftex.def Info: plots//graph10.png  used on input line 213.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 200--201
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 213--214
  [][] 
  []
 
@@ -843,25 +843,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 209.
+ine 222.
 
 <plots//graph11.png, id=28, 774.7344pt x 592.8549pt>
 File: plots//graph11.png Graphic file (type png)
 <use plots//graph11.png>
-Package pdftex.def Info: plots//graph11.png  used on input line 211.
+Package pdftex.def Info: plots//graph11.png  used on input line 224.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 211--212
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 224--225
  [][] 
  []
 
 <plots//graph12.png, id=29, 774.7344pt x 592.8549pt>
 File: plots//graph12.png Graphic file (type png)
 <use plots//graph12.png>
-Package pdftex.def Info: plots//graph12.png  used on input line 216.
+Package pdftex.def Info: plots//graph12.png  used on input line 229.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 216--217
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 229--230
  [][] 
  []
 
@@ -871,25 +871,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Package perpage Warning: \stepcounter probably at start of vertical list:
 You might need to use \leavevmode before it to avoid vertical shifts on input l
-ine 225.
+ine 238.
 
 <plots//graph13.png, id=30, 774.7344pt x 592.8549pt>
 File: plots//graph13.png Graphic file (type png)
 <use plots//graph13.png>
-Package pdftex.def Info: plots//graph13.png  used on input line 227.
+Package pdftex.def Info: plots//graph13.png  used on input line 240.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 227--228
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 240--241
  [][] 
  []
 
 <plots//graph14.png, id=31, 774.7344pt x 592.8549pt>
 File: plots//graph14.png Graphic file (type png)
 <use plots//graph14.png>
-Package pdftex.def Info: plots//graph14.png  used on input line 232.
+Package pdftex.def Info: plots//graph14.png  used on input line 245.
 (pdftex.def)             Requested size: 774.73251pt x 592.85345pt.
 
-Overfull \hbox (0.98479pt too wide) in paragraph at lines 232--233
+Overfull \hbox (0.98479pt too wide) in paragraph at lines 245--246
  [][] 
  []
 
@@ -897,12 +897,14 @@ Overfull \hbox (0.98479pt too wide) in paragraph at lines 232--233
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2] [3 <./plots//graph1.png (PNG copy)> <./plots//graph2.png (PNG copy)> <./plo
-ts//graph3.png (PNG copy)> <./plots//graph4.png (PNG copy)>] [4 <./plots//graph
-5.png (PNG copy)> <./plots//graph6.png (PNG copy)> <./plots//graph7.png (PNG co
+ts//graph3.png (PNG copy)> <./plots//graph4.png (PNG copy)> <./plots//graph5.pn
+g (PNG copy)> <./plots//graph6.png (PNG copy)>] [4 <./plots//graph7.png (PNG co
 py)> <./plots//graph8.png (PNG copy)> <./plots//graph9.png (PNG copy)> <./plots
-//graph10.png (PNG copy)>] [5 <./plots//graph11.png (PNG copy)> <./plots//graph
-12.png (PNG copy)> <./plots//graph13.png (PNG copy)> <./plots//graph14.png (PNG
- copy)>] (Rozpad.aux) ) 
+//graph10.png (PNG copy)> <./plots//graph11.png (PNG copy)> <./plots//graph12.p
+ng (PNG copy)>] [5 <./plots//graph13.png (PNG copy)> <./plots//graph14.png (PNG
+ copy)>] [6
+
+] (Rozpad.aux) ) 
 Here is how much of TeX's memory you used:
  20647 strings out of 478927
  417121 string characters out of 2864768
@@ -910,21 +912,21 @@ Here is how much of TeX's memory you used:
  38155 multiletter control sequences out of 15000+600000
  413221 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,13n,92p,845b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-<D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Program
-y/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/Miktex/fonts/ty
-pe1/public/amsfonts/cm/cmmi12.pfb><D:/Programy/Miktex/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D
-:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programy/Miktex/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programy/Miktex/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programy/Mi
-ktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programy/Miktex/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb>
-Output written on Rozpad.pdf (5 pages, 1083914 bytes).
+ 88i,13n,92p,536b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+<D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/Mikte
+x/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/Miktex/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Progr
+amy/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programy/Miktex/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><D:/Programy/Miktex/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:
+/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programy/Miktex/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programy/Miktex/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb>
+Output written on Rozpad.pdf (6 pages, 1084371 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

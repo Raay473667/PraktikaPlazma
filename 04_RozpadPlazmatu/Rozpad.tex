@@ -66,7 +66,7 @@ Důležitou charakteristikou plazmatu jakožto ionizovaného plynu je koncentrac
 za předpokladu, že máme výbojku válcového tvaru s délkou větší než poloměrem, dostáváme koncentraci elektronů v jedné dimenzi jako
 
 \begin{equation}
-	n(x,t) = n_0(x)\,e^{\left(-\frac{Dt}{\Lambda^2} \right)} 
+	n(x,t) = n_0(x)\,\e^{\left(-\frac{Dt}{\Lambda^2} \right)} 
 \end{equation}
 
 kde $n_0$ je koncentrace elektronů v počátku $x = 0$, $D$ je difúzní koeficient, $t$ je čas a $\Lambda$ je difuzní délka.
@@ -94,10 +94,11 @@ Objemovou rekombinaci můžeme napsat jako časovou změnu koncentrace, tedy
 kde $\alpha$ je koeficient rekombinace. Obecně platí, že rekombinační ztráty se více projevují při vysokém tlaku, difuzní ztráty naopak při nízkém tlaku. Difuzní ztráty jsou charakterizovány časovou závislostí 
 
 \begin{equation}
-	n(t) = n_0\,e^{\left( -\frac{Dt}{\Lambda^2}\right)}
+	n(t) = n_0\,\e^{\left( -\frac{Dt}{\Lambda^2}\right)}
 \end{equation}
 
-a tedy funkce $\text{ln}n = f(t)$ je lineární, ze směrnice přímky lze určit $D$. V případě rekombinace platí
+a tedy funkce $\ln n = f(t)$ je lineární, ze směrnice přímky lze určit $D$. V 
+případě rekombinace platí
 
 \begin{equation}
 	\frac{1}{n(t)} = \frac{1}{n_0} + \alpha t
@@ -106,7 +107,7 @@ a tedy funkce $\text{ln}n = f(t)$ je lineární, ze směrnice přímky lze urči
 a závislost $1/n = f(t)$ je lineární, ze směrnice určíme $\alpha$. Pokud tímto způsobem určujeme jeden z koeficientů, tedy $D$ nebo $\alpha$, děláme to za předpokladu zanedbání druhého procesu. Nabízí se tedy vyjádřit $n(t)$ se zahrnutím obou koeficientů pomocí zpřesněné rovnice
 
 \begin{equation}
-	n(t) = \frac{1}{c\,e^{\frac{tD}{\Lambda^2}}-\frac{\alpha \Lambda^2}{D}}
+	n(t) = \frac{1}{c\,\e^{\frac{tD}{\Lambda^2}}-\frac{\alpha \Lambda^2}{D}}
 	\label{zpresnena}
 \end{equation}
 
@@ -117,12 +118,24 @@ Pokud v rezonátoru zapálíme plazma, změní se jeho rezonanční frekvence $\
 	\overrightarrow{n}(t) = \frac{0,271 R^2 \Delta f(t) 8 \pi^2 \epsilon_0 m f_0}{0,64 R'^2 e^2}
 \end{equation}
 
-kde $R$ je poloměr rezonátoru, $\Delta\,f(t)$ je rozdíl frekvence vysokofrekvenčního zdroje $f'$ a rezonanční frekvence prázdného rezonátoru $f_0$ $\epsilon_0$ je permitivita vakua, $m$ je hmotnost elektronu, $R'$ je poloměr výbojky a $e$ je elementární náboj.
+kde $R$ je poloměr rezonátoru, $\Delta f(t)$ je rozdíl frekvence 
+vysokofrekvenčního zdroje $f'$ a rezonanční frekvence prázdného rezonátoru 
+$f_0$ $\epsilon_0$ je permitivita vakua, $m$ je hmotnost elektronu, $R'$ je 
+poloměr výbojky a $e$ je elementární náboj.
 
 \section{Měření a výsledky}
 Měřící aparatura obsahuje vysokofrekvenční laditelný zdroj, který dodává energii do rezonátoru o poloměru $R = 40\,\si{\milli\meter}$, jehož osou prochází výbojka o poloměru $R' = 9\,\si{\milli\meter}$. Prošlý signál je na vstupu do osciloskopu usměrněný diodou. Proud měříme ampérmetrem, napětí osciloskopem. Výbojka je čerpána rotační olejovou a difuzní vývěvou, tlak měříme Piraniho manometrem. Ve výbojce máme helium jehož tlak lze měnit.
 
-Rezonanční frekvence prázdného rezonátoru $f_0$ se po zapálení výboje zvýší na $f_1$. Po vypnutí přívodu energie se plazma začne rozpadat a rezonanční frekvence opět klesá až na původní hodnotu $f_0$. Tento periodický proces lze zachytit osciloskopem. Při měření měníme frekvenci zdroje $f'$ a z oscilogramu určujeme čas $t'$, za který dojde k rezonanci. Také si zaznamenáváme $f_0$, abychom následně mohli vypočítat koncentraci elektronů mimo jiné z $\Delta\,f$. Následně můžeme graficky vynést závislosti $1/n = f(t)$ a $\ln\,n = f(t)$, určit z nich $\alpha$, $D$ a rozhodnout, zda je převládajícím procesem difúze nebo rekombinace. $\alpha$ a $D$ včetně $n_0$ také určíme proložením funkcí podle rovnice \ref{zpresnena} a výsledky porovnáme.
+Rezonanční frekvence prázdného rezonátoru $f_0$ se po zapálení výboje zvýší na 
+$f_1$. Po vypnutí přívodu energie se plazma začne rozpadat a rezonanční 
+frekvence opět klesá až na původní hodnotu $f_0$. Tento periodický proces lze 
+zachytit osciloskopem. Při měření měníme frekvenci zdroje $f'$ a z oscilogramu 
+určujeme čas $t'$, za který dojde k rezonanci. Také si zaznamenáváme $f_0$, 
+abychom následně mohli vypočítat koncentraci elektronů mimo jiné z $\Delta f$. 
+Následně můžeme graficky vynést závislosti $1/n = f(t)$ a $\ln n = f(t)$, 
+určit z nich $\alpha$, $D$ a rozhodnout, zda je převládajícím procesem difúze 
+nebo rekombinace. $\alpha$ a $D$ včetně $n_0$ také určíme proložením funkcí 
+podle rovnice \ref{zpresnena} a výsledky porovnáme.
 
 \begin{figure}[h]
 	\centering
@@ -236,7 +249,7 @@ Rezonanční frekvence prázdného rezonátoru $f_0$ se po zapálení výboje zv
 	\label{g:450Pa}
 \end{figure}
 
-\newpage
+\clearpage
 \section{Závěr}
 
 \end{document}
