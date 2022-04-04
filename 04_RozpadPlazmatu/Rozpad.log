@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  4 APR 2022 16:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  4 APR 2022 18:09
 entering extended mode
 **./Rozpad.tex
 (Rozpad.tex
@@ -906,13 +906,13 @@ ng (PNG copy)>] [5 <./plots//graph13.png (PNG copy)> <./plots//graph14.png (PNG
 
 ] (Rozpad.aux) ) 
 Here is how much of TeX's memory you used:
- 20647 strings out of 478927
- 417121 string characters out of 2864768
- 704581 words of memory out of 3000000
- 38155 multiletter control sequences out of 15000+600000
+ 20650 strings out of 478927
+ 417168 string characters out of 2864768
+ 712589 words of memory out of 3000000
+ 38158 multiletter control sequences out of 15000+600000
  413221 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,13n,92p,536b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,13n,92p,536b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
 <D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
 D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/Mikte
 x/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Programy/Miktex/fonts/type1/pub
@@ -924,7 +924,7 @@ ts/cm/cmr17.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:
 /Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programy/Miktex/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programy/Miktex/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb>
-Output written on Rozpad.pdf (6 pages, 1084371 bytes).
+Output written on Rozpad.pdf (6 pages, 1083406 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
