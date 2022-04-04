@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  4 APR 2022 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  4 APR 2022 13:09
 entering extended mode
 **./Paschen.tex
 (Paschen.tex
@@ -666,24 +666,24 @@ Overfull \hbox (2.61108pt too wide) in paragraph at lines 47--54
 <img//glowdischarge.png, id=17, 652.68843pt x 293.59688pt>
 File: img//glowdischarge.png Graphic file (type png)
 <use img//glowdischarge.png>
-Package pdftex.def Info: img//glowdischarge.png  used on input line 125.
+Package pdftex.def Info: img//glowdischarge.png  used on input line 141.
 (pdftex.def)             Requested size: 369.88582pt x 166.38876pt.
  [2 <./img//glowdischarge.png>]
 <img//VA.png, id=24, 529.22719pt x 312.41719pt>
 File: img//VA.png Graphic file (type png)
 <use img//VA.png>
-Package pdftex.def Info: img//VA.png  used on input line 143.
+Package pdftex.def Info: img//VA.png  used on input line 167.
 (pdftex.def)             Requested size: 369.88582pt x 218.35207pt.
  [3 <./img//VA.png>]
 <plots//tlakfixed.png, id=29, 774.7344pt x 592.8549pt>
 File: plots//tlakfixed.png Graphic file (type png)
 <use plots//tlakfixed.png>
-Package pdftex.def Info: plots//tlakfixed.png  used on input line 161.
+Package pdftex.def Info: plots//tlakfixed.png  used on input line 203.
 (pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
 <plots//dfixed.png, id=30, 774.7344pt x 592.8549pt>
 File: plots//dfixed.png Graphic file (type png)
 <use plots//dfixed.png>
-Package pdftex.def Info: plots//dfixed.png  used on input line 169.
+Package pdftex.def Info: plots//dfixed.png  used on input line 211.
 (pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
 
 
@@ -693,7 +693,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <plots//KatodovySpad.png, id=34, 774.7344pt x 592.8549pt>
 File: plots//KatodovySpad.png Graphic file (type png)
 <use plots//KatodovySpad.png>
-Package pdftex.def Info: plots//KatodovySpad.png  used on input line 187.
+Package pdftex.def Info: plots//KatodovySpad.png  used on input line 242.
 (pdftex.def)             Requested size: 341.43306pt x 261.27309pt.
 
 
@@ -702,7 +702,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <plots//VAodpor.png, id=35, 774.7344pt x 593.0958pt>
 File: plots//VAodpor.png Graphic file (type png)
 <use plots//VAodpor.png>
-Package pdftex.def Info: plots//VAodpor.png  used on input line 194.
+Package pdftex.def Info: plots//VAodpor.png  used on input line 249.
 (pdftex.def)             Requested size: 341.43306pt x 261.37924pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -716,7 +716,7 @@ Here is how much of TeX's memory you used:
  36799 multiletter control sequences out of 15000+600000
  411075 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,7n,92p,1277b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,7n,92p,775b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
 <D:/Programy/Miktex/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmex10
 .pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programy
@@ -726,7 +726,7 @@ cm/cmr12.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/P
 rogramy/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programy/Miktex/font
 s/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programy/Miktex/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb>
-Output written on Paschen.pdf (6 pages, 361578 bytes).
+Output written on Paschen.pdf (6 pages, 361378 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
