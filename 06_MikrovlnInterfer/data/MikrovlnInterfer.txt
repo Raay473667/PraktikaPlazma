@@ -1,0 +1,32 @@
+měřím fázi, zapnu plazma, vypnu plazma, odečtu fázi
+zapnutý averaging x10 potlačí šum, zvýši dobu
+
+naměřím dvě hodnoty proudu a pak vystřídám s nulou,,
+
+trace trace import/export data 
+frekvence - dB Mag - phase
+center 2,25 GHz 
+data01 - vypnuto
+data02 - 1mA 
+data03 - 2mA trošku bliká
+data04 - vypnuto
+data05 - 3mA
+data06 - 0,8mA - drcnuto do výbojky, nulu musím až další
+data07 - 0,6mA
+data08 - vypnuto
+data09 - 0,4mA
+data10 - 0,2mA
+data11 - vypnuto
+
+následující data Span 30 MHz
+data21 - 0,2 mA
+data22 - 0,4 mA
+data23 - vypnuto
+data24 - 0,6 mA
+data25 - 0,8
+data26 - vyp
+data27 - 1 mA
+data28 - 2 mA
+data29 - vyp
+data30 - 3 mA HÝBÁNO
+data31 - vyp
