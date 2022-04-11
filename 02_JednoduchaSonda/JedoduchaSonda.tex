@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage [utf8x]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage[margin=22mm]{geometry}
+\usepackage{esvect}
+\usepackage{ragged2e}
+\usepackage{tikz,pgf}
+\usepackage{bm}
+\usepackage{perpage}
+\usepackage{capt-of}
+
+\graphicspath{
+	{img/}
+	{plots/}
+}
+
+\newcommand{\e}{\text{e}}
+
+
+\MakeSorted{figure}
+\newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
+\newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
+\newtoks\cisloulohy \newtoks\jmenoulohy
+\newtoks\tlak \newtoks\teplota \newtoks\vlhkost
+\jmenopraktika={Diagnostika plazmatu doutnavého výboje pomocí jednoduché sondy}  % nahradte jmenem vaseho predmetu
+\jmeno={Radek Horňák, Lukáš Vrána}            
+\datum={15. 3. 2022}        % nahradte datem mereni ulohy                           
+\rocnik={2.}                  
+\semestr={IV.}                 
+\cisloulohy={6}    % cislo ulohy           
+
+\begin{document}
+	\begin{center}
+		{\Large Přírodovědecká fakulta Masarykovy univerzity} \\
+		\bigskip
+		{\Large \bfseries PRAKTIKUM Z~FYZIKY PLAZMATU} \\
+		\bigskip
+		{\Large \the\jmenopraktika}
+	\end{center}
+	\bigskip
+	\noindent
+	\setlength{\arrayrulewidth}{1pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+		\large {\bfseries Zpracovali:}  \the\jmeno  \hspace{20mm} \large  
+		{\bfseries Naměřeno:} \the\datum\\[2.5mm]
+		\hline
+	\end{tabular*}
+
+\section{Teorie}
+\subsection{Doutnavý výboj}
+V této úloze se budeme zabývat měřením parametrů kladného sloupce doutnavého výboje.	
+Doutnavý výboj je druh výboje, jehož typický vzhled můžeme vidět na schématu na 
+obr.~\ref{glow+napeti}. V~rozmezí tlaku 13-130\,\si{\pascal} v~něm můžeme 
+pozorovat střídající se temné nebo svítící místa, která rozlišujeme na katodové a anodové oblasti. Katodové oblasti jsou nutnou a důležitou oblastí doutnavého výboje na rozdíl od kladného sloupce, jehož délka se při zkracování vzdálenosti elektrod zmenšuje a může i úplně zmizet. Intenzita elektrického pole je podél jeho osy konstantní, viz dolní část obr. \ref{glow+napeti}. Může být určena buď pomocí sondových měření nebo ji lze vypočítat ze závislosti napětí na elektrodách na jejich vzdálenosti při konstantním proudu ve výboji.
+
+\subsection{Elektrostatická Langmuirova sonda}
+Langmuirova sonda je vodič malých rozměrů zavedený do plazmatu, pomocí nějž lze měřit nejdůležitější parametry plazmatu jako elektronovou hustotu $n_e$, teplotu elektronů $T_e$, rozdělovací funkci elektronů $f(v)$ a prostorové rozdělení potenciálu a elektrického pole. Potenciál sondy $V_s$ určujeme vzhledem k referenční elektrodě. Pokud je vůči ní plocha sondy velmi malá, můžeme ji nazvat jednoduchou sondou. 
+	
+\end{document}
