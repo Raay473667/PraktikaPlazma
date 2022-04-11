@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  11 APR 2022 09:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.24)  12 APR 2022 00:25
 entering extended mode
 **./Paschen.tex
 (Paschen.tex
@@ -737,69 +737,75 @@ File: img//glowdischarge.png Graphic file (type png)
 Package pdftex.def Info: img//glowdischarge.png  used on input line 141.
 (pdftex.def)             Requested size: 369.88582pt x 166.38876pt.
  [2 <./img//glowdischarge.png>]
+Overfull \hbox (4.50368pt too wide) in paragraph at lines 164--167
+\OT1/cmr/m/n/12 Kdyz se anoda do-stane do ob-lasti zaporneho svetla, zmiz
+ ano-dove svetlo. Dalsm zmensovanm
+ []
+
 <img//VA.png, id=24, 529.22719pt x 312.41719pt>
 File: img//VA.png Graphic file (type png)
 <use img//VA.png>
-Package pdftex.def Info: img//VA.png  used on input line 167.
+Package pdftex.def Info: img//VA.png  used on input line 170.
 (pdftex.def)             Requested size: 369.88582pt x 218.35207pt.
- [3 <./img//VA.png>]
+[3 <./img//VA.png>]
 <plots//tlakfixed.png, id=29, 774.7344pt x 592.8549pt>
 File: plots//tlakfixed.png Graphic file (type png)
 <use plots//tlakfixed.png>
-Package pdftex.def Info: plots//tlakfixed.png  used on input line 203.
-(pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
+Package pdftex.def Info: plots//tlakfixed.png  used on input line 223.
+(pdftex.def)             Requested size: 426.79134pt x 326.59589pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <plots//dfixed.png, id=30, 774.7344pt x 592.8549pt>
 File: plots//dfixed.png Graphic file (type png)
 <use plots//dfixed.png>
-Package pdftex.def Info: plots//dfixed.png  used on input line 211.
-(pdftex.def)             Requested size: 369.88582pt x 283.04735pt.
+Package pdftex.def Info: plots//dfixed.png  used on input line 231.
+(pdftex.def)             Requested size: 426.79134pt x 326.59589pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./plots//tlakfixed.png (PNG copy)>]
-<plots//KatodovySpad.png, id=34, 774.7344pt x 592.8549pt>
+[4] [5 <./plots//tlakfixed.png (PNG copy)> <./plots//dfixed.png (PNG copy)>]
+<plots//KatodovySpad.png, id=37, 774.7344pt x 592.8549pt>
 File: plots//KatodovySpad.png Graphic file (type png)
 <use plots//KatodovySpad.png>
-Package pdftex.def Info: plots//KatodovySpad.png  used on input line 242.
-(pdftex.def)             Requested size: 341.43306pt x 261.27309pt.
+Package pdftex.def Info: plots//KatodovySpad.png  used on input line 268.
+(pdftex.def)             Requested size: 412.56496pt x 315.71327pt.
 
+[6
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<plots//VAodpor.png, id=35, 774.7344pt x 593.0958pt>
+ <./plots//KatodovySpad.png (PNG copy)>]
+<plots//VAodpor.png, id=41, 774.7344pt x 592.8549pt>
 File: plots//VAodpor.png Graphic file (type png)
 <use plots//VAodpor.png>
-Package pdftex.def Info: plots//VAodpor.png  used on input line 249.
-(pdftex.def)             Requested size: 341.43306pt x 261.37924pt.
+Package pdftex.def Info: plots//VAodpor.png  used on input line 279.
+(pdftex.def)             Requested size: 412.56496pt x 315.71327pt.
+ [7 <./plots//VAodpor.png (PNG copy)>] [8
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <./plots//dfixed.png (PNG copy)>] [6 <./plots//KatodovySpad.png (PNG copy)> 
-<./plots//VAodpor.png>] (Paschen.aux) ) 
+] (Paschen.aux) ) 
 Here is how much of TeX's memory you used:
- 19726 strings out of 478681
- 414368 string characters out of 2846534
- 680683 words of memory out of 3000000
- 37499 multiletter control sequences out of 15000+600000
+ 19728 strings out of 478681
+ 414380 string characters out of 2846534
+ 680697 words of memory out of 3000000
+ 37501 multiletter control sequences out of 15000+600000
  411075 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,7n,91p,775b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/lukas/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lukas/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukas/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/luk
-as/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/U
-sers/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
-fb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr17.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Paschen.pdf (6 pages, 361376 bytes).
+ 88i,10n,91p,775b,711s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lukas/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/lukas/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lukas/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/l
+ukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
+/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Users/lukas/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb>
+Output written on Paschen.pdf (8 pages, 397724 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

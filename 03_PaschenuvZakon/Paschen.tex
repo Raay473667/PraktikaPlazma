@@ -119,7 +119,7 @@ kde $C' = \ln C - \ln A$. Závislost $U_z = f (pd)$ se nazývá Paschenův záko
 Má charakteristický tvar, včetně minima nazývaného Stoletowův bod.
 
 
-\subsection{Katodový spád potenciálu v~doutnavém výboji}
+\subsection{Doutnavý výboj}
 Doutnavý výboj je druh výboje, jehož typický vzhled můžeme vidět na schématu na 
 obr.~\ref{glowdischarge}. V~rozmezí tlaku 13-130\,\si{\pascal} v~něm můžeme 
 pozorovat střídající se temné nebo svítící oblasti. Elektron pohybující se ve 
@@ -160,7 +160,10 @@ procházejících průřezem výbojky. Celkový počet částic $N$ lze napsat j
 
 kde $n$ je koncentrace nabitých částic ve výboji a $S$ je plocha, kterou zabírá záporné světlo na katodě. V~katodové oblasti normálního doutnavého výboje vzrůstá $N$ v~důsledku růstu $S$, v~kladném sloupci však vzrůstá koncentrace $n$. Napětí ve výbojce se skládá z~napětí v~katodové oblasti a ze spádu napětí na katodovém sloupci, který se s~rostoucím proudem zvyšuje. Pokud vzroste proud tak, že celá katoda je pokryta záporným světlem, přechází doutnavý výboj do takzvaného anomálního stavu. Napětí v~katodové oblasti roste rychleji než napětí v~kladném sloupci klesá, výsledkem je oblast charakteristiky od bodu D k~E. Oblast E-F odpovídá přechodu na obloukový výboj.
 
-Katodový spád potenciálu $U_k$ je označení pro napětí mezi ostrou hranicí záporného světla a katodou. Je funkcí materiálu elektrod a plynu ve výbojce. 
+\subsection{Katodový spád potenciálu v~doutnavém výboji}
+Katodový spád potenciálu $U_k$ je označení pro napětí mezi ostrou hranicí záporného světla a katodou. Je funkcí materiálu elektrod a plynu ve výbojce. Stanovení katodového spádu potenciálu lze provést metodou ztíženého výboje. 
+Tato metoda spočívá v udržování konstantního výbojového proudu, přičemž se mění vzdálenost elektrod a na ní závislé napětí. Když se anoda dostane do oblasti záporného světla, zmizí anodové 
+světlo. Dalším zmenšováním vzdáleností elektrod začne napětí nutné na udržení výboje prudce růst, protože elektronové laviny nemají k dispozici potřebnou dráhu pro dostatečnou ionizaci.
 
 \begin{figure}[h]
 	\centering
@@ -178,81 +181,109 @@ Pro měření použijeme výbojku s~pohyblivými elektrodami. Tlak měříme Pir
 manometrem, zápalné napětí určujeme voltmetrem s~vysokým vstupním odporem. Plyn 
 ve výbojce je vzduch, kalibrační faktor k~Piraniho manometru je tedy 1. První 
 měření provedeme s~konstantním tlakem $p = 100\,\si{\pascal}$, přičemž budeme 
-měnit vzdálenost elektrod od 2\,\si{\milli\meter} do 50\,\si{\milli\meter}. Na 
+měnit vzdálenost elektrod od 4\,\si{\milli\meter} do 50\,\si{\milli\meter}. Na 
 výbojce zvyšujeme napětí a odečítáme hodnotu napětí v~okamžiku zapálení výboje. 
 Mezi každým měřením vyčkáváme alespoň jednu minutu na rekombinaci náboje ve 
 výbojce. Výsledný graf závislosti $U_z = f(pd)$ je na obr.~\ref{tlakfixed}. 
-Body jsou proloženy funkcí podle rovnice (\ref{9}) a dostáváme $B = 310 \pm 30$ 
-a $C' = 1,05 \pm 0,02$. Výsledky měření se od ideální závislosti popsané 
-rovnicí (\ref{9}) docela odchylují. Tato ochylka může být způsobena jak 
+Body jsou proloženy funkcí podle rovnice (\ref{9}) a získané hodnoty $B$ 
+a $C'$ jsou v levé části tabulky \ref{tab1}. Výsledky měření se od ideální závislosti popsané 
+rovnicí (\ref{9}) odchylují. Tato ochylka může být způsobena jak 
 nepřesností odečítání zápalného napětí, tak nedostatečnou rekombinací nábojů 
 mezi jednotlivými měřeními. 
 %440,68\pm94,46
 Druhé měření je za konstantní vzdálenosti elektrod $d = 20\,\si{\milli\meter}$, 
 měníme tlak od 25\,\si{\pascal} do 300\,\si{\pascal}. Opět zapisujeme hodnotu 
 napětí v~okamžiku zapálení výboje. Graf závislosti $U_z = f(pd)$ je na obr. 
-\ref{dfixed}. Body jsou proloženy funkcí podle rovnice (\ref{9}) a dostáváme $B 
-= 290 \pm 30$ a $C' = 0,79 \pm 0,01$. Toto měření se oproti předchozímu více 
+\ref{dfixed}. Body jsou proloženy funkcí podle rovnice (\ref{9}), získané konstanty 
+$B$ a $C'$ jsou uvedeny v pravé části tabulky \ref{tab1}. Toto měření se oproti předchozímu více 
 blíží ideální závislosti popsané rovnicí (\ref{9}), z~grafu vidíme až na malou 
 odchylku typickou závislost napětí na součinu tlaku a vzdálenosti elektrod.
 %286,26\pm27,22
 % UZ ZJISTIT A OKOMENTOVAT, Z MINIMA FCE NEBO MĚŘENÍ?
 
-\begin{figure}[h]
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\caption{Hodnoty konstant $B$ a $C'$}
+		\label{tab1}
+		\begin{tabular}{|c|c|c|c|} \hline
+			\multicolumn{2}{|c|}{Měření s konstantním tlakem} 
+			& \multicolumn{2}{c|}{Měření s konstantní vzdáleností elektrod}  \\ \hline
+			$B$ [\si{\meter\squared\per\coulomb}] & $C'$ 
+			& $B$ [\si{\meter\squared\per\coulomb}] & $C'$ \\ \hline
+			310 $\pm$ 30 & 1,05 $\pm$ 0,02 &  290 $\pm$ 30  
+			& 0,79 $\pm$ 0,01 \\ \hline
+
+		\end{tabular}
+	\end{table}
+\end{center}
+
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=130mm]{tlakfixed.png}
+	\includegraphics[width=150mm]{tlakfixed.png}
 	\caption{Naměřená Paschenova křivka při konstantním tlaku.}
 	\label{tlakfixed}
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=130mm]{dfixed.png}
+	\includegraphics[width=150mm]{dfixed.png}
 	\caption{Naměřená Paschenova křivka při konstantní vzdálenosti elektrod.}
 	\label{dfixed}
 \end{figure}
 
-\newpage
+\clearpage
 \subsection{Katodový spád potenciálu v~doutnavém výboji}
-Stanovení katodového spádu potenciálu provedeme metodou ztíženého výboje. 
-Výbojový proud udržujeme konstantní, měníme vzdálenost elektrod a zapisujeme 
-napětí. Když se anoda dostane do oblasti záporného světla, zmizí anodové 
-světlo. Dalším zmenšováním vzdáleností elektrod začne napětí prudce růst. 
-Napětí vzroste, protože je ztížená ionizace v~důsledku zmizení anodového 
-světla, které tedy hraje důležitou roli v~mechanizmu vytváření katodového 
-spádu. Měření provedeme pro dvě konstantní hodnoty tlaku a proudu, 
+Měření katodového spádu potenciálu metodou ztíženého výboje provedeme pro dvě konstantní hodnoty tlaku a proudu, 
 zaznamenáváme změnu napětí se změnou vzdálenosti elektrod. V~grafu na 
-obr.~\ref{KatodovySpad} jsou vidět naměřené závislosti. Pro $I = 
-1\,\si{\milli\ampere}$ a $p = 33\,\si{\pascal}$ je katodový spád $U_k = 
-701\,\si{\volt}$. Pro $I = 1,8\,\si{\milli\ampere}$ a $p = 100\,\si{\pascal}$ 
-je katodový spád nižší,  $U_k = 514\,\si{\volt}$. Při měření jsme vypozorovali, 
-že katodová vrstva se s~tlakem vizuálně zmenšuje.
+obr.~\ref{KatodovySpad} jsou vidět naměřené závislosti. Výsledné hodnoty 
+katodového spádu jsou uvedeny v tabulce \ref{tab2}. S vyšším proudem i tlakem
+jsme naměřili nižší katodový spád. Při měření jsme vypozorovali, 
+že katodová vrstva se s rostoucím tlakem vizuálně zmenšuje. Dle literatury je katodový spád největší pro největší katodovou vrstvu, tedy v případě, když je celý povrch katody pokrytý výbojem. To je v souladu s našimi pozorováními.
 
 %komentář proč se katodový spád liší
 %komentář vizuál výboje
-
-Naměřená voltampérová charakteristika je v~grafu na obr.~\ref{VAodpor}. Vidíme, 
-že se nám podařilo naměřit oblast C-E, jak je znázorněno v~obr.~\ref{VA}.
+	  
 
 %co ty tři body vlevo 
 
+\begin{center}
+	\begin{table}[h!]
+		\centering
+		\caption{Naměřené hodnoty katodového spádu}
+		\label{tab2}
+		\begin{tabular}{|c|c|} \hline
+			$I = 1\,\si{\milli\ampere}$, $p = 33\,\si{\pascal}$ 
+			& $I = 1,8\,\si{\milli\ampere}$, $p = 100\,\si{\pascal}$\\ \hline
+			$U_k$ [V] & $U_k$ [V]\\ \hline
+			701 & 514 \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{center}
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=120mm]{KatodovySpad.png}
+	\includegraphics[width=145mm]{KatodovySpad.png}
 	\caption{Závislosti napětí na vzdálenosti elektrod, kde minimum napětí odpovídá katodovému spádu.}
 	\label{KatodovySpad}
 \end{figure}
 
+\newpage
+Naměřená voltampérová charakteristika je v~grafu na obr.~\ref{VAodpor}. Vidíme, 
+že se nám podařilo naměřit oblast C-E, jak je znázorněno v~obr.~\ref{VA}. Oblast C-D se nazývá normální doutnavý výboj. Vyšší proud je kompenzovaný zvětšením katodové vrstvy. Až je celý povrch katody pokrytý výbojem, zvětšuje se velikost katodového spádu a tím tok iontů na katodu. Tomu odpovídá abnormální doutnavý výboj, tedy oblast D-E. Dalším ohřevem katody by výboj přešel v elektrický oblouk.
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=120mm]{VAodpor.png}
+	\includegraphics[width=145mm]{VAodpor.png}
 	\caption{Voltampérová charakteristika}
 	\label{VAodpor}
 \end{figure}
 
-\newpage
+\clearpage
 \section{Závěr}
-V~této úloze jsme se seznámili s~Paschenovým zákonem, tedy závislostí zápalného napětí na součinu tlaku a vzdálenosti elektrod. Podařilo se nám naměřit typický tvar Paschenovy křivky. Dále jsme se zabývali měřením katodového spádu potenciálu. Pro $I = 1\,\si{\milli\ampere}$ a $p = 33\,\si{\pascal}$ jsme dostali katodový spád $U_k = 701\,\si{\volt}$. Pro $I = 1,8\,\si{\milli\ampere}$ a $p = 100\,\si{\pascal}$ je katodový spád nižší,  $U_k = 514\,\si{\volt}$. Nakonec jsme naměřili voltampérovou charakteristiku doutnavého výboje.
+V~této úloze jsme se seznámili s~Paschenovým zákonem, tedy závislostí zápalného napětí na součinu tlaku a vzdálenosti elektrod. Podařilo se nám naměřit typický tvar Paschenovy křivky včetně jejího minima. To je důležité pro nejrůznější aplikace výbojů, protože se jedná o bod, ve kterém výboj hoří s největší účinností.
+Dále jsme se zabývali měřením katodového spádu potenciálu. Pro $I~=~1\,\si{\milli\ampere}$ a $p~=~33\,\si{\pascal}$ jsme dostali katodový spád $U_k = 701\,\si{\volt}$. Pro $I = 1,8\,\si{\milli\ampere}$ a $p = 100\,\si{\pascal}$ je katodový spád nižší,  $U_k = 514\,\si{\volt}$. Zjistili jsme, že oblast katodového spádu je pro hoření výboje kritická. Pokud přiblížíme elektrody takových způsobem, že zmizí anodové světlo, je kvůli ztížené ionizaci pro hoření výboje potřeba dodávat vysoké napětí. Nakonec jsme naměřili voltampérovou charakteristiku doutnavého výboje, ve které jsme popsali oblasti odpovídající normální i abnormální části výboje.
 
 \end{document}
