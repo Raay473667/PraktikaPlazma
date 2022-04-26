@@ -94,7 +94,10 @@ případě rekombinace platí
 \begin{equation}
 	\frac{1}{n(t)} = \frac{1}{n_0} + \alpha t
 \end{equation} 
-a závislost $1/\,n = f(t)$ je lineární, ze směrnice určíme $\alpha$. Pokud tímto způsobem určujeme jeden z koeficientů, tedy $D$ nebo $\alpha$, děláme to za předpokladu zanedbání druhého procesu. Nabízí se tedy vyjádřit $n(t)$ se zahrnutím obou koeficientů pomocí zpřesněné rovnice
+a závislost $1/n = f(t)$ je lineární, ze směrnice určíme $\alpha$. Pokud tímto 
+způsobem určujeme jeden z koeficientů, tedy $D$ nebo $\alpha$, děláme to za 
+předpokladu zanedbání druhého procesu. Nabízí se tedy vyjádřit $n(t)$ se 
+zahrnutím obou koeficientů pomocí zpřesněné rovnice
 
 \begin{equation}
 	n(t) = \frac{1}{c\,\e^{\frac{tD}{\Lambda^2}}-\frac{\alpha \Lambda^2}{D}}
@@ -121,15 +124,24 @@ frekvence opět klesá až na původní hodnotu $f_0$. Tento periodický proces 
 zachytit osciloskopem. Při měření měníme frekvenci zdroje $f'$ a z oscilogramu 
 určujeme čas $t'$, za který dojde k rezonanci. Také si zaznamenáváme $f_0$, 
 abychom následně mohli vypočítat koncentraci elektronů ze vztahu (\ref{koncentrace}). 
-Následně můžeme graficky vynést závislosti $1/\,n = f(t)$ a $\ln n = f(t)$, 
+Následně můžeme graficky vynést závislosti $1/n = f(t)$ a $\ln n = f(t)$, 
 určit z nich $\alpha$, $D$ a rozhodnout, zda je převládajícím procesem difúze 
 nebo rekombinace. $\alpha$ a $D$ včetně $n_0$ také určíme proložením funkcí 
 podle rovnice \eqref{zpresnena} a výsledky porovnáme.
 
-Závislosti $1/\,n = f(t)$ a $\ln n = f(t)$ včetně proložení podle exponenciální rovnice 
+Závislosti $1/n = f(t)$ a $\ln n = f(t)$ včetně proložení podle exponenciální 
+rovnice 
 \eqref{zpresnena} jsou vyneseny v grafech na obrázcích~\ref{g:5Pa}--\ref{g:450Pa}. 
 Koeficienty $\alpha$ a $D$ určené z proložených lineárních a exponenciálních funkcí jsou 
-uvedeny v tab.~\ref{table:koef}. Vidíme, že exponenciální fit podle rovnice \ref{zpresnena} je nejpřesnější, při našich podmínkách měření tedy probíhala rekombinace i difuze zároveň. Výsledné koeficienty se z lineárních fitů oproti exponenciálnímu fitu liší v některých případech i více než dvojnásobně. Pro tlaky v rozmezí 50--200 Pa jsou závislosti $\ln n = f(t)$ téměř lineární, převládá zde tedy difuze nad rekombinací. Pro vyšší tlak 450 Pa je lineárnější závislost $1/\,n = f(t)$, dominantní je rekombinace v objemu. Toto pozorování je v souladu s teorií. Pro tlaky 5--20 Pa není ani jedna ze závislostí lineární, nelze tak určit dominantní proces. 
+uvedeny v tab.~\ref{table:koef}. Vidíme, že exponenciální fit podle rovnice 
+\ref{zpresnena} je nejpřesnější, při našich podmínkách měření tedy probíhala 
+rekombinace i difuze zároveň. Výsledné koeficienty se z lineárních fitů oproti 
+exponenciálnímu fitu liší v některých případech i více než dvojnásobně. Pro 
+tlaky v rozmezí 50--200\,Pa jsou závislosti $\ln n = f(t)$ téměř lineární, 
+převládá zde tedy difuze nad rekombinací. Pro vyšší tlak 450\,Pa je lineárnější 
+závislost $1/n = f(t)$, dominantní je rekombinace v objemu. Toto pozorování je 
+v souladu s teorií. Pro tlaky 5--20\,Pa není ani jedna ze závislostí lineární, 
+nelze tak určit dominantní proces. 
 
 \begin{figure}[h]
 	\centering
@@ -294,7 +306,14 @@ uvedeny v tab.~\ref{table:koef}. Vidíme, že exponenciální fit podle rovnice 
 \end{table}
 \clearpage
 \section{Závěr}
-V této úloze jsme se zabývali rozpadem plazmatu a popsali jsme procesy, jakým k němu dochází. Naším úkolem bylo určit koncentraci elektronů v závislosti na čase, za který dojde k rezonanci. Z těchto závislostí, které jsme naměřili pro tlaky v rozmezí 5--450 Pa, jsme fitováním třemi různými funkcemi určili koeficienty rekombinace a difuzní koeficienty. Naše výsledky se pro oblast 50--450 Pa shodují s teorií. Při nízkém tlaku do 200 Pa je dominantním procesem difuze, při 450 Pa je to naopak rekombinace. Pro tlaky 5--20 Pa jsme z našich dat převládající proces určit nedokázali.
+V této úloze jsme se zabývali rozpadem plazmatu a popsali jsme procesy, jakým k 
+němu dochází. Naším úkolem bylo určit koncentraci elektronů v závislosti na 
+čase, za který dojde k rezonanci. Z těchto závislostí, které jsme naměřili pro 
+tlaky v rozmezí 5--450\,Pa, jsme fitováním třemi různými funkcemi určili 
+koeficienty rekombinace a difuzní koeficienty. Naše výsledky se pro oblast 
+50--450\,Pa shodují s teorií. Při nízkém tlaku do 200 Pa je dominantním 
+procesem difuze, při 450\,Pa je to naopak rekombinace. Pro tlaky 5--20\,Pa jsme 
+z našich dat převládající proces určit nedokázali.
 
 
 \end{document}
