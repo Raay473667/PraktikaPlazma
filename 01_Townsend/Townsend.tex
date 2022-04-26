@@ -74,13 +74,13 @@ a následnou úpravou dostáváme vztah
 \end{equation}
 kde $n_0$ je počet elektronů v~počátečním bodě $x = 0$. Ionizační koeficient 
 závisí na intenzitě elektrického pole $E$ a na tlaku plynu v~aparatuře $p$. 
-Je-li dán podíl $E/p$, můžeme psát
+Je-li dán podíl $E/\,p$, můžeme psát
 
 \begin{equation}
 	\alpha = p\,f\left( \frac {E}{p} \right) 
 	\label{4}
 \end{equation}
-tedy ionizační koeficient je úměrný počtu srážek na jednotku délky. Experimentální vý\-sled\-ky ukazují, že konkrétní závislost $\alpha$ na $E/p$ je ve tvaru
+tedy ionizační koeficient je úměrný počtu srážek na jednotku délky. Experimentální vý\-sled\-ky ukazují, že konkrétní závislost $\alpha$ na $E/\,p$ je ve tvaru
 
 \begin{equation}
 	\frac{\alpha}{p} = A\,\e^{-\frac{Bp}{E}} 
@@ -132,7 +132,7 @@ x}$, z~toho získané $i_0$ a $\alpha$ jsou uvedené v~levé části
 tabulky~\ref{tab1}.
 
 Dále můžeme vytvořit graf závislosti $\ln i = \ln i_0 + \alpha x$, viz 
-obr.~\ref{lni80-120} a obr.~\ref{lni90-110}. Závislost je proložená lineární funkcí $i = i_0 + \alpha x$, 
+obr.~\ref{lni80-120} a obr.~\ref{lni90-110}. Závislost je proložená lineární funkcí $\ln i =\ln i_0 + \alpha x$, 
 získané $i_0$ a $\alpha$ jsou uvedené v~pravé části tabulky~\ref{tab1}.
 
 V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ proud $i_0$ klesá a ionizační koeficient $\alpha$ roste.
@@ -174,7 +174,7 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 		\label{tab1}
 		\begin{tabular}{|c|c|c|c|c|} \hline
 			\multicolumn{1}{|c|}{}  & \multicolumn{2}{c|}{$i = i_0 \e^{\alpha 
-			x}$}& \multicolumn{2}{c|}{$i = i_0 + \alpha x$}  \\ \hline
+			x}$}& \multicolumn{2}{c|}{$\ln i = \ln i_0 + \alpha x$}  \\ \hline
 			$E$ [Vcm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] \\ \hline
 			80 & 63,7 $\pm$ 6,6 & 1,60 $\pm$ 0,06 & 44,7 $\pm$ 1,1 & 1,83 $\pm$ 
 			0,04\\ \hline
@@ -218,8 +218,8 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 %\end{center}
 
 \newpage
-Jelikož jsme provedli měření pro několik hodnot $E/p$, můžeme sestavit grafy 
-závislosti $\ln \alpha/p = f(p/E)$ a proložit jej lineární funkcí $\ln \alpha/p 
+Jelikož jsme provedli měření pro několik hodnot $E/\,p$, můžeme sestavit grafy 
+závislosti $\ln \alpha/\,p = f(p/\,E)$ a proložit jej lineární funkcí $\ln \alpha/\,p 
 = \ln A~- \frac{Bp}{E}$, která vychází z~úpravy rovnice~(\ref{5}). To provedeme 
 jak pro $\alpha$ získané z~exponenciálního fitu, tak i pro $\alpha$ z~lineárního fitu. Následně pomocí rovnice~(\ref{6}) určíme ionizační potenciál 
 argonu $U_\text{i}$, viz tab.~\ref{tab2}. Tabulková hodnota pro argon je $U_\text{i} = 
@@ -230,7 +230,7 @@ dosazení $\alpha$ z~lineárního fitu.
  \begin{figure}[h]
  	\centering
  	\includegraphics[width=145mm]{exp.png}
- 	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ 
+ 	\caption{Graf závislosti $\ln \alpha/\,p$ na $p/\,E$ pro $\alpha$ 
  	z~exponenciálního fitu.}
  	\label{exp}
  \end{figure}
@@ -238,7 +238,7 @@ dosazení $\alpha$ z~lineárního fitu.
  \begin{figure}[h]
 	\centering
 	\includegraphics[width=145mm]{lin.png}
-	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ z~lineárního 
+	\caption{Graf závislosti $\ln \alpha/\,p$ na $p/\,E$ pro $\alpha$ z~lineárního 
 	fitu.}
 	\label{lin}
 \end{figure}
@@ -247,11 +247,11 @@ dosazení $\alpha$ z~lineárního fitu.
 	\begin{table}[h]
 		\centering
 		\caption{Hodnoty konstant $A$, $B$ a ionizačních potenciálů $U_\text{i}$ 
-		argonu z~$\ln \alpha/p = \ln A~- \frac{Bp}{E}$.}
+		argonu z~$\ln \alpha/\,p = \ln A~- \frac{Bp}{E}$.}
 		\label{tab2}
 		\begin{tabular}{|c|c|c|c|c|c|} \hline
 			\multicolumn{3}{|c|}{Dosazení $\alpha$ z~exponenciálního fitu} & \multicolumn{3}{c|}{Dosazení $\alpha$ z~lineárního fitu}  \\ \hline
-			$A$ & $B$ & $U_\text{i}$ [eV] & $A$ & $B$ & $U_\text{i}$ [eV] \\ \hline
+			$A$ [\si{\per\pascal\per\meter}] & $B$ [\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [eV] & $A$ [\si{\per\pascal\per\meter}] & $B$ [\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [eV] \\ \hline
 			9,3 $\pm$ 1,2 & 156 $\pm$ 18 &  16,8 $\pm$ 2,9  & 9,0 $\pm$ 1,0 & 
 			137 $\pm$ 5 & 15,3 $\pm$ 1,9\\ \hline
 %9,31 $\pm$ 1,16
@@ -272,7 +272,7 @@ určili první Townsendův koeficient pro různé hodnoty intenzity elektrickéh
 pole, který roste s~rostoucí $E$. Nakonec jsme získali ionizační potenciál 
 argonu ze závislostí $i = f(x)$ a $\ln i = f(x)$, který nám vyšel přesněji
 z~lineárního proložení $\ln i = f(x)$ jako $U_\text{i}$ = (15,3 $\pm$  1,9)\,eV, 
-tabulková hodnota je $U_\text{i} = 15,76$\,eV. V~případě fitu exponenciální závislosti metodou nejmenších čtverců mají body o~vyšší y hodnotě ve fitu větší váhu než ty při nižších y. Tím může být do výsledné proložené křivky zanesena větší chyba než v~případě lineárního fitu, který bývá oproti exponenciálnímu přesnější.
+tabulková hodnota je $U_\text{i} = 15,76$\,eV. V~případě fitu exponenciální závislosti metodou nejmenších čtverců mají body o~vyšší y hodnotě ve fitu větší váhu než ty při nižších y. 
 
 
 \end{document}
