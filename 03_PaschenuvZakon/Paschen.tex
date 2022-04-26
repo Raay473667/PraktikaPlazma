@@ -55,35 +55,48 @@
 \section{Teorie}
 \subsection{Paschenův zákon}
 
-Z~Townsendovy teorie lavin víme, že působením elektrického pole na zředěný plyn dochází k~urychlování přítomných elektronů. Takto urychlené elektrony mohou ionizovat neutrální částice a vytvořit takzvanou Townsedovu lavinu. Počet elektronů vzniklých v~důsledku Townsendovy laviny závisí exponenciálně na dráze $d$  
+Z~Townsendovy teorie lavin víme, že působením elektrického pole na zředěný plyn 
+dochází k~urychlování přítomných elektronů. Takto urychlené elektrony mohou 
+ionizovat neutrální částice a vytvořit takzvanou Townsendovu lavinu. Počet 
+elektronů vzniklých v~důsledku Townsendovy laviny závisí exponenciálně na dráze 
+$d$  
 
 \begin{equation}
 	n = n_0\,\e^{\alpha d}
 	\label{1}
 \end{equation}
-
-kde $n_0$ je počet elektronů v~počátečním bodě $d = 0$ a $\alpha$ je první Townsendův nebo také ionizační koeficient. Elektrické pole můžeme charakterizovat napětím $U$ přiloženým mezi dvě rovinné elektrody, dráha $d$ je vzdálenost mezi elektrodami. Elektronovou lavinu doprovází vznik iontů, jejichž počet lze vyjádřit jako
+kde $n_0$ je počet elektronů v~počátečním bodě $d = 0$ a $\alpha$ je první 
+Townsendův nebo také ionizační koeficient. Elektrické pole můžeme 
+charakterizovat napětím $U$ přiloženým mezi dvě rovinné elektrody, dráha $d$ je 
+vzdálenost mezi elektrodami. Elektronovou lavinu doprovází vznik iontů, jejichž 
+počet lze vyjádřit jako
 
 \begin{equation}
-	 n_i = n_0\,[\e^{\alpha d}-1]
+	 n_\text{i} = n_0\,(\e^{\alpha d}-1)
 	\label{2}
 \end{equation}
 
-Ionty jsou polem urychlovány ke katodě, dopadají na ni a vyvolávají sekundární emisi elektronů. Tu popisuje Townsendův třetí koeficient neboli koeficient sekundární emise $\gamma$. Konkrétně udává průměrný počet elektronů emitovaných jedním iontem při jeho dopadu na katodu. Pomocí $\gamma$ lze vyjádřit podmínku zapálení výboje jako
+Ionty jsou polem urychlovány ke katodě, dopadají na ni a vyvolávají sekundární 
+emisi elektronů. Tu popisuje Townsendův třetí koeficient neboli koeficient 
+sekundární emise $\gamma$. Konkrétně udává průměrný počet elektronů emitovaných 
+jedním iontem při jeho dopadu na katodu. Pomocí $\gamma$ lze vyjádřit podmínku 
+zapálení výboje jako
 
 \begin{equation}
 	\gamma\,(\e^{\alpha d } - 1) = 1
 	\label{3}
 \end{equation} 
-
-tedy že v~lavině musí být jedním primárním elektronem vytvořeno tolik iontů, které dopadem na katodu způsobí emisi jednoho nového elektronu. Ionizační koeficient $\alpha$ závisí na intenzitě elektrického pole 
+tedy že v~lavině musí být jedním primárním elektronem vytvořeno tolik iontů, 
+které dopadem na katodu způsobí emisi jednoho nového elektronu. Ionizační 
+koeficient $\alpha$ závisí na intenzitě elektrického pole 
 
 \begin{equation}
 	\frac{\alpha}{p} = A\,\e^{-\frac{Bp}{E}} 
 	\label{4}
 \end{equation}
-
-kde $A = 1/\lambda_1$ a $B = U/\lambda_1$ jsou konstanty závislé na druhu plynu, $\lambda_1$ je střední volná dráha elektronů při jednotkovém tlaku. Dále lze (\ref{4}) přepsat jako
+kde $A = 1/\lambda_1$ a $B = U/\lambda_1$ jsou konstanty závislé na druhu 
+plynu, $\lambda_1$ je střední volná dráha elektronů při jednotkovém tlaku. Dále 
+lze (\ref{4}) přepsat jako
 
 \begin{equation}
 	\frac{\alpha}{p} = A\,\e^{-\frac{Bpd}{U}} 
@@ -95,14 +108,15 @@ Logaritmováním a úpravou (\ref{5}) získáme
 	U~= \frac{B\,pd}{\ln A~- \ln \frac{\alpha}{d}}
 	\label{6}
 \end{equation}
-Dosazením $d\alpha$ z~(\ref{6}) do (\ref{3}), logaritmováním a dalšími úpravami 
+Zápalné napětí výboje $U_\text{z}$ získáme dosazením $d\alpha$ z~(\ref{6}) do 
+podmínky zápálení výboje (\ref{3}). Logaritmováním a dalšími úpravami 
 dojdeme k~tvaru
 
 \begin{equation}
-	A\,pd\,\e^{-\frac{Bpd}{U_z}} = \ln \left(\frac{1}{\gamma} + 1\right)
+	A\,pd\,\e^{-\frac{Bpd}{U_\text{z}}} = \ln \left(\frac{1}{\gamma} + 1\right)
 	\label{7}
 \end{equation}
-kde $U_z$ je zápalné napětí výboje. Pro daný plyn a materiál katody položme pravou stranu (\ref{7})
+Pro daný plyn a materiál katody položme pravou stranu
 
 \begin{equation}
 	\ln \left(\frac{1}{\gamma} + 1\right) = C
@@ -111,30 +125,32 @@ kde $U_z$ je zápalné napětí výboje. Pro daný plyn a materiál katody polo�
 Úpravami dostáváme
 
 \begin{equation}
-	U_z = \frac{B\,pd}{C' + \ln(pd)}
+	U_\text{z} = \frac{B\,pd}{C' + \ln(pd)}
 	\label{9}
 \end{equation}
-
-kde $C' = \ln C - \ln A$. Závislost $U_z = f (pd)$ se nazývá Paschenův zákon. 
-Má charakteristický tvar, včetně minima nazývaného Stoletowův bod.
+kde $C' = \ln C - \ln A$. Závislost $U_\text{z} = f (pd)$ se nazývá Paschenův 
+zákon. 
+Má charakteristický tvar, včetně minima nazývaného Stoletovův bod.
 
 
 \subsection{Doutnavý výboj}
 Doutnavý výboj je druh výboje, jehož typický vzhled můžeme vidět na schématu na 
-obr.~\ref{glowdischarge}. V~rozmezí tlaku 13-130\,\si{\pascal} v~něm můžeme 
+obr.~\ref{glowdischarge}. V~rozmezí tlaku 10$^1$-10$^2$\,\si{\pascal} v~něm 
+můžeme 
 pozorovat střídající se temné nebo svítící oblasti. Elektron pohybující se ve 
 výboji od katody k~anodě získá dostatečnou energii k~excitaci neutrálů až 
 v~oblasti katodové vrstvy, ta je tedy první svítící oblastí. Následuje temný 
-katodový prostor. Protože elektrony s~vysokou energií ionizují neutrály, 
-k~vzniku fotonů zde nedochází. Nově vzniklé elektrony ionizací s~malou energií 
-vytvoří další svítivou oblast, kterou nazýváme záporné světlo. Energie 
-elektronů dále klesá a následuje Faradayův temný prostor. Na jeho konci vzrůstá 
-intenzita elektrického pole, energie elektronů opět roste a jsou schopné 
-excitačních svítivých srážek, viz kladný sloupec. Jak se blížíme k~anodě, na 
-konci kladného sloupce vzniká anodový spád potenciálu v~důsledku prostorového 
-náboje, elektrony vystupují z~kladného sloupce s~malou rychlostí. Jakmile 
-překonají anodový temný prostor, mají opět dostatek energie na excitaci i 
-ionizaci neutrálů, a tak u~anody pozorujeme anodové světlo.
+katodový prostor. Zde mají elektrony energii vyšší, a nedochází tak často k 
+excitaci a vzniku fotonů. Na konci temného katodového prostoru mají elektrony 
+dostatečnou energii k ionizaci plynu. Nové elektrony s malou energií, které 
+vznikly ionizací, vytvoří další svítivou oblast, kterou nazýváme záporné 
+světlo. Energie elektronů dále klesá a následuje Faradayův temný prostor. Na 
+jeho konci vzrůstá intenzita elektrického pole, energie elektronů opět roste a 
+jsou schopné excitačních svítivých srážek, viz kladný sloupec. Jak se blížíme 
+k~anodě, na konci kladného sloupce vzniká anodový spád potenciálu v~důsledku 
+prostorového náboje, elektrony vystupují z~kladného sloupce s~malou rychlostí. 
+Jakmile překonají anodový temný prostor, mají opět dostatek energie na excitaci 
+i ionizaci neutrálů, a tak u~anody pozorujeme anodové světlo.
 
 \begin{figure}[h]
 	\centering
@@ -157,13 +173,25 @@ procházejících průřezem výbojky. Celkový počet částic $N$ lze napsat j
 	N = \int n \text{d}S
 	\label{10}
 \end{equation}
-
-kde $n$ je koncentrace nabitých částic ve výboji a $S$ je plocha, kterou zabírá záporné světlo na katodě. V~katodové oblasti normálního doutnavého výboje vzrůstá $N$ v~důsledku růstu $S$, v~kladném sloupci však vzrůstá koncentrace $n$. Napětí ve výbojce se skládá z~napětí v~katodové oblasti a ze spádu napětí na katodovém sloupci, který se s~rostoucím proudem zvyšuje. Pokud vzroste proud tak, že celá katoda je pokryta záporným světlem, přechází doutnavý výboj do takzvaného anomálního stavu. Napětí v~katodové oblasti roste rychleji než napětí v~kladném sloupci klesá, výsledkem je oblast charakteristiky od bodu D k~E. Oblast E-F odpovídá přechodu na obloukový výboj.
+kde $n$ je koncentrace nabitých částic ve výboji a $S$ je plocha, kterou zabírá 
+záporné světlo na katodě. V~katodové oblasti normálního doutnavého výboje 
+vzrůstá $N$ v~důsledku růstu $S$, v~kladném sloupci však vzrůstá koncentrace 
+$n$. Napětí ve výbojce se skládá z~napětí v~katodové oblasti a ze spádu napětí 
+na kladném sloupci, který se s~rostoucím proudem zvyšuje. Pokud vzroste proud 
+tak, že celá katoda je pokryta záporným světlem, přechází doutnavý výboj do 
+takzvaného anomálního stavu. Napětí v~katodové oblasti roste rychleji než 
+napětí v~kladném sloupci klesá, výsledkem je oblast charakteristiky od bodu D 
+k~E. Oblast E-F odpovídá přechodu na obloukový výboj.
 
 \subsection{Katodový spád potenciálu v~doutnavém výboji}
-Katodový spád potenciálu $U_k$ je označení pro napětí mezi ostrou hranicí záporného světla a katodou. Je funkcí materiálu elektrod a plynu ve výbojce. Stanovení katodového spádu potenciálu lze provést metodou ztíženého výboje. 
-Tato metoda spočívá v~udržování konstantního výbojového proudu, přičemž se mění vzdálenost elektrod a na ní závislé napětí. Když se anoda dostane do oblasti záporného světla, zmizí anodové 
-světlo. Dalším zmen\-šo\-vá\-ním vzdáleností elektrod začne napětí nutné na 
+Katodový spád potenciálu $U_\text{k}$ je označení pro napětí mezi ostrou 
+hranicí záporného světla a katodou. Je funkcí materiálu elektrod a plynu ve 
+výbojce. Stanovení katodového spádu potenciálu lze provést metodou ztíženého 
+výboje. 
+Tato metoda spočívá v~udržování konstantního výbojového proudu, přičemž se mění 
+vzdálenost elektrod a na ní závislé napětí. Zmenšováním vzdálenosti elektrod se 
+zmenšuje kladný sloupec a následně Faradayův temný prostor. Dalším 
+zmen\-šo\-vá\-ním vzdálenosti elektrod začne napětí nutné na 
 udržení výboje prudce růst, protože elektronové laviny nemají k~dispozici 
 potřebnou dráhu pro dostatečnou ionizaci.
 
@@ -186,7 +214,8 @@ měření provedeme s~konstantním tlakem $p = 100\,\si{\pascal}$, přičemž bu
 měnit vzdálenost elektrod od 4\,\si{\milli\meter} do 50\,\si{\milli\meter}. Na 
 výbojce zvyšujeme napětí a odečítáme hodnotu napětí v~okamžiku zapálení výboje. 
 Mezi každým měřením vyčkáváme alespoň jednu minutu na rekombinaci náboje ve 
-výbojce. Výsledný graf závislosti $U_z = f(pd)$ je na obr.~\ref{tlakfixed}. 
+výbojce. Výsledný graf závislosti $U_\text{z} = f(pd)$ je na 
+obr.~\ref{tlakfixed}. 
 Body jsou proloženy funkcí podle rovnice~(\ref{9}) a získané hodnoty $B$ 
 a $C'$ jsou v~tabulce~\ref{tab1}. Výsledky měření se od ideální závislosti 
 popsané 
@@ -194,9 +223,10 @@ rovnicí~(\ref{9}) odchylují. Tato ochylka může být způsobena jak
 nepřesností odečítání zápalného napětí, tak nedostatečnou rekombinací nábojů 
 mezi jednotlivými měřeními. 
 %440,68\pm94,46
-Druhé měření je za konstantní vzdálenosti elektrod $d = 20\,\si{\milli\meter}$, 
+Druhá série měření je za konstantní vzdálenosti elektrod $d = 
+20\,\si{\milli\meter}$, 
 měníme tlak od 25\,\si{\pascal} do 300\,\si{\pascal}. Opět zapisujeme hodnotu 
-napětí v~okamžiku zapálení výboje. Graf závislosti $U_z = f(pd)$ je na 
+napětí v~okamžiku zapálení výboje. Graf závislosti $U_\text{z} = f(pd)$ je na 
 obr.~\ref{dfixed}. Body jsou proloženy funkcí podle rovnice~(\ref{9}), získané 
 konstanty 
 $B$ a $C'$ jsou uvedeny v~tabulce~\ref{tab1}. Toto měření se oproti 
@@ -204,10 +234,10 @@ předchozímu více
 blíží ideální závislosti popsané rovnicí~(\ref{9}), z~grafu vidíme až na malou 
 odchylku typickou závislost napětí na součinu tlaku a vzdálenosti elektrod.
 Z minim fitovaných křivek je v~tabulce~\ref{tab1} také uvedeno zápalné napětí 
-$U_{z,\text{min}}$ a 
+$U_\text{z,min}$ a 
 součin tlaku a vzdálenosti $pd_{\text{min}}$. Tyto hodnoty 
 lze srovnat s~tabulkovými hodnotami, které se uvádí pro vzduch: 
-$U_{z,\text{min}} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
+$U_\text{z,min} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 %286,26\pm27,22
 % UZ ZJISTIT A OKOMENTOVAT, Z MINIMA FCE NEBO MĚŘENÍ?
 
@@ -224,7 +254,8 @@ $U_{z,\text{min}} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 %			& $B$ [\si{\meter\squared\per\coulomb}] & $C'$ \\ \hline
 %			310 $\pm$ 30 & 1,05 $\pm$ 0,02 &  290 $\pm$ 30  
 %			& 0,79 $\pm$ 0,01 \\ \hline
-%			$U_z$\,[V] & $pd$\,[Pa$\cdot$m] & $U_z$\,[V] & $pd$\,[Pa$\cdot$m]
+%			$U_\text{z}$\,[V] & $pd$\,[Pa$\cdot$m] & $U_\text{z}$\,[V] & 
+%$pd$\,[Pa$\cdot$m]
 %			\\ \hline
 %			$291,6$ & 0,95 & 351,4 & 1,23 \\ \hline
 %
@@ -235,7 +266,7 @@ $U_{z,\text{min}} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 \begin{center}
 \begin{table}[h]
 	\centering
-	\caption{Hodnoty konstant $B$, $C'$, zápalného napětí $U_{z,\text{min}}$ a 
+	\caption{Hodnoty konstant $B$, $C'$, zápalného napětí $U_\text{z,min}$ a 
 	minima 
 	součinu $pd_{\text{min}}$}
 	\label{tab1}
@@ -243,7 +274,7 @@ $U_{z,\text{min}} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 		\hline
 		\multicolumn{1}{|l|}{}                                                  
 		           	&$B$\,[\si{\volt\per\pascal\per\meter}] & $C'$  & 
-		           	$U_{z,\text{min}}$\,[V]    & 
+		           	$U_\text{z,min}$\,[V]    & 
 		           	$pd_{\text{min}}$\,[Pa$\cdot$m]   \\ \hline
 		\begin{tabular}[c]{@{}r@{}}Měření s kontantním\\  
 		tlakem\end{tabular}               & 310 $\pm$ 30 & 1,05 $\pm$ 0,02 & 
@@ -274,7 +305,8 @@ $U_{z,\text{min}} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 \clearpage
 \subsection{Katodový spád potenciálu v~doutnavém výboji}
 Měření katodového spádu potenciálu metodou ztíženého výboje provedeme pro dvě konstantní hodnoty tlaku a proudu, 
-zaznamenáváme změnu napětí se změnou vzdálenosti elektrod. V~grafu na 
+zaznamenáváme změnu napětí se změnou vzdálenosti elektrod při konstantním 
+proudu. V~grafu na 
 obr.~\ref{KatodovySpad} jsou vidět naměřené závislosti. Výsledné hodnoty 
 katodového spádu jsou uvedeny v~tabulce~\ref{tab2}. S~vyšším proudem i tlakem
 jsme naměřili nižší katodový spád. Při měření jsme vypozorovali, 
@@ -294,7 +326,7 @@ jsme naměřili nižší katodový spád. Při měření jsme vypozorovali,
 		\begin{tabular}{|c|c|} \hline
 			$I = 1\,\si{\milli\ampere}$, $p = 33\,\si{\pascal}$ 
 			& $I = 1,8\,\si{\milli\ampere}$, $p = 100\,\si{\pascal}$\\ \hline
-			$U_k$ [V] & $U_k$ [V]\\ \hline
+			$U_\text{k}$ [V] & $U_\text{k}$ [V]\\ \hline
 			701 & 514 \\ \hline
 			
 		\end{tabular}
@@ -312,7 +344,8 @@ jsme naměřili nižší katodový spád. Při měření jsme vypozorovali,
 Naměřená voltampérová charakteristika je v~grafu na obr.~\ref{VAodpor}. Vidíme, 
 že se nám podařilo naměřit oblast C-E, jak je znázorněno v~obr.~\ref{VA}. 
 Oblast C-D se nazývá normální doutnavý výboj. Vyšší proud je kompenzovaný 
-zvětšením katodové vrstvy. Až je celý povrch katody pokrytý výbojem, zvětšuje 
+zvětšením plochy katodové vrstvy. Až je celý povrch katody pokrytý výbojem, 
+zvětšuje 
 se velikost katodového spádu, a tím tok iontů na katodu. Tomu odpovídá 
 abnormální doutnavý výboj, tedy oblast D-E. Dalším ohřevem katody by výboj 
 přešel v~elektrický oblouk.
@@ -326,7 +359,19 @@ přešel v~elektrický oblouk.
 
 \clearpage
 \section{Závěr}
-V~této úloze jsme se seznámili s~Paschenovým zákonem, tedy závislostí zápalného napětí na součinu tlaku a vzdálenosti elektrod. Podařilo se nám naměřit typický tvar Paschenovy křivky včetně jejího minima. To je důležité pro nejrůznější aplikace výbojů, protože se jedná o~bod, ve kterém výboj hoří s~největší účinností.
-Dále jsme se zabývali měřením katodového spádu potenciálu. Pro $I~=~1\,\si{\milli\ampere}$ a $p~=~33\,\si{\pascal}$ jsme dostali katodový spád $U_k = 701\,\si{\volt}$. Pro $I = 1,8\,\si{\milli\ampere}$ a $p = 100\,\si{\pascal}$ je katodový spád nižší,  $U_k = 514\,\si{\volt}$. Zjistili jsme, že oblast katodového spádu je pro hoření výboje kritická. Pokud přiblížíme elektrody takových způsobem, že zmizí anodové světlo, je kvůli ztížené ionizaci pro hoření výboje potřeba dodávat vysoké napětí. Nakonec jsme naměřili voltampérovou charakteristiku doutnavého výboje, ve které jsme popsali oblasti odpovídající normální i abnormální části výboje.
+V~této úloze jsme se seznámili s~Paschenovým zákonem, tedy závislostí zápalného 
+napětí na součinu tlaku a vzdálenosti elektrod. Podařilo se nám naměřit typický 
+tvar Paschenovy křivky včetně jejího minima. To je důležité pro nejrůznější 
+aplikace výbojů, protože se jedná o~bod, ve kterém lze nejsnázeji zapálit výboj.
+Dále jsme se zabývali měřením katodového spádu potenciálu. Pro 
+$I = 1\,\si{\milli\ampere}$ a $p = 33\,\si{\pascal}$ jsme dostali katodový spád 
+$U_\text{k} = 701\,\si{\volt}$. Pro $I = 1,8\,\si{\milli\ampere}$ a $p = 
+100\,\si{\pascal}$ je katodový spád nižší,  $U_\text{k} = 514\,\si{\volt}$. 
+Zjistili jsme, že oblast katodového spádu je pro hoření výboje kritická. Pokud 
+přiblížíme elektrody takových způsobem, že zmizí katodová vrstva, je kvůli 
+ztížené ionizaci pro hoření výboje potřeba dodávat vysoké napětí. Nakonec jsme 
+naměřili voltampérovou charakteristiku doutnavého výboje, kterou jsme 
+identifikovali jako oblasti odpovídající normálnímu i abnormálnímu doutnavému 
+výboji.
 
 \end{document}
