@@ -55,56 +55,46 @@
 
 \section{Teorie}
 \subsection{Difuze a rekombinace v plazmatu}
-Důležitou charakteristikou plazmatu jakožto ionizovaného plynu je koncentrace elektronů a iontů. Pokud přestaneme dodávat energii, plazma se začne rozpadat, což se projeví postupným poklesem koncentrace nabitých částic. Tento pokles je způsoben buď difúzí a následnou rekombinací na stěnách nebo objemovou rekombinací.
+Důležitou charakteristikou plazmatu jakožto ionizovaného plynu je koncentrace elektronů a iontů. Pokud přestaneme dodávat energii, plazma se začne rozpadat, což se projeví postupným poklesem koncentrace nabitých částic. Tento pokles je způsoben buď difúzí a ná\-sled\-nou rekombinací na stěnách nebo objemovou rekombinací.
 
 Řešením rovnice kontinuity pro koncentraci elektronů 
 
 \begin{equation}
 	\frac{\partial n}{\partial t} + \text{div} \overrightarrow{\Phi} = 0
 \end{equation}
-
-za předpokladu, že máme výbojku válcového tvaru s délkou větší než poloměrem, dostáváme koncentraci elektronů v jedné dimenzi jako
+za předpokladu, že máme výbojku válcového tvaru s délkou větší než poloměrem, do\-stáváme koncentraci elektronů v jedné dimenzi jako
 
 \begin{equation}
 	n(x,t) = n_0(x)\,\e^{\left(-\frac{Dt}{\Lambda^2} \right)} 
 \end{equation}
-
 kde $n_0$ je koncentrace elektronů v počátku $x = 0$, $D$ je difúzní koeficient, $t$ je čas a $\Lambda$ je difuzní délka.
-
 Radiální profil koncentrace je v tomto případě  
 
 \begin{equation}
 	n_0(x) = \text{konst.}\, J_0 \left(\frac{x}{\Lambda} \right) 
 \end{equation}
-
 kde $J_0$ je Besselova funkce prvního druhu. Difuzní délku lze vyjádřit jako
 
 \begin{equation}
 	\Lambda \approx \frac{r_0}{2,405}
 \end{equation}
-
 kde $r_0$ je poloměr výbojky a 2,405 je první kořen funkce $J_0$.
-
 Objemovou rekombinaci můžeme napsat jako časovou změnu koncentrace, tedy
-
 \begin{equation}
 	\frac{\text{d}n}{\text{d}t} = -\alpha n^2
 \end{equation}
-
-kde $\alpha$ je koeficient rekombinace. Obecně platí, že rekombinační ztráty se více projevují při vysokém tlaku, difuzní ztráty naopak při nízkém tlaku. Difuzní ztráty jsou charakterizovány časovou závislostí 
+kde $\alpha$ je koeficient rekombinace. Obecně platí, že rekombinační ztráty se více projevují při vysokém tlaku. Difuzní ztráty jsou naopak dominantní při nízkém tlaku a jsou charakterizovány časovou závislostí 
 
 \begin{equation}
 	n(t) = n_0\,\e^{\left( -\frac{Dt}{\Lambda^2}\right)}
 \end{equation}
-
 a tedy funkce $\ln n = f(t)$ je lineární, ze směrnice přímky lze určit $D$. V 
 případě rekombinace platí
 
 \begin{equation}
 	\frac{1}{n(t)} = \frac{1}{n_0} + \alpha t
 \end{equation} 
-
-a závislost $1/n = f(t)$ je lineární, ze směrnice určíme $\alpha$. Pokud tímto způsobem určujeme jeden z koeficientů, tedy $D$ nebo $\alpha$, děláme to za předpokladu zanedbání druhého procesu. Nabízí se tedy vyjádřit $n(t)$ se zahrnutím obou koeficientů pomocí zpřesněné rovnice
+a závislost $1/\,n = f(t)$ je lineární, ze směrnice určíme $\alpha$. Pokud tímto způsobem určujeme jeden z koeficientů, tedy $D$ nebo $\alpha$, děláme to za předpokladu zanedbání druhého procesu. Nabízí se tedy vyjádřit $n(t)$ se zahrnutím obou koeficientů pomocí zpřesněné rovnice
 
 \begin{equation}
 	n(t) = \frac{1}{c\,\e^{\frac{tD}{\Lambda^2}}-\frac{\alpha \Lambda^2}{D}}
@@ -116,11 +106,10 @@ Pokud v rezonátoru zapálíme plazma, změní se jeho rezonanční frekvence $\
 
 \begin{equation}
 	\overrightarrow{n}(t) = \frac{0,271 R^2 \Delta f(t) 8 \pi^2 \epsilon_0 m f_0}{0,64 R'^2 e^2}
+	\label{koncentrace}
 \end{equation}
-
-kde $R$ je poloměr rezonátoru, $\Delta f(t)$ je rozdíl frekvence 
-vysokofrekvenčního zdroje $f'$ a rezonanční frekvence prázdného rezonátoru 
-$f_0$ $\epsilon_0$ je permitivita vakua, $m$ je hmotnost elektronu, $R'$ je 
+kde $R$ je poloměr rezonátoru, $\Delta f(t)$ je rozdíl frekvencí zdroje $f'$~a~rezonanční frekvence prázdného rezonátoru 
+$f_0$, $\epsilon_0$ je permitivita vakua, $m$ je hmotnost elektronu, $R'$ je 
 poloměr výbojky a $e$ je elementární náboj.
 
 \section{Měření a výsledky}
@@ -131,16 +120,16 @@ $f_1$. Po vypnutí přívodu energie se plazma začne rozpadat a rezonanční
 frekvence opět klesá až na původní hodnotu $f_0$. Tento periodický proces lze 
 zachytit osciloskopem. Při měření měníme frekvenci zdroje $f'$ a z oscilogramu 
 určujeme čas $t'$, za který dojde k rezonanci. Také si zaznamenáváme $f_0$, 
-abychom následně mohli vypočítat koncentraci elektronů mimo jiné z $\Delta f$. 
-Následně můžeme graficky vynést závislosti $1/n = f(t)$ a $\ln n = f(t)$, 
+abychom následně mohli vypočítat koncentraci elektronů ze vztahu (\ref{koncentrace}). 
+Následně můžeme graficky vynést závislosti $1/\,n = f(t)$ a $\ln n = f(t)$, 
 určit z nich $\alpha$, $D$ a rozhodnout, zda je převládajícím procesem difúze 
 nebo rekombinace. $\alpha$ a $D$ včetně $n_0$ také určíme proložením funkcí 
 podle rovnice \eqref{zpresnena} a výsledky porovnáme.
 
-Závislosti $1/n = f(t)$ a $\ln n = f(t)$ včetně proložení podle rovnice 
-\eqref{zpresnena} jsou na obrázcích~\ref{g:5Pa}-\ref{g:450Pa}. Koeficienty 
-$\alpha$ a $D$ určené z proložených lineárních a exponenciálních funkcí jsou 
-uvedeny v tab.~\ref{table:koef}
+Závislosti $1/\,n = f(t)$ a $\ln n = f(t)$ včetně proložení podle exponenciální rovnice 
+\eqref{zpresnena} jsou vyneseny v grafech na obrázcích~\ref{g:5Pa}--\ref{g:450Pa}. 
+Koeficienty $\alpha$ a $D$ určené z proložených lineárních a exponenciálních funkcí jsou 
+uvedeny v tab.~\ref{table:koef}. Vidíme, že exponenciální fit podle rovnice \ref{zpresnena} je nejpřesnější, při našich podmínkách měření tedy probíhala rekombinace i difuze zároveň. Výsledné koeficienty se z lineárních fitů oproti exponenciálnímu fitu liší v některých případech i více než dvojnásobně. Pro tlaky v rozmezí 50--200 Pa jsou závislosti $\ln n = f(t)$ téměř lineární, převládá zde tedy difuze nad rekombinací. Pro vyšší tlak 450 Pa je lineárnější závislost $1/\,n = f(t)$, dominantní je rekombinace v objemu. Toto pozorování je v souladu s teorií. Pro tlaky 5--20 Pa není ani jedna ze závislostí lineární, nelze tak určit dominantní proces. 
 
 \begin{figure}[h]
 	\centering
@@ -305,5 +294,7 @@ uvedeny v tab.~\ref{table:koef}
 \end{table}
 \clearpage
 \section{Závěr}
+V této úloze jsme se zabývali rozpadem plazmatu a popsali jsme procesy, jakým k němu dochází. Naším úkolem bylo určit koncentraci elektronů v závislosti na čase, za který dojde k rezonanci. Z těchto závislostí, které jsme naměřili pro tlaky v rozmezí 5--450 Pa, jsme fitováním třemi různými funkcemi určili koeficienty rekombinace a difuzní koeficienty. Naše výsledky se pro oblast 50--450 Pa shodují s teorií. Při nízkém tlaku do 200 Pa je dominantním procesem difuze, při 450 Pa je to naopak rekombinace. Pro tlaky 5--20 Pa jsme z našich dat převládající proces určit nedokázali.
+
 
 \end{document}
