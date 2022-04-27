@@ -207,7 +207,8 @@ potřebnou dráhu pro dostatečnou ionizaci.
 
 \section{Měření a výsledky}
 \subsection{Paschenův zákon}
-Pro měření použijeme výbojku s~pohyblivými elektrodami. Tlak měříme Piraniho 
+Pro měření použijeme výbojku s~pohyblivými elektrodami, viz schéma na 
+obr.~\ref{schema1}. Tlak měříme Piraniho 
 manometrem, zápalné napětí určujeme voltmetrem s~vysokým vstupním odporem. Plyn 
 ve výbojce je vzduch, kalibrační faktor k~Piraniho manometru je tedy 1. První 
 měření provedeme s~konstantním tlakem $p = 100\,\si{\pascal}$, přičemž budeme 
@@ -236,7 +237,7 @@ odchylku typickou závislost napětí na součinu tlaku a vzdálenosti elektrod.
 Z minim fitovaných křivek je v~tabulce~\ref{tab1} také uvedeno zápalné napětí 
 $U_\text{z,min}$ a 
 součin tlaku a vzdálenosti $pd_{\text{min}}$. Tyto hodnoty 
-lze srovnat s~tabulkovými hodnotami, které se uvádí pro vzduch: 
+lze srovnat s~tabulkovými hodnotami \cite{wiki}, které se uvádí pro vzduch: 
 $U_\text{z,min} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 %286,26\pm27,22
 % UZ ZJISTIT A OKOMENTOVAT, Z MINIMA FCE NEBO MĚŘENÍ?
@@ -262,6 +263,15 @@ $U_\text{z,min} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 %		\end{tabular}
 %	\end{table}
 %\end{center}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=145mm]{schema1.png}
+	\caption{Schéma zapojení pro měření Paschenovy křivky. Červeně zvýrazněné 
+		prvky jsou zapojeny v části praktika pro měření voltamperové 
+		charakteristiky.}
+	\label{schema1}
+\end{figure}
 
 \begin{center}
 \begin{table}[h]
@@ -306,17 +316,30 @@ $U_\text{z,min} = 327$\,V a $pd_{\text{min}} = 0,75$\,Pa$\cdot$m.
 \subsection{Katodový spád potenciálu v~doutnavém výboji}
 Měření katodového spádu potenciálu metodou ztíženého výboje provedeme pro dvě konstantní hodnoty tlaku a proudu, 
 zaznamenáváme změnu napětí se změnou vzdálenosti elektrod při konstantním 
-proudu. V~grafu na 
+proudu, viz schéma na obr.~\ref{schema2v2}. V~grafu na 
 obr.~\ref{KatodovySpad} jsou vidět naměřené závislosti. Výsledné hodnoty 
 katodového spádu jsou uvedeny v~tabulce~\ref{tab2}. S~vyšším proudem i tlakem
 jsme naměřili nižší katodový spád. Při měření jsme vypozorovali, 
-že katodová vrstva se s~rostoucím tlakem vizuálně zmenšuje. Dle literatury je katodový spád největší pro největší katodovou vrstvu, tedy v~případě, když je celý povrch katody pokrytý výbojem. To je v~souladu s~našimi pozorováními.
+že katodová vrstva se s~rostoucím tlakem vizuálně ztenšuje. Dle literatury je 
+katodový spád nejvyšší pro největší průřez katodové vrstvy, tedy v~případě, 
+když je 
+celý povrch katody pokrytý výbojem. To je v~souladu s~našimi pozorováními. 
+Při změně tlaku pozorujeme v grafu také posun minima, který odpovídá Paschenovu 
+zákonu, 
+tedy při vyšším tlaku se minimum posunulo k menší vzdálenosti elektrod.  
 
 %komentář proč se katodový spád liší
 %komentář vizuál výboje
 	  
 
 %co ty tři body vlevo 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=145mm]{schema2v2.png}
+	\caption{Schéma zapojení pro měření katodového spádu potenciálu.}
+	\label{schema2v2}
+\end{figure}
 
 \begin{center}
 	\begin{table}[h!]
@@ -341,7 +364,9 @@ jsme naměřili nižší katodový spád. Při měření jsme vypozorovali,
 \end{figure}
 
 \newpage
-Naměřená voltampérová charakteristika je v~grafu na obr.~\ref{VAodpor}. Vidíme, 
+Pro měření voltampérové charakteristiky bylo použito zapojení dle schématu na 
+obr.~\ref{schema1}. Naměřená voltampérová charakteristika je v~grafu na 
+obr.~\ref{VAodpor}. Vidíme, 
 že se nám podařilo naměřit oblast C-E, jak je znázorněno v~obr.~\ref{VA}. 
 Oblast C-D se nazývá normální doutnavý výboj. Vyšší proud je kompenzovaný 
 zvětšením plochy katodové vrstvy. Až je celý povrch katody pokrytý výbojem, 
@@ -352,7 +377,7 @@ přešel v~elektrický oblouk.
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=145mm]{VAodpor.png}
+	\includegraphics[width=145mm]{graph1.png}
 	\caption{Voltampérová charakteristika}
 	\label{VAodpor}
 \end{figure}
@@ -373,5 +398,13 @@ ztížené ionizaci pro hoření výboje potřeba dodávat vysoké napětí. Nak
 naměřili voltampérovou charakteristiku doutnavého výboje, kterou jsme 
 identifikovali jako oblasti odpovídající normálnímu i abnormálnímu doutnavému 
 výboji.
+
+\begin{thebibliography}{10}
+	\bibitem{wiki}
+	Wikipedia contributors. Paschen's law [Internet]. Wikipedia, The Free 
+	Encyclopedia; 2022 Mar 31, 05:42 UTC [cited 2022 Apr 27]. Available from: 
+	\url{https://en.wikipedia.org/w/index.php?title=Paschen%27s_law&oldid=1080258746.}
+
+\end{thebibliography}
 
 \end{document}
