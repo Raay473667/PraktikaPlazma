@@ -12,6 +12,7 @@
 *.cb2
 .*.lb
 *.te~
+OpravaScan
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
