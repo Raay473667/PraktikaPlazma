@@ -1,0 +1,67 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage [utf8x]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage[margin=22mm]{geometry}
+\usepackage{esvect}
+\usepackage{ragged2e}
+\usepackage{tikz,pgf}
+\usepackage{bm}
+\usepackage{perpage}
+\usepackage{capt-of}
+\usepackage{subcaption}
+
+\graphicspath{
+	{img/}
+	{plots/}
+}
+
+\newcommand{\e}{\text{e}}
+
+
+\MakeSorted{figure}
+\newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
+\newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
+\newtoks\cisloulohy \newtoks\jmenoulohy
+\newtoks\tlak \newtoks\teplota \newtoks\vlhkost
+\jmenopraktika={Leptání elektrických prvků na křemíkové desce}  % nahradte 
+%jmenem vaseho predmetu
+\jmeno={Radek Horňák, Lukáš Vrána}            
+\datum={29. 4. 2022}        % nahradte datem mereni 
+%ulohy                           
+\rocnik={2.}                  
+\semestr={IV.}                 
+\cisloulohy={6}    % cislo ulohy           
+
+\begin{document}
+	\begin{center}
+		{\Large Přírodovědecká fakulta Masarykovy univerzity} \\
+		\bigskip
+		{\Large \bfseries EXPERIMENTÁLNÍ METODY 2} \\
+		\bigskip
+		{\Large \the\jmenopraktika}
+	\end{center}
+	\bigskip
+	\noindent
+	\setlength{\arrayrulewidth}{1pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+		\large {\bfseries Zpracovali:}  \the\jmeno  \hspace{20mm} \large  
+		{\bfseries Naměřeno:} \the\datum\\[2.5mm]
+		\hline
+	\end{tabular*}
+
+\section{Teorie}
+Cílem tohoto praktika bylo projít si procesem leptání křemíkové desky...
+
+\section{Měření a výsledky}
+
+\clearpage
+\section{Závěr}
+
+
+\end{document}
