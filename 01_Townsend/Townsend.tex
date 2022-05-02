@@ -137,11 +137,13 @@ obr.~\ref{ifx80-120} a obr.~\ref{ifx90-110}. Body jsou proložené exponenciáln
 x}$, z~toho získané $i_0$ a $\alpha$ jsou uvedené v~levé části 
 tabulky~\ref{tab1}.
 
-Dále můžeme vytvořit graf závislosti $\ln i = \ln i_0 + \alpha x$, viz 
+Dále můžeme vytvořit graf závislosti $\ln i = f(x)$, viz 
 obr.~\ref{lni80-120} a obr.~\ref{lni90-110}. Závislost je proložená lineární funkcí $\ln i =\ln i_0 + \alpha x$, 
-získané $i_0$ a $\alpha$ jsou uvedené v~pravé části tabulky~\ref{tab1}.
+získané $i_0$ a $\alpha$ jsou uvedené v~pravé části tabulky~\ref{tab1}. U naměřených dat pro $E = 120$ \si{\volt\per\centi\meter} jsme vynechali z fitu hodnotu $x = 0,2 \si{\centi\meter}$, protože se viditelně odchyluje od zbytku měření a je v ní tedy nejspíše zanesena hrubá chyba.
 
-V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ proud $i_0$ klesá a~ionizační koeficient $\alpha$ roste.
+Jelikož lineární fit v grafech \ref{lni80-120} a \ref{lni90-110} na první pohled příliš neodpovídá vynesené závislosti, zkusíme provést zpřesnění a data proložíme funkcí $\ln i =\ln (i_0\,e^{\alpha x} + i_\text{p})$, kde i$_\text{p}$ nazveme posuvným proudem. $i_0$, $\alpha$ a $i_\text{p}$ získané z tohoto přesnějšího fitu jsou uvedené v tabulce~\ref{tabiposun}
+
+Ve všech případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ proud $i_0$ klesá a~ionizační koeficient $\alpha$ roste.
 
 \begin{figure}[h!]
 	\centering
@@ -172,7 +174,6 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 	\label{lni90-110}
 \end{figure}
 
-
 \begin{center}
 	\begin{table}[h]
 		\centering
@@ -180,7 +181,7 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 		\label{tab1}
 		\begin{tabular}{|c|c|c|c|c|} \hline
 			\multicolumn{1}{|c|}{}  & \multicolumn{2}{c|}{$i = i_0 \e^{\alpha 
-			x}$}& \multicolumn{2}{c|}{$\ln i = \ln i_0 + \alpha x$}  \\ \hline
+					x}$}& \multicolumn{2}{c|}{$\ln i = \ln i_0 + \alpha x$}  \\ \hline
 			$E$ [Vcm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] \\ \hline
 			80 & 63,7 $\pm$ 6,6 & 1,60 $\pm$ 0,06 & 44,7 $\pm$ 1,1 & 1,83 $\pm$ 
 			0,04\\ \hline
@@ -196,6 +197,25 @@ V~obou případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ 
 		\end{tabular}
 	\end{table}
 \end{center}
+
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\caption{Hodnoty proudů $i_0$, $i_\text{p}$ a ionizačních koeficientů $\alpha$ pro různé hodnoty $E$.}
+		\label{tabiposun}
+		\begin{tabular}{|c|c|c|c|} \hline
+			\multicolumn{1}{|c|}{}  & \multicolumn{3}{c|}{$\ln i =\ln (i_0\,e^{\alpha x} + i_\text{p})$}\\ \hline
+			$E$ [Vcm$^{-1}$] & $i_0$ [pA] & $\alpha$ [cm$^{-1}$] &  $i_\text{p}$ [pA]\\ \hline
+			80 & 67,4 $\pm$ 6,3 & 1,60 $\pm$ 0,05 & -36,1 $\pm$ 8,9\\ \hline
+			90 & 63,5 $\pm$ 2,8 & 1,69 $\pm$ 0,03 & -54,9 $\pm$ 3,9\\ \hline
+			100 & 29,5 $\pm$ 1,7 & 2,03 $\pm$ 0,04 & -26,1 $\pm$ 2,5\\ \hline
+			110 & 22,9 $\pm$ 0,9 & 2,22 $\pm$ 0,03 & -20,8 $\pm$ 1,4\\ \hline
+			120 & 10,6 $\pm$ 0,8 & 2,57 $\pm$ 0,05 & -14,4 $\pm$ 1,2\\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{center}
+
 
 %\begin{center}
 %	\begin{table}[h]
