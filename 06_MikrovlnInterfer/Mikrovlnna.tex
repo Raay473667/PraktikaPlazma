@@ -1,0 +1,65 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage [utf8x]{inputenc}
+\usepackage[czech]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{xspace}
+\usepackage{url}
+\usepackage{indentfirst}
+\usepackage[margin=22mm]{geometry}
+\usepackage{esvect}
+\usepackage{ragged2e}
+\usepackage{tikz,pgf}
+\usepackage{bm}
+\usepackage{perpage}
+\usepackage{capt-of}
+
+\graphicspath{
+	{img/}
+	{plots/}
+}
+
+\newcommand{\e}{\text{e}}
+
+
+\MakeSorted{figure}
+\newtoks\jmenopraktika \newtoks\jmeno \newtoks\datum
+\newtoks\obor \newtoks\skupina \newtoks\rocnik \newtoks\semestr
+\newtoks\cisloulohy \newtoks\jmenoulohy
+\newtoks\tlak \newtoks\teplota \newtoks\vlhkost
+\jmenopraktika={Mikrovlnná interferometrie plazmatu}  % nahradte jmenem vaseho predmetu
+\jmeno={Radek Horňák, Lukáš Vrána}            
+\datum={5. 4. 2022}        % nahradte datem mereni ulohy                           
+\rocnik={2.}                  
+\semestr={IV.}                 
+\cisloulohy={6}    % cislo ulohy           
+
+\begin{document}
+	\begin{center}
+		{\Large Přírodovědecká fakulta Masarykovy univerzity} \\
+		\bigskip
+		{\Large \bfseries PRAKTIKUM Z~FYZIKY PLAZMATU} \\
+		\bigskip
+		{\Large \the\jmenopraktika}
+	\end{center}
+	\bigskip
+	\noindent
+	\setlength{\arrayrulewidth}{1pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l l}
+		\large {\bfseries Zpracovali:}  \the\jmeno  \hspace{20mm} \large  
+		{\bfseries Naměřeno:} \the\datum\\[2.5mm]
+		\hline
+	\end{tabular*}
+
+\section{Teorie}
+
+
+
+\section{Měření a výsledky}
+
+
+\section{Závěr}
+
+
+\end{document}
