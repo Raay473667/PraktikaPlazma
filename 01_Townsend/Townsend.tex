@@ -174,6 +174,21 @@ Ve všech případech je vidět, že s~rostoucí intenzitou elektrického pole $
 	\label{lni90-110}
 \end{figure}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=145mm]{iposun80-120.png}
+	\caption{Graf závislosti $\ln i$ na $x$.}
+	\label{iposun80-120}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=145mm]{iposun90-110.png}
+	\caption{Graf závislosti $\ln i$ na $x$.}
+	\label{iposun90-110}
+\end{figure}
+
+
 \begin{center}
 	\begin{table}[h]
 		\centering
@@ -243,17 +258,15 @@ Ve všech případech je vidět, že s~rostoucí intenzitou elektrického pole $
 %	\end{table}
 %\end{center}
 
-\newpage
 Jelikož jsme provedli měření pro několik hodnot $E/p$, můžeme sestavit grafy 
 závislosti $\ln \alpha/p = f(p/E)$ a proložit jej lineární funkcí $\ln \alpha/p 
-= \ln A - \frac{Bp}{E}$, která vychází z~úpravy rovnice~(\ref{5}). To provedeme 
-jak pro $\alpha$ získané z~exponenciálního fitu, tak i pro $\alpha$ z~lineárního fitu. Následně pomocí rovnice~(\ref{6}) určíme ionizační potenciál 
-argonu $U_\text{i}$, viz tab.~\ref{tab2}. Tabulková hodnota pro argon je $U_\text{i} = 
-15,76$\,eV. Té se více přiblížil potenciál $U_\text{i}$ = (15,3 $\pm$  1,9)\,eV 
+= \ln A - \frac{Bp}{E}$, která vychází z~úpravy rovnice~(\ref{5}). To provedeme pro $\alpha$ získané z~exponenciálního, lineárního i logaritmického fitu. Následně pomocí rovnice~(\ref{6}) určíme ionizační potenciál 
+argonu $U_\text{i}$, viz tab. \ref{tab2} a tab.~\ref{tabiposun2}. Tabulková hodnota pro argon je $U_\text{i} = 
+15,76$\,eV. Té se nejvíce přiblížil potenciál $U_\text{i}$ = (15,3 $\pm$  1,9)\,eV 
 získaný po 
 dosazení $\alpha$ z~lineárního fitu.
  
- \begin{figure}[h]
+ \begin{figure}[h!]
  	\centering
  	\includegraphics[width=145mm]{exp.png}
  	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ 
@@ -261,14 +274,22 @@ dosazení $\alpha$ z~lineárního fitu.
  	\label{exp}
  \end{figure}
 
- \begin{figure}[h]
+ \begin{figure}[h!]
 	\centering
 	\includegraphics[width=145mm]{lin.png}
 	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ z~lineárního 
 	fitu.}
 	\label{lin}
 \end{figure}
- 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=145mm]{lnposun.png}
+	\caption{Graf závislosti $\ln \alpha/p$ na $p/E$ pro $\alpha$ z logaritmického fitu.}
+	\label{lnposun}
+\end{figure} 
+
+\newpage
 \begin{center}
 	\begin{table}[h]
 		\centering
@@ -290,6 +311,21 @@ dosazení $\alpha$ z~lineárního fitu.
 	\end{table}
 \end{center}
 
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\caption{Hodnoty konstant $A$, $B$ a ionizačního potenciálu $U_\text{i}$ 
+			argonu z~$\ln \alpha/p = \ln A - \frac{Bp}{E}$.}
+		\label{tabiposun2}
+		\begin{tabular}{|c|c|c|} \hline
+			\multicolumn{3}{|c|}{Dosazení $\alpha$ z~ logaritmického fitu s posuvným proudem} \\ \hline
+			$A$ [\si{\per\pascal\per\meter}] & $B$ [\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [eV] \\ \hline
+			8,1 $\pm$ 1,2 & 144,8 $\pm$ 1,0 &  17,8 $\pm$ 2,6 \\ \hline
+
+		\end{tabular}
+	\end{table}
+\end{center}
+
 \newpage
 \section{Závěr}
 Cílem této úlohy bylo seznámit se s~Townsendovou teorií lavin. Z~měření jsme 
@@ -298,7 +334,7 @@ určili první Townsendův koeficient pro různé hodnoty intenzity elektrickéh
 pole, který roste s~rostoucí $E$. Nakonec jsme získali ionizační potenciál 
 argonu ze závislostí $i = f(x)$ a $\ln i = f(x)$, který nám vyšel přesněji
 z~lineárního proložení $\ln i = f(x)$ jako $U_\text{i}$ = (15,3 $\pm$  1,9)\,eV, 
-tabulková hodnota je $U_\text{i} = 15,76$\,eV. V~případě fitu exponenciální závislosti metodou nejmenších čtverců mají body o~vyšší y hodnotě ve fitu větší váhu než ty při nižších y. 
+tabulková hodnota je $U_\text{i} = 15,76$\,eV. V~případě fitu exponenciální závislosti metodou nejmenších čtverců mají body o~vyšší y hodnotě ve fitu větší váhu než ty při nižších y. Fit logaritmickou závislostí $\ln i =\ln (i_0\,e^{\alpha x} + i_\text{p})$ sice velmi dobře kopíruje naměřená data, výsledný ionizační potenciál $U_\text{i}$ = (17,8 $\pm$  2,6)\,eV z něj získaný je však od tabulkové hodnoty nejvzdálenější.
 
 
 \end{document}
