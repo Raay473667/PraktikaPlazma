@@ -147,10 +147,10 @@ uvedeny v tab.~\ref{table:koef}. Vidíme, že fit podle rovnice
 \ref{zpresnena} je nejpřesnější, při našich podmínkách měření tedy probíhala 
 rekombinace i difúze zároveň. Výsledné koeficienty se ze separátních fitů oproti 
 kombinovanému fitu liší v některých případech i více než dvojnásobně. Pro 
-tlaky v rozmezí 79,5--318\,Pa jsou závislosti $\ln n = f(t)$ téměř lineární, 
-převládá zde tedy difúze nad rekombinací. Pro vyšší tlak 715,5\,Pa je lineárnější 
+tlaky v rozmezí 80--318\,Pa jsou závislosti $\ln n = f(t)$ téměř lineární, 
+převládá zde tedy difúze nad rekombinací. Pro vyšší tlak 716\,Pa je lineárnější 
 závislost $1/n = f(t)$, dominantní je rekombinace v objemu. Toto pozorování je 
-v souladu s teorií. Pro tlaky 7,95--31,8\,Pa není ani jedna ze závislostí lineární, 
+v souladu s teorií. Pro tlaky 8--32\,Pa není ani jedna ze závislostí lineární, 
 nelze tak určit dominantní proces. 
 
 \begin{figure}[h]
@@ -165,7 +165,7 @@ nelze tak určit dominantní proces.
 		\scalebox{.30}{\includegraphics{graph2.png}}
 		\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Časová závislost koncentrace elektronů pro tlak 7,95\,Pa.}
+	\caption{Časová závislost koncentrace elektronů pro tlak 8\,Pa.}
 	\label{g:5Pa}
 \end{figure}
 
@@ -181,7 +181,7 @@ nelze tak určit dominantní proces.
 		\scalebox{.30}{\includegraphics{graph4.png}}
 		\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Časová závislost koncentrace elektronů pro tlak 15,9\,Pa.}
+	\caption{Časová závislost koncentrace elektronů pro tlak 16\,Pa.}
 	\label{g:10Pa}
 \end{figure}
 
@@ -197,7 +197,7 @@ nelze tak určit dominantní proces.
 		\scalebox{.30}{\includegraphics{graph6.png}}
 		\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Časová závislost koncentrace elektronů pro tlak 31,8\,Pa.}
+	\caption{Časová závislost koncentrace elektronů pro tlak 32\,Pa.}
 	\label{g:20Pa}
 \end{figure}
 
@@ -213,7 +213,7 @@ nelze tak určit dominantní proces.
 		\scalebox{.30}{\includegraphics{graph8.png}}
 		\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Časová závislost koncentrace elektronů pro tlak 79,5\,Pa.}
+	\caption{Časová závislost koncentrace elektronů pro tlak 80\,Pa.}
 	\label{g:50Pa}
 \end{figure}
 
@@ -261,7 +261,7 @@ nelze tak určit dominantní proces.
 		\scalebox{.30}{\includegraphics{graph14.png}}
 		\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Časová závislost koncentrace elektronů pro tlak 715,5\,Pa.}
+	\caption{Časová závislost koncentrace elektronů pro tlak 716\,Pa.}
 	\label{g:450Pa}
 \end{figure}
 
@@ -270,48 +270,41 @@ nelze tak určit dominantní proces.
 \begin{table}[h]
 	\centering
 	\caption{Hodnoty koeficientu rekombinace $\alpha$ a difúzního koeficientu 
-	$D$ určené ze závislostí $1/n = f(t)$, $\ln n = f(t)$ a kombinované dle 
-	rovnice \eqref{zpresnena}.}
+	$D$ určené z~lineárních závislostí $1/n = f(t)$, $\ln n = f(t)$ a 
+	kombinované dle rovnice \eqref{zpresnena}.}
 	\label{table:koef}
-	\begin{tabular}{|r|c|c|c|c|}
+	\begin{tabular}{|r|c|c|c|c|c|c|}
 		\hline
-		Tlak    & $1/n = f(t)$      & $\ln n = f(t)$ & 
-		\multicolumn{2}{c|}{Oba procesy}                                \\ 
-		\hline
-		{[}Pa{]} & 
+		Tlak & $1/n = f(t)$ & $\ln n = f(t)$ & \multicolumn{2}{c|}{Kombinovaný 
+		fit} & \multicolumn{2}{c|}{Kombinovaný 
+		fit2} \\ \hline
+		[Pa] & 
 		$\alpha$\,[$10^{-3}$\si{\meter\cubed\per\second}] & 
-		$D$\,[$10^{-3}$\si{\metre^2\second^{-1}}]             & 
+		$D$\,[$10^{-3}$\si{\metre^2\second^{-1}}] & 
 		$\alpha$\,[$10^{-3}$\si{\meter\cubed\per\second}] & 
 		$D$\,[$10^{-3}$\si{\metre^2\second^{-1}}] \\ 
 		\hline
-		$7,95$                              &$ 2.01                 \pm 
-		0.11                $&$ 57.3              \pm  2.8              $& 
-		$0.7734    
-		\pm 0.0004    $&$ 28.4       \pm  0.4       $\\ \hline
-		$15,9$                             & $1.21                 \pm  
-		0.05                $&$ 50.7              \pm  3.3              $&$ 
-		0.576     
-		\pm 0.006     $&$ 21.8       \pm  1.5       $\\ \hline
-		$31,8                             $&$ 1.00                 \pm  
-		0.06                $&$ 56.9              \pm  2.7              $&$ 
-		0.436     
-		\pm 0.003     $&$ 25.2       \pm  1.3       $\\ \hline
-		$79,5                             $&$ 0.82                 \pm  
-		0.07                $&$ 52.7              \pm  1.0              $&$ 
-		0.180     
-		\pm 0.003     $&$ 37.1       \pm  2.2       $\\ \hline
-		$159                           $&$ 0.30                 \pm  
-		0.02                $&$ 36.1              \pm  0.5              $& 
-		$0.0292    
-		\pm 0.0002    $&$ 31.6       \pm  0.8       $\\ \hline
-		$318                           $&$ 0.27                 \pm  
-		0.02                $&$ 23.2              \pm  0.6              $& 
-		$0.0590    
-		\pm 0.0004    $&$ 16.8       \pm  0.7       $\\ \hline
-		$715,5                            $&$ 0.21                 \pm  
-		0.01                $&$ 15.5              \pm  0.8              $& 
-		$0.118     
-		\pm 0.003     $&$ 5.6        \pm  0.7       $\\ \hline
+		$8$ & $2.01\pm0.11$ & $57.3\pm2.8$ & $0.7734\pm0.0004$ & $28.4\pm0.4$ & 
+		$0.6750\pm0.0023$ & $31.5\pm1.2$ 
+		\\ \hline
+		$16$ & $1.21\pm0.05$ & $50.7\pm3.3$ & $0.576\pm0.006$ & $21.8\pm1.5$ & 
+		$0.642\pm0.012$ & $18.8\pm2.0$
+		\\ \hline
+		$32$ & $1.00\pm0.06$ & $56.9\pm2.7$ & $0.436\pm0.003$ & $25.2\pm1.3$ & 
+		$0.278\pm0.005$ & $34.7\pm3.0$
+		\\ \hline
+		$80$ & $0.82\pm0.07$ & $52.7\pm1.0$ & $0.180\pm0.003$ & $37.1\pm2.2$ & 
+		$0.087\pm0.0005$ & $44.1\pm1.4$
+		\\ \hline
+		$159$ & $0.30\pm0.02$ & $36.1\pm0.5$ & $0.0292\pm0.0002$ & $31.6\pm0.8$ 
+		& $0.0409\pm0.0001$ & $30.1\pm0.6$
+		\\ \hline
+		$318$ & $0.27\pm0.02$ & $23.2\pm0.6$ & $0.0590\pm0.0004$ & $16.8\pm0.7$ 
+		& $0.0686\pm0.0002$ & $16.0\pm0.5$
+		\\ \hline
+		$716$ & $0.21\pm0.01$ & $15.5\pm0.8$ & $0.118\pm0.003$ & $5.6\pm0.7$ & 
+		$0.118\pm0.001$ & $5.6\pm0.5$
+		\\ \hline
 	\end{tabular}
 \end{table}
 \clearpage
@@ -319,10 +312,10 @@ nelze tak určit dominantní proces.
 V této úloze jsme se zabývali rozpadem plazmatu a popsali jsme procesy, jakým k 
 němu dochází. Naším úkolem bylo určit koncentraci elektronů v závislosti na 
 čase po vypnutí výboje. Z těchto závislostí, které jsme naměřili pro 
-tlaky v rozmezí 7,95--715,5\,Pa, jsme fitováním třemi různými funkcemi určili 
+tlaky v rozmezí 8--716\,Pa, jsme fitováním třemi různými funkcemi určili 
 koeficienty rekombinace a difúzní koeficienty. Naše výsledky se pro oblast 
-79,5--715,5\,Pa shodují s teorií. Při nízkém tlaku do 318 Pa je dominantním 
-procesem difúze, při 715,5\,Pa je to naopak rekombinace. Pro tlaky 7,95--31,8\,Pa jsme 
+80--716\,Pa shodují s teorií. Při nízkém tlaku do 318 Pa je dominantním 
+procesem difúze, při 716\,Pa je to naopak rekombinace. Pro tlaky 8--32\,Pa jsme 
 z našich dat převládající proces určit nedokázali.
 
 
