@@ -144,9 +144,16 @@ U~naměřených dat pro $E = 120$ \si{\volt\per\centi\meter} jsme vynechali z fi
 hodnotu $x = 0,2 \si{\centi\meter}$, protože se viditelně odchyluje od zbytku 
 měření, a je v ní tedy nejspíše zanesena hrubá chyba.
 
-Jelikož lineární fit v grafech \ref{lni80-120} a \ref{lni90-110} na první pohled příliš neodpovídá vynesené závislosti, zkusíme provést zpřesnění a data proložíme funkcí $\ln i =\ln (i_0\,e^{\alpha x} + i_\text{p})$, kde i$_\text{p}$ nazveme posuvným proudem. $i_0$, $\alpha$ a $i_\text{p}$ získané z tohoto přesnějšího fitu jsou uvedené v tabulce~\ref{tabiposun}
+Lineární fit v grafech \ref{lni80-120} a \ref{lni90-110} na první pohled 
+odpovídá vynesené závislosti, ale body při nízkých $x$ se odchylují. Zkusíme 
+provést zpřesnění a data proložíme funkcí $\ln i =\ln (i_0\,e^{\alpha x} + 
+i_\text{p})$, kde veličinou $i_\text{p}$ se pokusíme opravit posunutí nuly. 
+Hodnoty $i_0$, $\alpha$ a $i_\text{p}$ získané z tohoto přesnějšího fitu jsou 
+uvedené v tabulce~\ref{tabiposun}
 
-Ve všech případech je vidět, že s~rostoucí intenzitou elektrického pole $E$ proud $i_0$ klesá a~ionizační koeficient $\alpha$ roste.
+Ve všech případech je vidět, že ionizační koeficient $\alpha$ roste. Důvodem
+klesajícího proudu $i_0$ je ruční ladění clony rtuťové výbojky pro 
+omezení proudu ampérmetrem.
 
 \begin{figure}[h!]
 	\centering
@@ -265,7 +272,8 @@ Jelikož jsme provedli měření pro několik hodnot $E/p$, můžeme sestavit gr
 závislosti $\ln \alpha/p = f(p/E)$ a proložit jej lineární funkcí $\ln \alpha/p 
 = \ln A - \frac{Bp}{E}$, která vychází z~úpravy rovnice~(\ref{5}). To provedeme pro $\alpha$ získané z~exponenciálního, lineárního i logaritmického fitu. Následně pomocí rovnice~(\ref{6}) určíme ionizační potenciál 
 argonu $U_\text{i}$, viz tab. \ref{tab2} a tab.~\ref{tabiposun2}. Tabulková hodnota pro argon je $U_\text{i} = 
-15,76$\,eV. Té se nejvíce přiblížil potenciál $U_\text{i}$ = (15,3 $\pm$  1,9)\,eV 
+15,76$\,V. Té se nejvíce přiblížil potenciál $U_\text{i}$ = (15,3 $\pm$  
+1,9)\,V 
 získaný po 
 dosazení $\alpha$ z~lineárního fitu.
  
@@ -301,7 +309,10 @@ dosazení $\alpha$ z~lineárního fitu.
 		\label{tab2}
 		\begin{tabular}{|c|c|c|c|c|c|} \hline
 			\multicolumn{3}{|c|}{Dosazení $\alpha$ z~exponenciálního fitu} & \multicolumn{3}{c|}{Dosazení $\alpha$ z~lineárního fitu}  \\ \hline
-			$A$ [\si{\per\pascal\per\meter}] & $B$ [\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [eV] & $A$ [\si{\per\pascal\per\meter}] & $B$ [\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [eV] \\ \hline
+			$A$ [\si{\per\pascal\per\meter}] & $B$ 
+			[\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [V] & $A$ 
+			[\si{\per\pascal\per\meter}] & $B$ 
+			[\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [V] \\ \hline
 			9,3 $\pm$ 1,2 & 156 $\pm$ 18 &  16,8 $\pm$ 2,9  & 9,0 $\pm$ 1,0 & 
 			137 $\pm$ 5 & 15,3 $\pm$ 1,9\\ \hline
 %9,31 $\pm$ 1,16
@@ -321,8 +332,10 @@ dosazení $\alpha$ z~lineárního fitu.
 			argonu z~$\ln \alpha/p = \ln A - \frac{Bp}{E}$.}
 		\label{tabiposun2}
 		\begin{tabular}{|c|c|c|} \hline
-			\multicolumn{3}{|c|}{Dosazení $\alpha$ z~ logaritmického fitu s posuvným proudem} \\ \hline
-			$A$ [\si{\per\pascal\per\meter}] & $B$ [\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [eV] \\ \hline
+			\multicolumn{3}{|c|}{Dosazení $\alpha$ z~ logaritmického fitu s 
+			$i_p$} \\ \hline
+			$A$ [\si{\per\pascal\per\meter}] & $B$ 
+			[\si{\volt\per\pascal\per\meter}] & $U_\text{i}$ [V] \\ \hline
 			8,1 $\pm$ 1,2 & 144,8 $\pm$ 1,0 &  17,8 $\pm$ 2,6 \\ \hline
 
 		\end{tabular}
@@ -336,8 +349,13 @@ ověřili exponenciální růst proudu s~rostoucí vzdáleností elektrod. Také
 určili první Townsendův koeficient pro různé hodnoty intenzity elektrického 
 pole, který roste s~rostoucí $E$. Nakonec jsme získali ionizační potenciál 
 argonu ze závislostí $i = f(x)$ a $\ln i = f(x)$, který nám vyšel přesněji
-z~lineárního proložení $\ln i = f(x)$ jako $U_\text{i}$ = (15,3 $\pm$  1,9)\,eV, 
-tabulková hodnota je $U_\text{i} = 15,76$\,eV. V~případě fitu exponenciální závislosti metodou nejmenších čtverců mají body o~vyšší y hodnotě ve fitu větší váhu než ty při nižších y. Fit logaritmickou závislostí $\ln i =\ln (i_0\,e^{\alpha x} + i_\text{p})$ sice velmi dobře kopíruje naměřená data, výsledný ionizační potenciál $U_\text{i}$ = (17,8 $\pm$  2,6)\,eV z něj získaný je však od tabulkové hodnoty nejvzdálenější.
+z~lineárního proložení $\ln i = f(x)$ jako $U_\text{i}$ = (15,3 $\pm$  1,9)\,V, 
+tabulková hodnota je $U_\text{i} = 15,76$\,V. V~případě fitu exponenciální 
+závislosti metodou nejmenších čtverců mají body o~vyšší y hodnotě ve fitu větší 
+váhu než ty při nižších y. Fit logaritmickou závislostí $\ln i =\ln 
+(i_0\,e^{\alpha x} + i_\text{p})$ sice velmi dobře kopíruje naměřená data, 
+výsledný ionizační potenciál $U_\text{i}$ = (17,8 $\pm$  2,6)\,V z něj získaný 
+je však od tabulkové hodnoty nejvzdálenější.
 
 
 \end{document}
