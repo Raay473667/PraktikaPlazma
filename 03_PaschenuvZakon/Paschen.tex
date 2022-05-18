@@ -214,11 +214,16 @@ výbojce zvyšujeme napětí a odečítáme hodnotu napětí v~okamžiku zapále
 Mezi každým měřením vyčkáváme alespoň jednu minutu na rekombinaci náboje ve 
 výbojce. Výsledný graf závislosti $U_\text{z} = f(pd)$ je na 
 obr.~\ref{tlakfixed}. 
-Body jsou proloženy funkcí podle rovnice~(\ref{9}), kde červený bod byl 
+Body jsou proloženy zlogaritmovanou rovnicí~(\ref{9}). Její logaritmování jsme 
+provedli, abychom snížili váhu prvních dvou bodů, jejichž hodnoty jsou 
+trojnásobné vůči ostatním. Chyba při měření vzdálenosti $d$ je 
+přibližně 0,5\,mm, tedy nízký součin $pd$ má vysokou relativní odchylku. 
+Červený bod na 
+obr.~\ref{tlakfixed} byl 
 vyloučen kvůli svému odchýlení. Získané hodnoty $B$ 
 a $C'$ jsou v~tabulce~\ref{tab1}. Výsledky měření se od ideální závislosti 
 popsané 
-rovnicí~(\ref{9}) odchylují. Tato ochylka může být způsobena jak 
+rovnicí~(\ref{9}) odchylují. Tato odchylka může být způsobena jak 
 nepřesností odečítání zápalného napětí, tak nedostatečnou rekombinací nábojů 
 mezi jednotlivými měřeními. 
 %440,68\pm94,46
@@ -226,16 +231,15 @@ Druhá série měření je za konstantní vzdálenosti elektrod $d =
 20\,\si{\milli\meter}$, 
 měníme tlak od 25\,\si{\pascal} do 300\,\si{\pascal}. Opět zapisujeme hodnotu 
 napětí v~okamžiku zapálení výboje. Graf závislosti $U_\text{z} = f(pd)$ je na 
-obr.~\ref{dfixed}. Body jsou proloženy funkcí podle rovnice~(\ref{9}), získané 
-konstanty 
-$B$ a $C'$ jsou uvedeny v~tabulce~\ref{tab1}. Toto měření se oproti 
+obr.~\ref{dfixed}. Toto měření se oproti 
 předchozímu více 
 blíží ideální závislosti popsané rovnicí~(\ref{9}), z~grafu vidíme až na malou 
 odchylku typickou závislost napětí na součinu tlaku a vzdálenosti elektrod.
 Z minim fitovaných křivek je v~tabulce~\ref{tab1} také uvedeno zápalné napětí 
 $U_\text{z,min}$ a 
 součin tlaku a vzdálenosti $pd_{\text{min}}$. Tyto hodnoty 
-lze srovnat s~tabulkovými hodnotami \cite{wiki}, které se uvádí pro vzduch.
+lze srovnat s~tabulkovými hodnotami \cite{wiki,gamma}, které se uvádí pro 
+vzduch.
 %286,26\pm27,22
 % UZ ZJISTIT A OKOMENTOVAT, Z MINIMA FCE NEBO MĚŘENÍ?
 
@@ -288,7 +292,7 @@ lze srovnat s~tabulkovými hodnotami \cite{wiki}, které se uvádí pro vzduch.
 		\begin{tabular}[c]{@{}r@{}}Měření s konstantní \\ vzdáleností 
 		elektrod\end{tabular} & 148 $\pm$ 5 & 3,98 $\pm$ 0,13 & 367 & 2,5 
 		\\ \hline
-	Tabulkové hodnoty & 273,75 & 11,25 & 327 & 0,75 \\ \hline
+	Tabulkové hodnoty \cite{wiki,gamma}& 273,75 & 10,34 & 327 & 0,75 \\ \hline
 \end{tabular}
 \end{table}
 \end{center}
@@ -321,7 +325,11 @@ katodový spád nejvyšší pro největší průřez katodové vrstvy, tedy v~p�
 když je 
 celý povrch katody pokrytý výbojem. To je v~souladu s~našimi pozorováními. 
 Při změně tlaku pozorujeme v grafu také posun minima, tedy při vyšším tlaku se 
-minimum posunulo k menší vzdálenosti elektrod.  
+minimum posunulo k menší vzdálenosti elektrod. Jelikož je katodový spád funkcí 
+elektrod a plynu ve výbojce, v našem případě molybdenu a vzduchu, a zároveň 
+závisí na tlaku a proudu, není možné najít přesné tabulkové hodnoty. Hodnoty 
+katodového spádu s podobnými parametry lze najít např. v~\cite{cathode}, naše 
+výsledky se však pohybují ve stejném řádu $10^2$~Pa.
 
 %komentář proč se katodový spád liší
 %komentář vizuál výboje
@@ -339,13 +347,13 @@ minimum posunulo k menší vzdálenosti elektrod.
 \begin{center}
 	\begin{table}[h!]
 		\centering
-		\caption{Naměřené hodnoty katodového spádu}
+		\caption{Naměřené hodnoty katodového spádu a polohy minima}
 		\label{tab2}
-		\begin{tabular}{|c|c|} \hline
-			$I = 1\,\si{\milli\ampere}$, $p = 33\,\si{\pascal}$ 
+		\begin{tabular}{|c|c|c|} \hline
+			& $I = 1\,\si{\milli\ampere}$, $p = 33\,\si{\pascal}$ 
 			& $I = 1,8\,\si{\milli\ampere}$, $p = 100\,\si{\pascal}$\\ \hline
-			$U_\text{k}$ [V] & $U_\text{k}$ [V]\\ \hline
-			701 & 514 \\ \hline
+			$U_\text{k}$\,[V] & 701 & 514 \\ \hline
+			$d_k$\,[mm] & 18 & 11 \\ \hline
 			
 		\end{tabular}
 	\end{table}
@@ -359,14 +367,19 @@ minimum posunulo k menší vzdálenosti elektrod.
 \end{figure}
 
 \newpage
+\subsection{Voltampérová charakteristika}
 Pro měření voltampérové charakteristiky bylo použito zapojení dle schématu na 
-obr.~\ref{schema3}. Naměřená voltampérová charakteristika je v~grafu na 
+obr.~\ref{schema3}. Napětí na výbojce $U$ měníme proměnným odporem $R$ 
+zapojeným do série a určíme jej z~rovnice~$U = U_\text{z} - RI$, kde 
+$U_\text{z}$ je napětí na zdroji a $I$ je proud obvodem.  
+Naměřená voltampérová charakteristika je v~grafu na 
 obr.~\ref{VAodpor}. Vidíme, 
 že se nám podařilo naměřit oblast C-E, jak je znázorněno v~obr.~\ref{VA}. 
 Oblast C-D se nazývá normální doutnavý výboj. Vyšší proud je umožněn zvětšením 
 plochy katodové vrstvy. Až je celý povrch katody pokrytý výbojem, 
 zvětšuje 
-se velikost katodového spádu, a tím tok iontů na katodu. Tomu odpovídá 
+se velikost katodového spádu, a tím energie iontů dopadajících na katodu. Tomu 
+odpovídá 
 abnormální doutnavý výboj, tedy oblast D-E. Dalším ohřevem katody by výboj 
 přešel v~elektrický oblouk.
 
@@ -396,17 +409,24 @@ $U_\text{k} = 701\,\si{\volt}$. Pro $I = 1,8\,\si{\milli\ampere}$ a $p =
 100\,\si{\pascal}$ je katodový spád nižší,  $U_\text{k} = 514\,\si{\volt}$. 
 Zjistili jsme, že oblast katodového spádu je pro hoření výboje kritická. Pokud 
 přiblížíme elektrody takových způsobem, že zmizí katodová vrstva, je kvůli 
-ztížené ionizaci pro hoření výboje potřeba dodávat vysoké napětí. Nakonec jsme 
+ztížené ionizaci potřeba dodávat vysoké napětí. Nakonec jsme 
 naměřili voltampérovou charakteristiku doutnavého výboje, kterou jsme 
 identifikovali jako oblasti odpovídající normálnímu i abnormálnímu doutnavému 
 výboji.
 
 \begin{thebibliography}{10}
 	\bibitem{wiki}
-	Wikipedia contributors. Paschen's law [Internet]. Wikipedia, The Free 
+	Wikipedia contributors. \textit{Paschen's law} [Internet]. Wikipedia, The 
+	Free 
 	Encyclopedia; 2022 Mar 31, 05:42 UTC [cited 2022 Apr 27]. Available from: 
 	\url{https://en.wikipedia.org/w/index.php?title=Paschen%27s_law&oldid=1080258746.}
-
+	\bibitem{gamma}
+	Arumugam, S., Alex, P., \& Sinha, S. K. (2017). \textit{Effective secondary 
+	electron emission coefficient in DC abnormal glow discharge plasmas.} 
+	Physics of Plasmas, 24(11), 112106. doi:10.1063/1.4997622 
+	\bibitem{cathode}
+	Ward, A. L. (1962). \textit{Calculations of Cathode-Fall Characteristics.} 
+	Journal 	of Applied Physics, 33(9), 2789–2794. doi:10.1063/1.1702550 
 \end{thebibliography}
 
 \end{document}
