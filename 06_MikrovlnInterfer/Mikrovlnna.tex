@@ -53,9 +53,37 @@
 	\end{tabular*}
 
 \section{Teorie}
+Plazma lze obecně kvalitativně považovat za vodič, dielektrikum či magnetickou kapalinu. Výběr modelu je závislý na konkrétní situaci. V případě interakce elektromagnetického záření s plazmatem se v oblasti nízkých frekvencí plazma popisuje jako vodič pomocí nízkofrekvenční vodivost, při vysokých frekvencích je vhodná aplikace dielektrického modelu včetně definice vysokofrekvenční permitivity. Hranicí mezi nízkými a vysokými frekvencemi je plazmová frekvence $\omega_\text{pl}$, od které se může vlna plazmatem šířit. Ta souvisí s hustotou plazmatu pomocí vztahu
+
+\begin{equation}
+	\omega_\text{pl} = \frac{n_\text{e} e^2}{m_\text{e} \epsilon_0}
+\end{equation}
+kde $n_\text{e}$ je hustota volných elektronů, $e$ elementární náboj, $m_\text{e}$ hmotnost elektronu a $\epsilon_0$ permitivita vakua.
+
+Pro dielektrický model nemagnetického plazmatu je permitivita komplexní skalár. V případě, že pro popis rozdělení rychlosti elektronů zvolíme Maxwellovo rozdělení, je relativní permitivita popsaná vztahem
+
+\begin{equation}
+	\epsilon_\text{r} = 1- \frac{n_\text{e} e^2 (\omega - i \nu_\text{m})}{m_\text{e} \epsilon_0 \omega (\omega^2 +\nu_\text{m}^2)}
+	\label{komplexnipermitivita}
+\end{equation}
+kde $\nu_\text{m}$ je srážková frekvenci pro přenos hybnosti elektron--neutrál. Na rozdíl od běžných dielektrik je reálná část permitivity plazmatu menší než jedna. Místo relativní permitivity můžeme obdobně popisovat plazma pomocí indexu lomu $n$. Jeho reálná část je přímo úměrný fázové rychlosti vlny a tedy i fázovému posuvu $\Delta\phi$. Platí vztah
+
+\begin{equation}
+ 	\Delta\phi = k_0(1-n) \Delta z
+\end{equation}
+kde k$_0$ je vlnové číslo a $\Delta z$ kus dráhy.  
+
+\subsection{Stanovení hustoty elektronů}
+Pro stanovení hustoty elektronů aproximujeme vztah pro relativní permitivitu \eqref{komplexnipermitivita} tak, že zanedbáme imaginární složku a vypustíme $\nu_\text{m}^2)$. Dostáváme
+
+\begin{equation}
+	\epsilon_\text{r} = 1- \frac{n_\text{e} e^2 (\omega - i \nu_\text{m})}{m_\text{e} \epsilon_0 \omega (\omega^2 +\nu_\text{m}^2)}
+	\label{permitivita}
+\end{equation}
 
 
 
+%za $\Delta z$ rozměr co zabírá výbojka ve vlnovodu
 \section{Měření a výsledky}
 
 
