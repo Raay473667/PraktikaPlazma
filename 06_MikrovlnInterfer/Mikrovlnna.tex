@@ -111,7 +111,8 @@ Po dosazení do \eqref{posun} a úpravách můžeme vyjádřit koncentraci elekt
 v závislosti na fázovém posunu jako
 
 \begin{equation}
-	n_\text{e} = \frac{1-\left(1- \frac{\Delta\phi}{k_0 \Delta z} \right)^2
+	n_\text{e} = \frac{\left(1-\left(1-\frac{\Delta\phi}{k_0 \Delta z} 
+	\right)^2\right)
 	m_\text{e} \epsilon_0 \omega^2}{e^2}
 \end{equation}
 
@@ -174,7 +175,18 @@ V našem případě se jedná o tloušťku plazmatu, kterou je potřeba odhadnou
 pomocí geometrické úvahy ze znalosti příčného rozměru vlnovodu 86 \si{\milli\meter},
 průměru zářivky 18 \si{\milli\meter} a úhlu mezi zářivkou a vlnovodem 35$^{\circ}$. Za
 předpokladu, že zářivka má objem válce, který následně aproximujeme pravidelným
-čtyřbokým hranolem, tloušťka plazmatu podél nejdelšího rozměru vlnovodu je 24,6 \si{\milli\meter}.
+čtyřbokým hranolem, tloušťka plazmatu podél nejdelšího rozměru vlnovodu je 24,6 
+\si{\milli\meter}.
+
+\begin{equation}
+	\Delta z = \frac{V_v}{bd} = \frac{l \pi d^2}{4bd} = \frac{b \pi 
+	d^2}{4bd\sin\alpha} = \frac{\pi d}{4\sin\alpha}
+\end{equation}
+$V_v$ objem válce
+$b$ příčný rozměr vlnovodu
+$d$ průměr zářivky
+$l$ délka tyče
+
 
 \section{Závěr}
 
