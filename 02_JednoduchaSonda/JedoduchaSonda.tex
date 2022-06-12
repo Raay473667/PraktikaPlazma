@@ -14,6 +14,7 @@
 \usepackage{bm}
 \usepackage{perpage}
 \usepackage{capt-of}
+\usepackage{subcaption}
 
 \graphicspath{
 	{img/}
@@ -53,13 +54,239 @@
 	\end{tabular*}
 
 \section{Teorie}
-\subsection{Doutnavý výboj}
-V této úloze se budeme zabývat měřením parametrů kladného sloupce doutnavého výboje.	
-Doutnavý výboj je druh výboje, jehož typický vzhled můžeme vidět na schématu na 
-obr.~\ref{glow+napeti}. V~rozmezí tlaku 10$^1$-10$^2$\,\si{\pascal} v~něm můžeme 
-pozorovat střídající se temné nebo svítící místa, která rozlišujeme na katodové a anodové oblasti. Katodové oblasti jsou nutnou a důležitou oblastí doutnavého výboje na rozdíl od kladného sloupce, jehož délka se při zkracování vzdálenosti elektrod zmenšuje a může i úplně zmizet. Intenzita elektrického pole je podél jeho osy konstantní, viz dolní část obr. \ref{glow+napeti}. Může být určena buď pomocí sondových měření nebo ji lze vypočítat ze závislosti napětí na elektrodách na jejich vzdálenosti při konstantním proudu ve výboji.
+%\subsection{Doutnavý výboj}
+%V této úloze se budeme zabývat měřením parametrů kladného sloupce doutnavého výboje.	
+%Doutnavý výboj je druh výboje, jehož typický vzhled můžeme vidět na schématu na 
+%obr.~\ref{glow+napeti}. V~rozmezí tlaku 10$^1$-10$^2$\,\si{\pascal} v~něm můžeme 
+%pozorovat střídající se temné nebo svítící místa, která rozlišujeme na katodové a anodové oblasti. Katodové oblasti jsou nutnou a důležitou oblastí doutnavého výboje na rozdíl od kladného sloupce, jehož délka se při zkracování vzdálenosti elektrod zmenšuje a může i úplně zmizet. Intenzita elektrického pole je podél jeho osy konstantní, viz dolní část obr. \ref{glow+napeti}. Může být určena buď pomocí sondových měření nebo ji lze vypočítat ze závislosti napětí na elektrodách na jejich vzdálenosti při konstantním proudu ve výboji.
+
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=110mm]{glow+napeti.png}
+%	\caption{Doutnavý výboj a intenzita elektrického pole podíl jeho osy}
+%	\label{glow+napeti}
+%\end{figure}
 
 \subsection{Elektrostatická Langmuirova sonda}
-Langmuirova sonda je vodič malých rozměrů zavedený do plazmatu, pomocí nějž lze měřit nejdůležitější parametry plazmatu jako elektronovou hustotu $n_e$, teplotu elektronů $T_e$, rozdělovací funkci elektronů $f(v)$ a prostorové rozdělení potenciálu a elektrického pole. Potenciál sondy $V_s$ určujeme vzhledem k referenční elektrodě. Pokud je vůči ní plocha sondy velmi malá, můžeme ji nazvat jednoduchou sondou. 
-	
+Langmuirova sonda je vodič malých rozměrů zavedený do plazmatu, pomocí nějž lze měřit
+nejdůležitější parametry plazmatu jako elektronovou hustotu $n_\text{e}$, teplotu elektronů
+$T_\text{e}$, rozdělovací funkci elektronů $f(v)$ a prostorové rozdělení potenciálu a
+elektrického pole. Napětí sondy $U_\text{S}$ určujeme vzhledem k referenční elektrodě. Potenciál plazmatu v místě sondy vůči stejné referenční elektrodě označme $V_\text{p}$. Pokud je vůči ní plocha sondy velmi malá, můžeme sondu nazvat jednoduchou. Podle tvaru lze dále sondy dělit na válcové, kulové a rovinné. Závislost proudu protékajícího sondou $I_\text{S}$ na napětí přiloženém na sondu $V_\text{S}$ tvoří voltampérovou (VA) charakteristiku sondy. Napětí sondy $U_\text{S}$ získáme pomocí vztahu
+
+\begin{equation}
+	U_\text{S} = V_\text{S} - V_\text{p}
+	\label{Usondy}
+\end{equation}
+Pokud sonda není připojena k vnějšímu obvodu a proud elektronů i iontů na ni se ustálí, je výsledný proud nulový a sonda se ustálí na napětí $V_\text{{fl}}$, tedy na plovoucím potenciálu.
+
+VA charakteristiku jednoduché sondy můžeme rozdělit na tři části. Tou první je oblast saturovaného iontového proudu označená na obr. \ref{VA} jako $A$. Sonda je záporně nabita vzhledem k potenciálu plazmatu, elektrony jsou odpuzovány a ionty naopak přitahovány. Vizuálně se to projevuje temným prostorem obalujícím sondu.
+
+Druhou část charakteristiky tvoří přechodová oblast, pro kterou lze $U_\text{S}$ vymezit jako $-2(V_\text{p} - V_\text{{fl}} \leq U_\text{S} \leq 0)$. Na obr. \ref{VA} se jedná o oblast $B$. Celkový proud sondou $I_S$ můžeme vyjádřit jako
+
+\begin{equation}
+	I_\text{S} = I_\text{i} + I_\text{e}
+\end{equation}
+kde $I_\text{i}$ je iontový proud a $I_\text{e}$ elektronový proud, který je dán vztahem
+
+\begin{equation}
+	I_\text{e} = S e n_\text{e} \sqrt{\frac{k T_\text{e}}{2 \pi m_\text{e}}} \exp \left(\frac{-eU_\text{S}}{k T_\text{e}}\right)
+	\label{eproud}
+\end{equation}
+kde $S$ je povrch sondy, $e$ elementární náboj, $n_\text{e}$ koncentrace elektronů, $k$ Boltzmanova konstanta a $m_\text{e}$ hmotnost elektronu.
+
+Oblast saturovaného elektronového proudu je na obr. \ref{VA} označená jako $C$. Sonda je vzhledem k potenciálu plazmatu na kladném napětí a přitahuje tak elektrony. U válcové sondy nejeví tato oblast nasycení, nýbrž parabolicky narůstá.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=110mm]{VA.png}
+	\caption{VA charakteristika jednoduché rovinné sondy.}
+	\label{VA}
+\end{figure}	
+
+\section{Měření a výsledky}
+Měření provádíme na aparatuře, jejíž schéma je vidět na obr. \ref{schema}. Výbojka je čerpaná rotační olejovou vývěvou. Tlak nastavujeme změnou průtoku argonu a měříme jej Piraniho manometrem. Do výbojky je zavedená jednoduchá válcová sonda, jejíž délku jsme odhadli na 8 \si{\milli\meter} a průměr 0,1 \si{\milli\meter}. Povrch podstavy válcové sondy je k povrchu jejího pláště $S$ zanedbatelný, dostáváme $S \approx 2,5$. 
+
+Při měření vždy nejprve nalezneme plovoucí potenciál, abychom měli jistotu, že naměříme oblast nalevo i napravo od něj. Při měření se napětí přiložené na sondu $V_\text{S}$ mění automaticky pomocí elektrického motorku, na kterém stačí zařadit rychlostní stupeň v jednom se směrů chodu. Data jsou ukládána na počítač. Při vyhodnocování jsme se museli synchronizovat.   
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=110mm]{schema.png}
+	\caption{Schéma aparatury.}
+	\label{schema}
+\end{figure}
+
+Provedli jsme měření za konstantního tlaku 100 \si{\pascal} pro tři hodnoty výbojového proudu $I_\text{v}$. Výsledné VA charakteristiky jsou v grafu na obr. \ref{namerene012}. Z nich lze určit plovoucí potenciál, který se s rostoucím výbojovým proudem zvětšuje, viz tab. \ref{}. Dále jsme provedli měření za konstantního výbojového proudu 40 \si{\milli\ampere} pro pět hodnot tlaku. Odpovídající VA charakteristiky jsou v grafu na obr. \ref{namerene34567}. Pro tlak 200 \si{\pascal} je plovoucí potenciál nejmenší, v oblasti 5--50 \si{\pascal} však nevykazuje žádný trend, viz tab. \ref{}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=145mm]{namerene012.png}
+	\caption{Naměřené VA charakteristiky za konstantního tlaku 100 \si{\pascal}.}
+	\label{namerene012}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=145mm]{namerene34567.png}
+	\caption{Naměřené VA charakteristiky za konstantního výbojového proudu 40 \si{\milli\ampere}.}
+	\label{namerene34567}
+\end{figure}
+
+Dále je potřeba od charakteristik odečíst iontový proud, oblast kde saturuje jsme proložili křivkou. Názorné proložení pro VA charakteristku za podmínek $p = 100 \si{\pascal}$ a $I_\text{v} = 40 \si{\milli\ampere}$ je na obr. \ref{iiont}. Ve zbylých případech jsme postupovali obdobně. VA charakteristiky s takto odečteným iontovým proudem jsou v grafech na obr. \ref{odectene012} a \ref{odectene34567}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=145mm]{iiont.png}
+	\caption{Lineární fit saturovaného iontového proudu, $p = 100$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{iiont}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=145mm]{odectene012.png}
+	\caption{VA charakteristiky s odečteným iontovým proudem pro měření s konstantním tlakem $p = 100$ \si{\pascal}.}
+	\label{odectene012}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=145mm]{odectene34567.png}
+	\caption{VA charakteristiky s odečteným iontovým proudem pro měření s konstantním proudem $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{odectene34567}
+\end{figure}
+
+Potenciál plazmatu $V_\text{p}$ přibližně určíme ze zlomu VA charakteristik jako průsečík asymptot k lineárním částem závislostí. Tento postup je vidět na obrázcích \ref{data1} až \ref{data7} vlevo a výsledné $V_\text{p}$ jsou uvedeny v tab. \ref{}. Nyní můžeme ze vztahu \ref{Usondy} dopočítat $U_\text{S}$. Pokud následně sestrojíme závislosti $\ln I_{\text{e}} = -\frac{e}{kT_e}U_\text{S} + C$ pro oblasti $-2(V_\text{p} - V_\text{{fl}} \leq U_\text{S} \leq 0)$, můžeme z elektronového proudu pro $U_\text{S} = 0$ dle vztahu \ref{eproud} dopočítat koncentraci elektronů. Závislosti $\ln I_{\text{e}} = f(U_\text{S})$ proložené přímkou jsou na obrázcích \ref{data1} až \ref{data7} vpravo.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data1Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data1T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 100$ \si{\pascal} a $I_\text{v} = 30$ \si{\milli\ampere}.}
+	\label{data1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data0Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data0T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 100$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data0}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data2Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data2T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 100$ \si{\pascal} a $I_\text{v} = 50$ \si{\milli\ampere}.}
+	\label{data2}
+\end{figure}
+
+druhá várka zde
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data3Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data3T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 200$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data3}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data4Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data4T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 50$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data4}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data5Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data5T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 20$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data5}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data6Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data6T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 10$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data6}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data7Vp.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{data7T.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 5$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data7}
+\end{figure}
+\section{Závěr}
+
+%oblast saturovaného elektronového proudu jsme naší konfigurací nenaměřili
 \end{document}
