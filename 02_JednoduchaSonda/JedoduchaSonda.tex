@@ -113,8 +113,7 @@ Měření provádíme na aparatuře, jejíž schéma je vidět na obr. \ref{sche
 nastavujeme změnou průtoku argonu a měříme jej Piraniho manometrem. Do výbojky je zavedená jednoduchá válcová sonda, jejíž délku jsme
 odhadli na 8 \si{\milli\meter} a průměr 0,1 \si{\milli\meter}. Povrch podstavy válcové sondy je k povrchu jejího pláště $S$~zanedbatelný, po zaokrouhlení dostáváme $S = 2,5\cdot10^{-6}$ \si{\meter\squared}. 
 
-Při měření vždy nejprve nalezneme plovoucí potenciál, abychom měli jistotu, že naměříme oblast nalevo i napravo od něj. Při měření se
-napětí přiložené na sondu $V_\text{S}$ mění automaticky pomocí elektrického motorku, na kterém stačí zařadit rychlostní stupeň v jednom
+Při měření vždy nejprve nalezneme plovoucí potenciál, abychom měli jistotu, že naměříme oblast nalevo i napravo od něj. Napětí přiložené na sondu $V_\text{S}$ se mění automaticky pomocí elektrického motorku, na kterém stačí zařadit rychlostní stupeň v jednom
 se směrů chodu. Data jsou ukládána na počítač. Při vyhodnocování jsme je museli synchronizovat.   
 
 \begin{figure}[h]
@@ -146,7 +145,7 @@ charakteristiky jsou v grafu na obr. \ref{namerene34567}. Pro tlak 200 \si{\pasc
 
 \newpage
 Nyní je potřeba od charakteristik odečíst iontový proud, oblast kde saturuje jsme proložili křivkou. Názorné proložení pro VA
-charakteristku za podmínek $p = 100 \si{\pascal}$ a $I_\text{v} = 40 \si{\milli\ampere}$ je na obr. \ref{iiont}. Ve zbylých případech
+charakteristku za podmínek $p = 100$ \si{\pascal} a $I_\text{v}$ = 40 \si{\milli\ampere} je na obr. \ref{iiont}. Ve zbylých případech
 jsme postupovali obdobně. VA charakteristiky s takto odečteným iontovým proudem jsou v grafech na obr. \ref{odectene012} a
 \ref{odectene34567}.
 
@@ -176,9 +175,9 @@ jsme postupovali obdobně. VA charakteristiky s takto odečteným iontovým prou
 Potenciál plazmatu $V_\text{p}$ přibližně určíme ze zlomu VA charakteristik jako průsečík asymptot k lineárním částem závislostí. Tento
 postup je vidět na obrázcích \ref{data1} až \ref{data7} vlevo a výsledné $V_\text{p}$~jsou uvedeny v tab. \ref{tab1}. Vždy platí, že
 $V_\text{p}$ je větší než $V_\text{fl}$. Stejně jako $V_\text{fl}$, potenciál plazmatu s~rostoucím výbojovým proudem roste, při změně
-tlaku nevykazuje žádný trend. Nyní můžeme ze vztahu \ref{Usondy} dopočítat $U_\text{S}$. Pokud následně sestrojíme závislosti $\ln
-I_{\text{e}} = -\frac{e}{kT_e}U_\text{S} + C$ pro oblasti $-2(V_\text{p} - V_\text{{fl}} \leq U_\text{S} \leq 0)$, můžeme z
-elektronového proudu pro $U_\text{S} = 0$ dle vztahu \ref{eproud} dopočítat koncentraci elektronů. Závislosti $\ln I_{\text{e}} =
+tlaku nevykazuje žádný trend. Nyní můžeme ze vztahu \eqref{Usondy} dopočítat $U_\text{S}$. Pokud následně vyneseme do grafů závislosti $\ln
+I_{\text{e}}=-\frac{e}{kT_e}U_\text{S}+C$~pro oblasti $-2(V_\text{p} - V_\text{{fl}} \leq U_\text{S} \leq 0)$, můžeme z
+elektronového proudu pro $U_\text{S} = 0$ dle vztahu \eqref{eproud} dopočítat koncentraci elektronů. Závislosti $\ln I_{\text{e}} =
 f(U_\text{S})$ proložené přímkou jsou na obrázcích \ref{data1} až \ref{data7} vpravo. Výsledné elektronové teploty a koncentrace
 elektronů jsou v tab. \ref{tab2}. S rostoucím výbojovým proudem roste i koncentrace elektronů a jejich teplota klesá. S rostoucím
 tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí koncentrace elektronů.
@@ -357,7 +356,7 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 V této úloze jsme se seznámili s měřením pomocí Langmuirovy jednoduché válcové sondy. Naměřili jsme osm VA charakteristik pro různé
 podmínky. Určili jsme plovoucí potenciál sondy, který se zvětšuje s rostoucím výbojovým proudem, při změnách tlaku za konstantního
 proudu nevykazoval žádný trend. Dále jsme určili potenciál plazmatu, ten je vždy větší než plovoucí potenciál a při změnách výbojového
-proudu a tlaku se chová obdobně. Nakonec jsme získali elektronové teploty a spočítali elektronovou koncentraci. S rostoucím výbojovým
+proudu a tlaku se chová obdobně jako plovoucí potenciál. Nakonec jsme získali elektronové teploty a spočítali elektronovou koncentraci. S rostoucím výbojovým
 proudem roste i koncentrace elektronů a jejich teplota klesá. S rostoucím tlakem jsme pozorovali stejnou závislost, tedy rostoucí
-koncentraci elektronů a klesající elektronovou teplotu.
+koncentraci elektronů a~klesající elektronovou teplotu.
 \end{document}
