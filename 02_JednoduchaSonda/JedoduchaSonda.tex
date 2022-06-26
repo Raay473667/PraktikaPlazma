@@ -70,7 +70,12 @@
 \subsection{Elektrostatická Langmuirova sonda}
 Langmuirova sonda je vodič malých rozměrů zavedený do plazmatu, pomocí nějž lze měřit
 nejdůležitější parametry plazmatu jako elektronovou hustotu $n_\text{e}$, teplotu elektronů~$T_\text{e}$, rozdělovací funkci elektronů $f(v)$ a prostorové rozdělení potenciálu a
-elektrického pole. Napětí sondy $V_\text{S}$ určujeme vzhledem k referenční elektrodě. Potenciál plazmatu v místě sondy vůči stejné referenční elektrodě označme $V_\text{p}$. Pokud je vůči ní plocha sondy velmi malá, můžeme sondu nazvat jednoduchou. Podle tvaru lze dále sondy dělit na válcové, kulové a~rovinné. Závislost proudu protékajícího sondou $I_\text{S}$ na napětí přiloženém na sondu $V_\text{S}$ tvoří voltampérovou (VA) charakteristiku sondy. Napětí sondy $U_\text{S}$ získáme pomocí vztahu
+elektrického pole. Napětí sondy $V_\text{S}$ určujeme vzhledem k referenční elektrodě. Potenciál 
+plazmatu v místě sondy vůči stejné referenční elektrodě označme $V_\text{p}$. Pokud je vůči ní 
+plocha sondy velmi malá, můžeme sondu nazvat jednoduchou. Podle tvaru lze dále sondy dělit na 
+válcové, kulové a~rovinné. Závislost proudu protékajícího sondou $I_\text{S}$ na napětí 
+přiloženém na sondu $V_\text{S}$ tvoří volt\-am\-pé\-ro\-vou (VA) charakteristiku sondy. Napětí 
+sondy $U_\text{S}$ získáme pomocí vztahu
 
 \begin{equation}
 	U_\text{S} = V_\text{S} - V_\text{p}
@@ -114,7 +119,9 @@ Měření provádíme na aparatuře, jejíž schéma je vidět na obr. \ref{sche
 nastavujeme změnou průtoku argonu a měříme jej Piraniho manometrem. Do výbojky je zavedená jednoduchá válcová sonda, jejíž délku jsme
 odhadli na 8 \si{\milli\meter} a průměr 0,1 \si{\milli\meter}. Povrch podstavy válcové sondy je k povrchu jejího pláště $S$~zanedbatelný, po zaokrouhlení dostáváme $S = 2,5\cdot10^{-6}$ \si{\meter\squared}. 
 
-Při měření vždy nejprve nalezneme plovoucí potenciál, abychom měli jistotu, že naměříme oblast nalevo i napravo od něj. Napětí přiložené na sondu $V_\text{S}$ se mění automaticky pomocí elektrického motorku který pohání potenciometr, stačí zařadit rychlostní stupeň v jednom
+Při měření vždy nejprve nalezneme plovoucí potenciál, abychom měli jistotu, že naměříme oblast 
+nalevo i napravo od něj. Napětí přiložené na sondu $V_\text{S}$ se mění automaticky pomocí 
+potenciometru, který je poháněn elektrickým motorkem, kde stačí zařadit rychlostní stupeň v jednom
 ze směrů chodu. Data jsou ukládána na počítač. Při vyhodnocování jsme je museli 
 synchronizovat.   
 
@@ -146,7 +153,8 @@ charakteristiky jsou v grafu na obr. \ref{namerene34567}. Pro tlak 320 \si{\pasc
 \end{figure}
 
 \newpage
-Nyní je potřeba od charakteristik odečíst iontový proud, oblast kde saturuje jsme proložili křivkou. Názorné proložení pro VA
+Nyní je potřeba od charakteristik odečíst iontový proud, oblast kde saturuje jsme proložili 
+přímkou. Názorné proložení pro VA
 charakteristku za podmínek $p = 160$ \si{\pascal} a $I_\text{v}$ = 40 \si{\milli\ampere} je na obr. \ref{iiont}. Ve zbylých případech
 jsme postupovali obdobně. VA charakteristiky s takto odečteným iontovým proudem jsou v grafech na obr. \ref{odectene012} a
 \ref{odectene34567}.
@@ -176,7 +184,7 @@ jsme postupovali obdobně. VA charakteristiky s takto odečteným iontovým prou
 \newpage
 Potenciál plazmatu $V_\text{p}$ přibližně určíme ze zlomu VA charakteristik jako průsečík asymptot k lineárním částem zlogaritmovaných závislostí. Postup je vidět na obrázcích \ref{data1} až \ref{data7} vlevo a výsledné $V_\text{p}$~jsou uvedeny v tab. \ref{tab1}. Vždy platí, že~$V_\text{p}$ je větší než $V_\text{fl}$. Stejně jako $V_\text{fl}$, potenciál plazmatu s~rostoucím výbojovým proudem roste, při změně
 tlaku nevykazuje žádný trend. Nyní můžeme ze vztahu \eqref{Usondy} dopočítat $U_\text{S}$. Pokud následně vyneseme do grafů závislosti $\ln
-I_{\text{e}}=-\frac{e}{kT_e}U_\text{S}+C$~pro oblasti $-2(V_\text{p} - 
+I_{\text{e}}$~=~$-\frac{e}{kT_e}U_\text{S}+C$~pro oblasti $-2(V_\text{p} - 
 V_\text{{fl}}) \leq U_\text{S} \leq 0$, můžeme z
 elektronového proudu pro $U_\text{S} = 0$ dle vztahu \eqref{eproud} dopočítat koncentraci elektronů. Závislosti $\ln I_{\text{e}} =
 f(U_\text{S})$ proložené přímkou jsou na obrázcích \ref{data1} až \ref{data7} vpravo. Výsledné elektronové teploty a koncentrace
@@ -248,7 +256,8 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data0T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 160$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 160$ \si{\pascal} a 
+	$I_\text{v} = 40$ \si{\milli\ampere}.}
 	\label{data0}
 \end{figure}
 
@@ -362,8 +371,9 @@ proudem roste i koncentrace elektronů a jejich teplota klesá. S rostoucím tla
 koncentraci elektronů a~klesající elektronovou teplotu.
 
 \newpage
-\begin{thebibliography}{widest entry}
-	\bibitem{VA} Návod k praktiku: Diagnostika plazmatu doutnavého výboje pomocí elektrostatických sond: jednoduchá sonda.
+\begin{thebibliography}{10}
+	\bibitem{VA} Návod k praktiku: \textit{Diagnostika plazmatu doutnavého výboje pomocí 
+	elektrostatických sond: jednoduchá sonda.}
 
 \end{thebibliography}
 
