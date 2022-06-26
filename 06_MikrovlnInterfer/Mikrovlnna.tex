@@ -54,12 +54,12 @@
 
 \section{Teorie}
 Plazma lze obecně kvalitativně považovat za vodič, dielektrikum či magnetickou kapalinu. 
-Výběr modelu je závislý na konkrétní situaci. V případě interakce elektromagnetického 
-záření s plazmatem se v oblasti nízkých frekvencí plazma popisuje jako vodič pomocí 
+Výběr modelu je závislý na konkrétní situaci. V~případě interakce elektromagnetického 
+záření s~plazmatem se v~oblasti nízkých frekvencí plazma popisuje jako vodič pomocí 
 nízkofrekvenční vodivost, při vysokých frekvencích je vhodná aplikace dielektrického modelu 
 včetně definice vysokofrekvenční permitivity. Hranicí mezi nízkými a vysokými frekvencemi 
 je plazmová frekvence $\omega_\text{pl}$, od které se může vlna plazmatem šířit. Ta souvisí 
-s hustotou plazmatu pomocí vztahu
+s~hustotou plazmatu pomocí vztahu
 
 \begin{equation}
 	\omega_\text{pl} = \frac{n_\text{e} e^2}{m_\text{e} \epsilon_0}
@@ -67,7 +67,7 @@ s hustotou plazmatu pomocí vztahu
 kde $n_\text{e}$ je koncentrace volných elektronů, $e$ elementární náboj, $m_\text{e}$ hmotnost 
 elektronu a $\epsilon_0$ permitivita vakua.
 
-Pro dielektrický model nemagnetického plazmatu je permitivita komplexní skalár ve tvaru $\epsilon_\text{r} = \epsilon_1 + i\epsilon_2$. V případě, 
+Pro dielektrický model nemagnetického plazmatu je permitivita komplexní skalár ve tvaru $\epsilon_\text{r} = \epsilon_1 + i\epsilon_2$. V~případě, 
 že pro popis rozdělení rychlosti elektronů zvolíme Maxwellovo rozdělení, je relativní 
 permitivita popsaná vztahem
 
@@ -93,38 +93,39 @@ Reálná část indexu lomu je
 přímo úměrná fázové rychlosti vlny a tedy i fázovému posuvu $\Delta\phi$. Platí vztah
 
 \begin{equation}
- 	\Delta\phi = k_0(1-n) \Delta z
- 	\label{posun}
+ 	\Delta\phi = k_0(1-n) \Delta
+z~\label{posun}
 \end{equation}
 kde k$_0$ je vlnové číslo a $\Delta z$ kus dráhy.  
 
 \subsection{Stanovení koncentrace elektronů}
-Pro stanovení koncentrace elektronů aproximujeme vztah pro relativní permitivitu 
+Pro stanovení koncentrace elektronů aproximujeme vztah 
 \eqref{komplexnipermitivita} tak, že zanedbáme imaginární složku a vypustíme 
-$\nu_\text{m}^2)$. Dostáváme
+$\nu_\text{m}^2$. Dostáváme
 
 \begin{equation}
 	\epsilon_\text{r} = 1- \frac{n_\text{e} e^2}{m_\text{e} \epsilon_0 \omega^2}
 	\label{permitivita}
 \end{equation}
 Po dosazení do \eqref{posun} a úpravách můžeme vyjádřit koncentraci elektronů
-v závislosti na fázovém posunu jako
+v~závislosti na fázovém posunu jako
 
 \begin{equation}
 	n_\text{e} = \frac{\left(1-\left(1-\frac{\Delta\phi}{k_0 \Delta z} 
 	\right)^2\right)
 	m_\text{e} \epsilon_0 \omega^2}{e^2}
+\label{eq:koncentrace}
 \end{equation}
 
 \subsection{Stanovení srážkové frekvence}
-Pomocí Taylorova rozvoje je možné dojít k tvaru imaginární části indexu lomu
+Pomocí Taylorova rozvoje je možné dojít k~tvaru imaginární části indexu lomu
 \begin{equation}
 	\kappa = \frac{|\epsilon_2|}{2\sqrt{2}|\epsilon_1|}
 \end{equation}
-Zkombinováním tohoto vztahu s \eqref{komplexnipermitivita}, \eqref{realna}, \eqref{imaginarni} a zanedbáním kvadratických členů můžeme vyjádřit srážkovou frekvenci jako
+Zkombinováním tohoto vztahu s~\eqref{komplexnipermitivita}, \eqref{realna}, \eqref{imaginarni} a zanedbáním kvadratických členů můžeme vyjádřit srážkovou frekvenci jako
 
 \begin{equation}
-	\nu_\text{m} = \frac{c \ln \frac{P_0}{P} 2 \sqrt{2}|\epsilon_1|}{2\omega \Delta z \frac{n_\text{e} e^2}{m_\text{e} \epsilon_0 \omega^3}}
+	\nu_\text{m} = \frac{c \ln \frac{P_0}{P} 2 \sqrt{2}|\epsilon_1|}{2\omega \Delta z~\frac{n_\text{e} e^2}{m_\text{e} \epsilon_0 \omega^3}}
 \end{equation}
 kde $P_0$ je dodávaný výkon a $P$ je součet prošlého a odraženého výkonu.
 Výpočet srážkové frekvence tedy předpokládá znalost koncentrace elektronů.
@@ -133,13 +134,13 @@ Výpočet srážkové frekvence tedy předpokládá znalost koncentrace elektron
 %fázový posun zjistíme z měření S21
 \section{Měření a výsledky}
 Měřící aparatura se skládá ze zářivky procházející vlnovodem. Uvnitř ní je
-zapálený doutnavý výboj v argonu a parách rtuti 
-za sníženého tlaku, typicky kolem 400 \si{\pascal}. Schéma aparatury je na obr.
-\ref{schema}. Důležitým prvkem v zapojení je Vector Network Analyzer (VNA),
+zapálený doutnavý výboj v~argonu a parách rtuti 
+za sníženého tlaku, typicky kolem 400\,\si{\pascal}. Schéma aparatury je na obr.
+\ref{schema}. Důležitým prvkem v~zapojení je Vector Network Analyzer (VNA),
 který zastává funkci vysokofrekvenčního zdroje i detektoru.
-V klasickém interferometrickém experimentu je signál ze zdroje rozdělený do
+V~klasickém interferometrickém experimentu je signál ze zdroje rozdělený do
 referenční a měřící větve, které jsou nakonec svedeny dohromady. Výsledný 
-detekovaný signál je tedy interferencí signálů z obou větví. Abychom kromě 
+detekovaný signál je tedy interferencí signálů z~obou větví. Abychom kromě 
 změny fáze také detekovali změnu amplitudy signálu, je potřeba použít metodu 
 kvadraturní detekce se dvěma detektory. VNA, jehož schéma je vidět na 
 obr. \ref{vna}, má uvnitř integrovanou referenční větev včetně detektorů, 
@@ -155,40 +156,112 @@ nám tedy stačí přes dva porty připojit měřící větev. Prostřednictvím
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=110mm]{vna.png}
-	\caption{}
+	\caption{Schéma Vector Network Analyzer (VNA)}
 	\label{vna}
 \end{figure}
 
 Před měřením je potřeba VNA zkalibrovat. To se klasicky provádí pomocí definovaných
 zátěží -- short, open a match. Měření probíhá následovně: Na vysokonapěťovém zdroji
-měníme proud mezi hodnotami 0,2--3 \si{\milli\ampere} a zaznamenáváme fázi a prošlý
+měníme proud mezi hodnotami 0,2--3\,\si{\milli\ampere} a zaznamenáváme fázi a 
+prošlý
 výkon parametru $S_{21}$. Odražený výkon zanedbáváme. První sadu dat měříme pro oblast
-frekvencí 1,5--3 \si{\giga\hertz}. Na VNA máme zapnuté x10 průměrování, čímž potlačíme
-šum. Každé dvě měření s určitými hodnotami proudu na zářivce vystřídáme měřením s
-nulovým proudem, tedy vypnutou zářivkou. Při zpracování dat poté vztahujeme jednotlivá
-měření k nejbližšímu s nulovým proudem. Tímto způsobem tedy zkoumáme vliv výboje v zářivce umístěné ve vlnovodu na procházející signál vlnovodem.
+frekvencí 1,5--3\,\si{\giga\hertz}. Na VNA máme zapnuté x10 průměrování, čímž 
+potlačíme
+šum. Každé dvě měření s~určitými hodnotami proudu na zářivce vystřídáme měřením
+s~nulovým proudem, tedy vypnutou zářivkou. Při zpracování dat poté vztahujeme jednotlivá
+měření k~nejbližšímu s~nulovým proudem. Tímto způsobem tedy zkoumáme vliv výboje v~zářivce umístěné ve vlnovodu na procházející signál vlnovodem.
 
-Druhou sadu dat jsme naměřili stejným způsobem pro menší oblast frekvencí 2,235--2,265 \si{\giga\hertz}.
+Druhou sadu dat jsme naměřili stejným způsobem pro menší oblast frekvencí 
+2,235--2,265\,\si{\giga\hertz}.
 
 Ve výpočtech vystupuje veličina $\Delta z$, kterou jsme obecně označili jako kus dráhy.
-V našem případě se jedná o tloušťku plazmatu, kterou je potřeba odhadnout. To provedeme
-pomocí geometrické úvahy ze znalosti příčného rozměru vlnovodu 86 \si{\milli\meter},
-průměru zářivky 18 \si{\milli\meter} a úhlu mezi zářivkou a vlnovodem 35$^{\circ}$. Za
-předpokladu, že zářivka má objem válce, který následně aproximujeme pravidelným
-čtyřbokým hranolem, tloušťka plazmatu podél nejdelšího rozměru vlnovodu je 24,6 
-\si{\milli\meter}.
+V~našem případě se jedná o~tloušťku plazmatu, kterou je potřeba odhadnout. To provedeme
+pomocí geometrické úvahy ze znalosti příčného rozměru vlnovodu $b = 
+86$\,\si{\milli\meter},
+průměru zářivky $d$~=~$18$\,\si{\milli\meter}, délky zářivky $l = b/\sin\alpha$ 
+a úhlu mezi 
+zářivkou a vlnovodem 
+$\alpha = 35^{\circ}$. Za
+předpokladu, že zářivka má objem válce $V_v$, který následně aproximujeme 
+pravidelným
+čtyř\-bo\-kým hranolem, tloušťka plazmatu podél nejdelšího rozměru vlnovodu je
 
 \begin{equation}
-	\Delta z = \frac{V_v}{bd} = \frac{l \pi d^2}{4bd} = \frac{b \pi 
-	d^2}{4bd\sin\alpha} = \frac{\pi d}{4\sin\alpha}
+	\Delta z~= \frac{V_v}{bd} = \frac{l \pi d^2}{4bd} = \frac{b \pi 
+	d^2}{4bd\sin\alpha} = \frac{\pi d}{4\sin\alpha} = 24,6\,\si{\milli\meter}
 \end{equation}
-$V_v$ objem válce
-$b$ příčný rozměr vlnovodu
-$d$ průměr zářivky
-$l$ délka tyče
+
+Vlnovod přenásí energii až od určité mezní frekvence. Průřezem vlnovodu je 
+obdélník a jeho delší strana $b$ určuje mezní frekvenci $f_{\text{m}} = 
+\frac{c}{2b} = 1,744\,\si{\giga\hertz}$. Na obr.~\ref{S21vyp} je zobrazena 
+amplituda $S_{21}$ parametru pro vypnutou výbojku. Vidíme tedy propustnost 
+vlnovodu a měřená mezní frekvence téměř odpovídá vypočítané. Pro následující 
+grafy je $S_{21}$ parametr měřen od frekvence 1,75\,\si{\giga\hertz}. Na 
+obr.~\ref{phasetofreq} a \ref{phasetofreqzoom} jsou vyneseny fázové posuvy
+v~závislosti na frekvenci pro 7 různých proudů $I$ tekoucích plazmatem a pro 
+širší a užší oblast frekvencí. Pozorujeme s~rostoucím proudem vyšší fázový 
+posuv. Z~něj jsme dále vypočítali koncentraci elektronů v~plazmatu dle vztahu 
+\eqref{eq:koncentrace} a její závislost na proudu vynesli do 
+obr.~\ref{koncnai}. Pro proudy $I$~=~$0,4$--$3$~\si{\milli\ampere} se 
+koncentrace 
+pohybuje řádově $n_e \approx 10^{14}-10^{15}$~\si{\cubic\per\meter}. Tabulkové 
+hodnoty 
+$n_{e,\text{tab}}$~$\approx$~$10^{15}$--$10^{17}$~\si{\cubic\per\meter}
+\cite{conc} jsou vyšší. Zářivka už byla na konci své životnosti a nedokázali 
+jsme v~ní udržet stabilně výboj při vyšším proudu $I$, na kterém koncentrace 
+závisí. 
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{S21vyp.png}
+	\caption{Závislost amplitudy parametru $S_{21}$ na frekvenci se znázorněnou 
+	teoretickou mezní frekvencí.}
+	\label{S21vyp}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{phasetofreq.png}
+	\caption{Závislost fázového posuvu parametru $S_{21}$ na frekvenci pro 
+	širší oblast frekvencí.}
+	\label{phasetofreq}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{phasetofreqzoom.png}
+	\caption{Závislost fázového posuvu parametru $S_{21}$ na frekvenci pro 
+		užší oblast frekvencí.}
+	\label{phasetofreqzoom}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{koncnai.png}
+	\caption{Závislost koncentrace elektronů na proudu pro širší a užší rozsah 
+	frekvencí.}
+	\label{koncnai}
+\end{figure}
+
+\clearpage
 \section{Závěr}
+\par Mikrovlnnou inteferometrií jsme měřili vlastnosti rtuťové zářivky. Pomocí 
+VNA jsme naměřili $S_{21}$ parametr, který je závislý na interakci 
+elektromagnetického záření s~plazmatem. Z~něj jsme následně určili posuv 
+frekvence v~závislosti na frekvenci a koncentraci elektronů uvnitř zářivky. Ta 
+vyšla pro proudy $I$~=~$0,4-3$~\si{\milli\ampere} řádově $n_e \approx 
+10^{14}-10^{15}$~\si{\cubic\per\meter}. Tabulkové 
+hodnoty $n_{e,\text{tab}} \approx 10^{15}-10^{17}$~\si{\cubic\per\meter} 
+\cite{conc} jsou vyšší kvůli nižšímu proudu naší zářivkou.
 
 
+\begin{thebibliography}{10}
+	\bibitem{conc}
+	FRANZ, Gerhard. \textit{Low Pressure Plasmas and Microstructuring 
+	Technology} 
+	[online]. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009 [cit. 
+	2022-06-26]. ISBN 978-3-540-85848-5. Dostupné z: 
+	doi:10.1007/978-3-540-85849-2
+\end{thebibliography}
 \end{document}
