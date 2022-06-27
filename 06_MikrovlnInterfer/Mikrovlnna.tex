@@ -96,10 +96,10 @@ přímo úměrná fázové rychlosti vlny a tedy i fázovému posuvu~$\Delta\phi
  	\Delta\phi = k_0(1-n) \Delta
 z~\label{posun}
 \end{equation}
-kde $k_0$ je vlnové číslo a $\Delta z$ kus dráhy.  
+kde $k_0$ je vlnové číslo a $\Delta z$ úsek dráhy.  
 
 \subsection{Stanovení koncentrace elektronů}
-Pro stanovení koncentrace elektronů aproximujeme vztah 
+Pro stanovení koncentrace elektronů v této úloze aproximujeme vztah 
 \eqref{komplexnipermitivita} tak, že zanedbáme imaginární složku a vypustíme 
 $\nu_\text{m}^2$. Dostáváme
 
@@ -117,6 +117,14 @@ v~závislosti na fázovém posunu jako
 \label{eq:koncentrace}
 \end{equation}
 
+\subsection{Stanovení driftové rychlosti elektronů}
+Pro stanovení driftové rychlosti elektronů použijeme vztah
+
+\begin{equation}
+	v_d = \frac{I}{S e n_e}
+	\label{eq:vd}
+\end{equation}
+kde $I$ je výbojový proud $S = \pi d^2/4$ je průřez zářivky.
 %\subsection{Stanovení srážkové frekvence}
 %Pomocí Taylorova rozvoje je možné dojít k~tvaru imaginární části indexu lomu
 %\begin{equation}
@@ -149,51 +157,58 @@ nám tedy stačí přes dva porty připojit měřící větev. Prostřednictvím
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=110mm]{schema.png}
-	\caption{Schéma měřící aparatury}
+	\caption{Schéma měřící aparatury \cite{navod}.}
 	\label{schema}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=110mm]{vna.png}
-	\caption{Schéma Vector Network Analyzer (VNA)}
+	\caption{Schéma Vector Network Analyzer (VNA) \cite{navod}.}
 	\label{vna}
 \end{figure}
 
 Před měřením je potřeba VNA zkalibrovat. To se klasicky provádí pomocí definovaných
 zátěží -- short, open a match. Měření probíhá následovně: Na vysokonapěťovém zdroji
 měníme proud mezi hodnotami 0,2--3\,\si{\milli\ampere} a zaznamenáváme fázi a 
-prošlý
-výkon parametru $S_{21}$. Odražený výkon zanedbáváme. První sadu dat měříme pro oblast
-frekvencí 1,5--3\,\si{\giga\hertz}. Na VNA máme zapnuté x10 průměrování, čímž 
+absolutní hodnotu parametru $S_{21}$. Odražený výkon zanedbáváme. Na VNA máme 
+zapnuté 10násobné průměrování, 
+čímž 
 potlačíme
-šum. Každé dvě měření s~určitými hodnotami proudu na zářivce vystřídáme měřením
+šum. Jelikož je zářivka už stará, mezi měřeními je potřeba s ní občas pohnout. 
+Proto každé dvě měření s~určitými hodnotami proudu na zářivce vystřídáme měřením
 s~nulovým proudem, tedy vypnutou zářivkou. Při zpracování dat poté vztahujeme jednotlivá
 měření k~nejbližšímu s~nulovým proudem. Tímto způsobem tedy zkoumáme vliv výboje v~zářivce umístěné ve vlnovodu na procházející signál vlnovodem.
 
-Druhou sadu dat jsme naměřili stejným způsobem pro menší oblast frekvencí 
-2,235--2,265\,\si{\giga\hertz}.
-
-Ve výpočtech vystupuje veličina $\Delta z$, kterou jsme obecně označili jako kus dráhy.
+Ve výpočtech vystupuje veličina $\Delta z$, kterou jsme obecně označili jako 
+úsek dráhy.
 V~našem případě se jedná o~tloušťku plazmatu, kterou je potřeba odhadnout. To provedeme
-pomocí geometrické úvahy ze znalosti příčného rozměru vlnovodu $b = 
+pomocí geometrické úvahy ze znalosti příčného rozměru vlnovodu $a = 
 86$\,\si{\milli\meter},
-průměru zářivky $d$~=~$18$\,\si{\milli\meter}, délky zářivky $l = b/\sin\alpha$ 
+průměru zářivky $d$~=~$18$\,\si{\milli\meter}, délky zářivky $l = a/\sin\alpha$ 
 a úhlu mezi 
 zářivkou a vlnovodem 
 $\alpha = 35^{\circ}$. Za
-předpokladu, že zářivka má objem válce $V_v$, který následně aproximujeme 
+předpokladu, že zářivka má objem válce $V_v$, který následně nahradíme 
 pravidelným
-čtyř\-bo\-kým hranolem, tloušťka plazmatu podél nejdelšího rozměru vlnovodu je
+čtyř\-bo\-kým hranolem s objemem $V_h = V_v =ab\Delta z$, tloušťka plazmatu 
+podél 
+nejdelšího rozměru vlnovodu je
 
 \begin{equation}
-	\Delta z~= \frac{V_v}{bd} = \frac{l \pi d^2}{4bd} = \frac{b \pi 
-	d^2}{4bd\sin\alpha} = \frac{\pi d}{4\sin\alpha} = 24,6\,\si{\milli\meter}
+	\Delta z~= \frac{\pi d^2}{4a\sin\alpha} = 5,2\,\si{\milli\meter}
+	%\frac{V_v}{ab} = \frac{l \pi d^2}{4ab} = \frac{b \pi d^2}{4ab\sin\alpha} =
 \end{equation}
 
+První sadu dat měříme pro oblast frekvencí 1,5--3\,\si{\giga\hertz}. 
 Vlnovod přenásí energii až od určité mezní frekvence. Průřezem vlnovodu je 
-obdélník a jeho delší strana $b$ určuje mezní frekvenci $f_{\text{m}} = 
-\frac{c}{2b} = 1,744\,\si{\giga\hertz}$. Na obr.~\ref{S21vyp} je zobrazena 
+obdélník a jeho delší strana $a$ určuje mezní frekvenci $f_{\text{m}} = 
+\frac{c}{2a} = 1,744\,\si{\giga\hertz}$. Horní hranici 3\,\si{\giga\hertz} jsme 
+zvolili kvůli nedokonalostem vlnovodu na vyšších frekvencích. Druhou sadu dat 
+jsme naměřili stejným způsobem pro menší oblast frekvencí 
+2,235--2,265\,\si{\giga\hertz}.
+
+Na obr.~\ref{S21vyp} je zobrazena 
 amplituda $S_{21}$ parametru pro vypnutou výbojku. Vidíme tedy propustnost 
 vlnovodu a měřená mezní frekvence téměř odpovídá vypočítané. Pro následující 
 grafy je $S_{21}$ parametr měřen od frekvence 1,75\,\si{\giga\hertz}. Na 
@@ -202,14 +217,22 @@ v~závislosti na frekvenci pro 7 různých proudů $I$ tekoucích plazmatem a pr
 širší a užší oblast frekvencí. Pozorujeme s~rostoucím proudem vyšší fázový 
 posuv. Z~něj jsme dále vypočítali koncentraci elektronů v~plazmatu dle vztahu 
 \eqref{eq:koncentrace} a její závislost na proudu vynesli do 
-obr.~\ref{koncnai}. Pro proudy $I$~=~$0,4$--$3$~\si{\milli\ampere} se 
+obr.~\ref{koncnai}. Pro proudy $I$~=~$0,4$--$3$\,\si{\milli\ampere} se 
 koncentrace 
-pohybuje řádově $n_e \approx 10^{14}-10^{15}$~\si{\cubic\per\meter}. Tabulkové 
-hodnoty 
-$n_{e,\text{tab}}$~$\approx$~$10^{15}$--$10^{17}$~\si{\cubic\per\meter}
-\cite{conc} jsou vyšší. Zářivka už byla na konci své životnosti a nedokázali 
-jsme v~ní udržet stabilně výboj při vyšším proudu $I$, na kterém koncentrace 
-závisí. 
+pohybuje řádově $n_e \approx 10^{15}$--$10^{16}$\,\si{\cubic\per\meter}. 
+Typické 
+hodnoty pro doutnavý výboj
+$n_{e,\text{typ}}$~$\approx$~$10^{15}$--$10^{17}$\,\si{\cubic\per\meter} dle
+\cite{conc} odpovídají námi naměřenými. Z~koncentrace jsme následně dle vztahu 
+\eqref{eq:vd} vypočítali driftovou rychlost elektronů. Její závislost na proudu 
+jsme vynesli do obr.~\ref{vd}. Závislost zde žádnou nepozorujeme, řádově se 
+pohybuje $v_d \approx 10^3$\,\si{\meter\per\second}. Typickou hodnotu 
+$v_{d,\text{typ}} \approx 10^4$\,\si{\meter\per\second} jsme vypočítali 
+v~databázi \cite{lxcat} pro intenzitu elektrického pole $E = 
+10$\,\si{\volt\per\centi\meter} a tlak $p = 100$\,\si{\pascal}.
+%Zářivka už byla na konci své životnosti a nedokázali 
+%jsme v~ní udržet stabilně výboj při vyšším proudu $I$, na kterém koncentrace 
+%závisí. 
 
 
 \begin{figure}[h]
@@ -244,24 +267,46 @@ závisí.
 	\label{koncnai}
 \end{figure}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{vd.png}
+	\caption{Závislost driftové rychlosti na proudu pro širší a užší rozsah 
+		frekvencí.}
+	\label{vd}
+\end{figure}
+
 \clearpage
 \section{Závěr}
-\par Mikrovlnnou inteferometrií jsme měřili vlastnosti rtuťové zářivky. Pomocí 
-VNA jsme naměřili $S_{21}$ parametr, který je závislý na interakci 
+\par Mikrovlnnou inteferometrií jsme měřili vlastnosti běžné zářivky. Pomocí 
+VNA jsme na\-mě\-ři\-li $S_{21}$ parametr, který je závislý na interakci 
 elektromagnetického záření s~plazmatem. Z~něj jsme následně určili posuv 
-frekvence v~závislosti na frekvenci a koncentraci elektronů uvnitř zářivky. Ta 
-vyšla pro proudy $I$~=~$0,4-3$~\si{\milli\ampere} řádově $n_e \approx 
-10^{14}-10^{15}$~\si{\cubic\per\meter}. Tabulkové 
-hodnoty $n_{e,\text{tab}} \approx 10^{15}-10^{17}$~\si{\cubic\per\meter} jsou vyšší \cite{conc}. Nižší naměřené hodnoty jsou způsobeny limitem v proudu,
-který jsme byli schopní přivést na zářivku a zároveň udržet stabilní výboj.
-Důvodem byla nevyhovující zářivka na konci životnosti.
+fáze v~závislosti na frekvenci a koncentraci elektronů uvnitř zářivky. Ta 
+vyšla pro proudy $I$~=~$0,4-3$\,\si{\milli\ampere} řádově $n_e \approx 
+10^{15}-10^{16}$\,\si{\cubic\per\meter}. Typické 
+hodnoty $n_{e,\text{typ}}$~$\approx$~$10^{15}-10^{17}$\,\si{\cubic\per\meter} 
+dle 
+\cite{conc} odpovídají měření. Driftová rychlost elektronů vyšla 
+$v_{d}$~$\approx$~$10^3$\,\si{\meter\per\second}, přičemž typická hodnota 
+$v_{d,\text{typ}} \approx 
+10^4$\,\si{\meter\per\second} určena z~\cite{lxcat} je o řád vyšší.
+%Nižší naměřené hodnoty jsou způsobeny limitem v proudu, který jsme byli 
+%schopní přivést na zářivku a zároveň udržet stabilní výboj. Důvodem byla 
+%nevyhovující zářivka na konci životnosti.
 
 \begin{thebibliography}{10}
+	\bibitem{navod} 
+	Návod k praktiku: \textit{Mikrovlnná interferometrie plazmatu.} 
+	Experimentální metody 2.
 	\bibitem{conc}
 	FRANZ, Gerhard. \textit{Low Pressure Plasmas and Microstructuring 
 	Technology} 
 	[online]. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009 [cit. 
 	2022-06-26]. ISBN 978-3-540-85848-5. Dostupné z: 
 	doi:10.1007/978-3-540-85849-2
+	\bibitem{lxcat}
+	E. Carbone, W. Graef, G. Hagelaar, D. Boer, M.M. Hopkins, J.C. Stephens, 
+	B.T. Yee, S. Pancheshnyi, J. van Dijk, L. Pitchford. \textit{Data Needs for 
+	Modeling Low-Temperature Non-Equilibrium Plasmas: The LXCat Project, 
+	History, Perspectives and a Tutorial.} Atoms (2021) 9 (1), 16.
 \end{thebibliography}
 \end{document}
