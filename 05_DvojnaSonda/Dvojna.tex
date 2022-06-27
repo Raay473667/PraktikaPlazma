@@ -54,7 +54,6 @@
 	\end{tabular*}
 
 \section{Teorie}
-\subsection{Dvojná sonda}
 Jednou z možných konstrukcí Langmuirovy sondy je takzvaná dvojná
 sonda. Ta se může skládat například ze dvou jednoduchých válcových
 sond stejných rozměrů. Mezi nimi by měla být dostatečná vzdálenost, 
@@ -64,8 +63,8 @@ VA charakteristika vždy vykazuje strmou oblast v okolí nulového
 napětí. Zároveň saturovaný iontový proud limituje proud obvodem,
 sonda tak méně narušuje samotné plazma. Schématické dvojné
 znázornění sondy je na obr. \ref{schemadvojna}. Sonda se ustavuje
-na plovoucím potenciálu $V_\text{{fl}}$. Měříme cirkulační proud
-$i_\text{{d}}$ okruhem sond při přiloženém napětí $V_\text{{d}}$
+na plovoucím potenciálu $V_\text{{fl}}$. Měříme cirkulační
+proud~$i_\text{{d}}$ okruhem sond při přiloženém napětí $V_\text{{d}}$
 mezi ně. 
 
 \begin{figure}[h]
@@ -88,7 +87,7 @@ Potenciál první ze sond se blíží potenciálu plazmatu,
 potenciál druhé sondy bude nižší než plovoucí.
 
 Kolem bodu $C$ platí $V_\text{{d}} \ll 0 $, jedná se tedy
-o oblast VA charakteristiky kde je velké záporné napětí.
+o oblast VA charakteristiky s velkým záporným napětím.
 První sonda přebírá veškerý tok elektronů, druhá sonda
 je silně negativní vzhledem k potenciálu plazmatu.
 Pokud dále vzrůstá $V_\text{{d}}$, dojde k nasycení
@@ -102,7 +101,7 @@ okruhem $i_\text{{d}}$ zůstává konstantní.
 	\label{charakteristikadvojna}
 \end{figure}
 \newpage
-Teplotu elektronů získáme ze vztahu
+Teplotu elektronů z měření dvojnou sondou získáme ze vztahu
 \begin{equation}
 	T_\text{{e}} = \frac{e}{k} (G-G^2) R_0 \sum i_\text{{p}}
 	\label{T}
@@ -134,12 +133,12 @@ lze určit z rovnice
 	n_\text{{p}} = \frac{4  _\text{{p}}}{S e \left\langle v_\text{{p}} \right\rangle }
 	\label{ne}
 \end{equation}
-kde $S$ je plocha sondy a $\left\langle v{p} \right\rangle$ získáme jako
+kde $S$ je plocha sondy a $\left\langle  v_\text{{p}} \right\rangle$ získáme jako
 \begin{equation}
 	\left\langle v_\text{{p}} \right\rangle = \left( \frac{8 k T_\text{{p}}}{\pi M} \right) 
 	\label{vp}
 \end{equation}
-kde $T_\text{p}$ je teplota iontů a rovná se teplotě elektronů, $M$ je hmotnost iontu.
+kde $T_\text{p}$ je teplota iontů a $M$ je hmotnost iontu.
 
 \subsection{Měření a výsledky}
 V našem případě měříme pomocí dvojné symetrické válcové sondy,
@@ -164,15 +163,15 @@ měření s odlišným proudem $I_\text{{v}}$ =
 	\label{VAmerenidvojna}
 \end{figure}
 Vyhodnocení dat provedeme podle obr. \ref{VAmerenidvojna}.
-Všechny tři oblasti charakteristiky proložíme přímkou.
+Všechny tři lineární oblasti charakteristiky proložíme přímkou.
 Poté určíme bod $\alpha$, který se nachází ve vzdálenosti
-$\frac{1}{5}MN$ od osy $y$. V bodě $\alpha$ lze určit proudy
+$\frac{1}{5}MN$ od osy $y$. V~bodě $\alpha$ lze určit proudy
 $i_\text{{p1}}$ a $i_\text{{p2}}$. Proud $i_\text{{d}}$
 získáme jako průsečík VA charakteristiky s $y$ osou v bodě
 $x$~=~0. Grafy charakteristik, ze kterých odečítáme výše
 zmíněné veličiny, jsou na obr. \ref{dvojna1} až \ref{dvojna4}.
 $R_0$ určíme ze směrnice přímky, kterou jsme proložili
-střední část charakteristiky, viz rovnice \eqref{R}.
+střední strmou část charakteristiky, viz rovnice \eqref{R}.
 Zbylé veličiny, tedy $i_\text{{e2}}$ a $G$ spočítáme z rovnic
 \eqref{ie2}, \eqref{sumaip} a \eqref{G}. Plochu dvojné sondy
 jsme odhadli z
@@ -180,35 +179,39 @@ délky 8 \si{\milli\meter} a průměru 0,1 \si{\milli\meter}
 jednoduchých sond jako dvojnásobek plochy právě
 jedné jednoduché sondy, $S = 5\cdot10^{-6}$ \si{\meter\squared}.
 Pak již můžeme
-spočítat teplotu elektronů z rovnice \eqref{T} a koncentraci
-elektronů z \eqref{ne}, výsledky jsou v tabulce \ref{tab1}.
+spočítat teplotu elektronů z~rovnice \eqref{T} a koncentraci
+elektronů z \eqref{ne}, výsledky jsou v tabulce~\ref{tab1}.
+Vidíme, že s~rostoucím tlakem roste koncentrace elektronů.
+Teplota elektronů nevykazuje žádný trend. Při snížení proudu
+výboje za konstantního tlaku dojte ke snížení teploty i~koncentrace
+elektronů.
 
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=130mm]{dvojna1.png}
-	\caption{p = 8 \si{\pascal}, 55 \si{\milli\ampere}}
+	\caption{VA charakteristika za podmínek $p$ = 8 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere}.}
 	\label{dvojna1}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=130mm]{dvojna2.png}
-	\caption{32 \si{\pascal}, 55 \si{\milli\ampere}}
+	\caption{VA charakteristika za podmínek $p$ = 32 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere}.}
 	\label{dvojna2}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=130mm]{dvojna3.png}
-	\caption{160 \si{\pascal}, 55 \si{\milli\ampere}}
+	\caption{VA charakteristika za podmínek $p$ = 160 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere}.}
 	\label{dvojna3}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=130mm]{dvojna4.png}
-	\caption{160 \si{\pascal}, 30 \si{\milli\ampere}}
+	\caption{VA charakteristika za podmínek $p$ = 160 \si{\pascal}, $I_\text{{v}}$ = 30 \si{\milli\ampere}.}
 	\label{dvojna4}
 \end{figure}
 
@@ -216,7 +219,7 @@ elektronů z \eqref{ne}, výsledky jsou v tabulce \ref{tab1}.
 \begin{center}
 	\begin{table}[h!]
 		\centering
-		\caption{Plovoucí a plazmové potenciály}
+		\caption{Teploty a koncentrace elektronů.}
 		\label{tab1}
 		\begin{tabular}{|c|c|c|c|c|c|} \hline
 			\multicolumn{3}{|c|}{$I_\text{v}$ = 55 \si{\milli\ampere}}& \multicolumn{3}{c|}{$p$ = 160 [\si{\pascal}] }  \\ \hline
@@ -231,6 +234,11 @@ elektronů z \eqref{ne}, výsledky jsou v tabulce \ref{tab1}.
 
 \newpage
 \section{Závěr}
-xyxy
+V této úloze jsme se seznámili s měřením důležitých veličin plazmatu pomocí dvojné sondy.
+Z naměřených charakteristik za různých podmínek se nám povedlo určit teplotu
+elektronů~$T_\text{e}$ a jejich koncentraci $n_\text{e}$. Teplota elektronů s rostoucím tlakem
+nevykazuje žádný trend, koncentrace elektronů však roste. Za sníženého proudu výbojem
+při udržování konstantního tlaku klesla teplota i koncentrace elektronů.
+
 
 \end{document}
