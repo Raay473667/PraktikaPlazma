@@ -56,10 +56,10 @@
 Plazma lze obecně kvalitativně považovat za vodič, dielektrikum či magnetickou kapalinu. 
 Výběr modelu je závislý na konkrétní situaci. V~případě interakce elektromagnetického 
 záření s~plazmatem se v~oblasti nízkých frekvencí plazma popisuje jako vodič pomocí 
-nízkofrekvenční vodivost, při vysokých frekvencích je vhodná aplikace dielektrického modelu 
+nízkofrekvenční vodivosti, při vysokých frekvencích je vhodná aplikace dielektrického modelu 
 včetně definice vysokofrekvenční permitivity. Hranicí mezi nízkými a vysokými frekvencemi 
-je plazmová frekvence $\omega_\text{pl}$, od které se může vlna plazmatem šířit. Ta souvisí 
-s~hustotou plazmatu pomocí vztahu
+je plazmová frekvence $\omega_\text{pl}$, od které se může vlna plazmatem šířit. Tu lze
+vyjádřit pomocí vztahu
 
 \begin{equation}
 	\omega_\text{pl} = \frac{n_\text{e} e^2}{m_\text{e} \epsilon_0}
@@ -75,7 +75,7 @@ permitivita popsaná vztahem
 	\epsilon_\text{r} = 1- \frac{n_\text{e} e^2 (\omega - i \nu_\text{m})}{m_\text{e} \epsilon_0 \omega (\omega^2 +\nu_\text{m}^2)}
 	\label{komplexnipermitivita}
 \end{equation}
-kde $\nu_\text{m}$ je srážková frekvenci pro přenos hybnosti elektron--neutrál. Na rozdíl 
+kde $\nu_\text{m}$ je srážková frekvence pro přenos hybnosti elektron--neutrál. Na rozdíl 
 od běžných dielektrik je reálná část permitivity plazmatu menší než jedna. Místo relativní permitivity  můžeme obdobně popisovat plazma pomocí komplexního indexu lomu
 $N = n + i\kappa$, přičemž mezi ním a relativní permitivitou je vztah $N^2$ = $\epsilon_\text{r}$. Pro jeho složky platí
 
@@ -90,13 +90,13 @@ $N = n + i\kappa$, přičemž mezi ním a relativní permitivitou je vztah $N^2$
 \end{equation}
 
 Reálná část indexu lomu je
-přímo úměrná fázové rychlosti vlny a tedy i fázovému posuvu $\Delta\phi$. Platí vztah
+přímo úměrná fázové rychlosti vlny a tedy i fázovému posuvu~$\Delta\phi$. Platí vztah
 
 \begin{equation}
  	\Delta\phi = k_0(1-n) \Delta
 z~\label{posun}
 \end{equation}
-kde k$_0$ je vlnové číslo a $\Delta z$ kus dráhy.  
+kde $k_0$ je vlnové číslo a $\Delta z$ kus dráhy.  
 
 \subsection{Stanovení koncentrace elektronů}
 Pro stanovení koncentrace elektronů aproximujeme vztah 
@@ -117,18 +117,18 @@ v~závislosti na fázovém posunu jako
 \label{eq:koncentrace}
 \end{equation}
 
-\subsection{Stanovení srážkové frekvence}
-Pomocí Taylorova rozvoje je možné dojít k~tvaru imaginární části indexu lomu
-\begin{equation}
-	\kappa = \frac{|\epsilon_2|}{2\sqrt{2}|\epsilon_1|}
-\end{equation}
-Zkombinováním tohoto vztahu s~\eqref{komplexnipermitivita}, \eqref{realna}, \eqref{imaginarni} a zanedbáním kvadratických členů můžeme vyjádřit srážkovou frekvenci jako
+%\subsection{Stanovení srážkové frekvence}
+%Pomocí Taylorova rozvoje je možné dojít k~tvaru imaginární části indexu lomu
+%\begin{equation}
+%	\kappa = \frac{|\epsilon_2|}{2\sqrt{2}|\epsilon_1|}
+%\end{equation}
+%Zkombinováním tohoto vztahu s~\eqref{komplexnipermitivita}, \eqref{realna}, \eqref{imaginarni} a zanedbáním kvadratických členů můžeme vyjádřit srážkovou frekvenci jako
 
-\begin{equation}
-	\nu_\text{m} = \frac{c \ln \frac{P_0}{P} 2 \sqrt{2}|\epsilon_1|}{2\omega \Delta z~\frac{n_\text{e} e^2}{m_\text{e} \epsilon_0 \omega^3}}
-\end{equation}
-kde $P_0$ je dodávaný výkon a $P$ je součet prošlého a odraženého výkonu.
-Výpočet srážkové frekvence tedy předpokládá znalost koncentrace elektronů.
+%\begin{equation}
+%	\nu_\text{m} = \frac{c \ln \frac{P_0}{P} 2 \sqrt{2}|\epsilon_1|}{2\omega \Delta z~\frac{n_\text{e} e^2}{m_\text{e} \epsilon_0 \omega^3}}
+%\end{equation}
+%kde $P_0$ je dodávaný výkon a $P$ je součet prošlého a odraženého výkonu.
+%%Výpočet srážkové frekvence tedy předpokládá znalost koncentrace elektronů.
 
 %za $\Delta z$ rozměr co zabírá výbojka ve vlnovodu
 %fázový posun zjistíme z měření S21
@@ -252,9 +252,9 @@ elektromagnetického záření s~plazmatem. Z~něj jsme následně určili posuv
 frekvence v~závislosti na frekvenci a koncentraci elektronů uvnitř zářivky. Ta 
 vyšla pro proudy $I$~=~$0,4-3$~\si{\milli\ampere} řádově $n_e \approx 
 10^{14}-10^{15}$~\si{\cubic\per\meter}. Tabulkové 
-hodnoty $n_{e,\text{tab}} \approx 10^{15}-10^{17}$~\si{\cubic\per\meter} 
-\cite{conc} jsou vyšší kvůli nižšímu proudu naší zářivkou.
-
+hodnoty $n_{e,\text{tab}} \approx 10^{15}-10^{17}$~\si{\cubic\per\meter} jsou vyšší \cite{conc}. Nižší naměřené hodnoty jsou způsobeny limitem v proudu,
+který jsme byli schopní přivést na zářivku a zároveň udržet stabilní výboj.
+Důvodem byla nevyhovující zářivka na konci životnosti.
 
 \begin{thebibliography}{10}
 	\bibitem{conc}
