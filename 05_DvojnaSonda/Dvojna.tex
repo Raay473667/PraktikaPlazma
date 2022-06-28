@@ -70,7 +70,7 @@ mezi ně.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=130mm]{schemadvojna.png}
-	\caption{Schéma dvojité sondy.}
+	\caption{Schéma dvojité sondy \cite{navod}.}
 	\label{schemadvojna}
 \end{figure}
 
@@ -97,11 +97,14 @@ okruhem $i_\text{{d}}$ zůstává konstantní.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=130mm]{charakteristikadvojna.png}
-	\caption{Charakteristika ideální dvojné rovinné sondy.}
+	\caption{Charakteristika ideální dvojné rovinné sondy \cite{navod}.}
 	\label{charakteristikadvojna}
 \end{figure}
 \newpage
-Teplotu elektronů z~měření dvojnou sondou získáme ze vztahu
+
+\subsection{Výpočet elektronové teploty rezistenční metodou}
+Teplotu elektronů můžeme získat ze vztahu
+
 \begin{equation}
 	T_\text{{e}} = \frac{e}{k} (G-G^2) R_0 \sum i_\text{{p}}
 	\label{T}
@@ -126,6 +129,16 @@ opět pro $V_\text{{d}} = 0$. Dále platí
 	\sum i_\text{{p}} = i_\text{{p1}} + i_\text{{p2}}
 	\label{sumaip}
 \end{equation}
+
+\subsection{Určení elektronové teploty z funkce $\tanh$}
+Teplotu elektronů můžeme také určit z graficky
+vynesené závislosti
+\begin{equation}
+	i_\text{{d}} = I_0 \tanh\left( \frac{e V_\text{{d}} }{k T_e} \right) 
+	\label{tanh}
+\end{equation}
+
+\subsection{Určení koncentrace elektronů}
 Koncentraci elektronů za předpokladu $n_\text{{e}}$ = $n_\text{{p}}$
 a $T_\text{{e}}$ = $T_\text{{p}}$
 lze určit z~rovnice
@@ -154,14 +167,14 @@ měření s~odlišným proudem $I_\text{{v}}$ =
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=130mm]{zapojenidvojna.png}
-	\caption{Schéma zapojení měřící aparatury.}
+	\caption{Schéma zapojení měřící aparatury \cite{navod}.}
 	\label{zapojenidvojna}
 \end{figure}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=130mm]{VAmerenidvojna.png}
-	\caption{Vyhodnocení VA charakteristiky dvojné sondy.}
+	\caption{Vyhodnocení VA charakteristiky dvojné sondy \cite{navod}.}
 	\label{VAmerenidvojna}
 \end{figure}
 Vyhodnocení dat provedeme podle obr. \ref{VAmerenidvojna}.
@@ -175,11 +188,17 @@ zmíněné veličiny, jsou na obr. \ref{dvojna1} až \ref{dvojna4}.
 $R_0$ určíme ze směrnice přímky, kterou jsme proložili
 střední strmou část charakteristiky, viz rovnice \eqref{R}.
 Zbylé veličiny, tedy $i_\text{{e2}}$ a $G$ spočítáme z~rovnic
-\eqref{ie2}, \eqref{sumaip} a \eqref{G}. Plochu dvojné sondy
-jsme odhadli
-z~délky 8 \si{\milli\meter} a průměru 0,1 \si{\milli\meter}
-jednoduchých sond jako dvojnásobek plochy právě
-jedné jednoduché sondy, $S = 5\cdot10^{-6}$ \si{\meter\squared}.
+\eqref{ie2}, \eqref{sumaip} a \eqref{G}. Plochu sondy $S$
+jsme spočítali pomocí odhadnutých rozměrů ze vztahu \eqref{S},
+kde její délka je $l = 8$ \si{\milli\meter} a její poloměr
+$r = 0,05$ \si{\milli\meter}. Tloušťka stěnové
+vrstvy je odhadem $d = 1$ \si{\centi\meter}.
+
+\begin{equation}
+	S = \pi (r+d)^2 + 2\pi (r+d) l = 8,22\cdot 10^{-4} \si{\meter\squared}
+	\label{S}
+\end{equation}
+
 Pak již můžeme
 spočítat teplotu elektronů z~rovnice \eqref{T} a koncentraci
 elektronů z~\eqref{ne}, výsledky jsou v~tabulce~\ref{tab1}.
@@ -187,8 +206,14 @@ Vidíme, že s~rostoucím tlakem roste koncentrace elektronů.
 Teplota elektronů nevykazuje žádný trend. Při snížení proudu
 výboje za konstantního tlaku dojde ke snížení teploty i~koncentrace
 elektronů.
+\newpage
+Teplotu určíme i druhým způsobem, tedy pomocí rovnice
+\eqref{tanh}. Proložení charakteristik funkcí $\tanh$
+je vidět........XXXXXXXXXXXXXXX
+a dopočítaná koncentrace elektronů ze vztahu \eqref{ne}
+je v tabulce
 
-
+\newpage
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=130mm]{dvojna1.png}
@@ -241,6 +266,12 @@ Z~naměřených charakteristik za různých podmínek se nám povedlo určit tep
 elektronů~$T_\text{e}$ a jejich koncentraci $n_\text{e}$. Teplota elektronů s~rostoucím tlakem
 nevykazuje žádný trend, koncentrace elektronů však roste. Za sníženého proudu výbojem
 při udržování konstantního tlaku klesla teplota i koncentrace elektronů.
+
+\newpage
+\begin{thebibliography}{10}
+	\bibitem{navod} Návod k praktiku: \textit{Studium kladného sloupce doutnavého výboje pomocí elektrostatických sond: dvojná sonda.}
+	
+\end{thebibliography}
 
 
 \end{document}
