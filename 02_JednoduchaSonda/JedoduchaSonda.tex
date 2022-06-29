@@ -19,6 +19,7 @@
 \graphicspath{
 	{img/}
 	{plots/}
+	{plots/2ndderivates/}
 }
 
 \newcommand{\e}{\text{e}}
@@ -75,7 +76,7 @@ plazmatu v místě sondy vůči stejné referenční elektrodě označme $V_\tex
 plocha sondy velmi malá, můžeme sondu nazvat jednoduchou. Podle tvaru lze dále sondy dělit na 
 válcové, kulové a~rovinné. Závislost proudu protékajícího sondou $I_\text{S}$ na napětí 
 přiloženém na sondu $V_\text{S}$ tvoří volt\-am\-pé\-ro\-vou (VA) charakteristiku sondy. Napětí 
-sondy $U_\text{S}$ získáme pomocí vztahu
+sondy vůči plazmovému potenciálu $U_\text{S}$ získáme pomocí vztahu
 
 \begin{equation}
 	U_\text{S} = V_\text{S} - V_\text{p}
@@ -128,7 +129,7 @@ synchronizovat.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=120mm]{schema.png}
-	\caption{Schéma aparatury.}
+	\caption{Schéma aparatury \cite{VA}.}
 	\label{schema}
 \end{figure}
 
@@ -182,28 +183,49 @@ jsme postupovali obdobně. VA charakteristiky s takto odečteným iontovým prou
 \end{figure}
 
 \newpage
-Potenciál plazmatu $V_\text{p}$ přibližně určíme ze zlomu VA charakteristik jako průsečík asymptot k lineárním částem zlogaritmovaných závislostí. Postup je vidět na obrázcích \ref{data1} až \ref{data7} vlevo a výsledné $V_\text{p}$~jsou uvedeny v tab. \ref{tab1}. Vždy platí, že~$V_\text{p}$ je větší než $V_\text{fl}$. Stejně jako $V_\text{fl}$, potenciál plazmatu s~rostoucím výbojovým proudem roste, při změně
+Potenciál plazmatu $V_\text{p}$ přibližně určíme ze zlomu VA charakteristik 
+jako průsečík asymptot k lineárním částem zlogaritmovaných závislostí. Postup 
+je vidět na obrázcích \ref{data1} až \ref{data7} vlevo a výsledné 
+$V_\text{p}$~jsou uvedeny v tab. \ref{tab1}. Pokud máme proměřený dostatečný 
+počet bodů, tak můžeme potenciál plazmatu určit také pomocí provedení druhé 
+derivace, protože sondová charakteristika má v potenciálu plazmatu inflexní 
+bod. Druhé derivace jsou vyneseny na obr.~\ref{data1sec} až \ref{data7sec}. 
+Takto určený potenciál plazmatu je v tab. \ref{tab1} označen jako 
+$V_\text{p,d}$. Vždy platí, že~$V_\text{p}$ je větší než $V_\text{fl}$. Stejně 
+jako 
+$V_\text{fl}$, potenciál plazmatu s~rostoucím výbojovým proudem roste, při změně
 tlaku nevykazuje žádný trend. Nyní můžeme ze vztahu \eqref{Usondy} dopočítat $U_\text{S}$. Pokud následně vyneseme do grafů závislosti $\ln
 I_{\text{e}}$~=~$-\frac{e}{kT_e}U_\text{S}+C$~pro oblasti $-2(V_\text{p} - 
 V_\text{{fl}}) \leq U_\text{S} \leq 0$, můžeme z
 elektronového proudu pro $U_\text{S} = 0$ dle vztahu \eqref{eproud} dopočítat koncentraci elektronů. Závislosti $\ln I_{\text{e}} =
-f(U_\text{S})$ proložené přímkou jsou na obrázcích \ref{data1} až \ref{data7} vpravo. Výsledné elektronové teploty a koncentrace
-elektronů jsou v tab. \ref{tab2}. S rostoucím výbojovým proudem roste i koncentrace elektronů a jejich teplota klesá. S rostoucím
-tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí koncentrace elektronů.
+f(U_\text{S})$ proložené přímkou jsou na obrázcích \ref{data1} až 
+\ref{data7sec} vpravo. Výsledné elektronové teploty a koncentrace
+elektronů jsou v tab. \ref{tab2}. S rostoucím výbojovým proudem roste i 
+koncentrace elektronů. Metodou průsečíků asymptot teplota elektronů s výbojovým 
+proudem klesá, ale metodou druhé derivace je konstantní. S rostoucím
+tlakem pozorujeme klesající teplotu a rostoucí koncentrace elektronů při 
+použití obou metod. Rozdílem výsledků metod je hlavně nižší plazmový potenciál 
+a koncentrace elektronů, jejichž závislost je výraznější při použití metody 
+druhé derivace. V obou metodách jsme však ve stejném řádu 
+$10^{14}$\,\si{\per\cubic\meter}.
 
 \begin{center}
 	\begin{table}[h!]
 		\centering
 		\caption{Plovoucí a plazmové potenciály}
 		\label{tab1}
-		\begin{tabular}{|c|c|c|c|c|c|} \hline
-			\multicolumn{3}{|c|}{$p$ = 160 \si{\pascal}}& \multicolumn{3}{c|}{$I_\text{v}$ = 40 \si{\milli\ampere} }  \\ \hline
-			$I_\text{v}$ [\si{\milli\ampere}] &  $V_\text{fl}$ [V] & $V_\text{p}$ [V] & $p$ [\si{\pascal}] &  $V_\text{fl}$ [V] & $V_\text{p}$ [V] \\ \hline
-			30 & -48,0 & -47,7 & 8 & -45,3 & -44,8\\ \hline
-			40 & -43,8 & -43,4 & 16 & -45,8 & -45,2 \\ \hline
-			50 & -42,2 & -41,6 & 32 & -45,0 & -44,6 \\ \hline
-			&  &  & 80 & -44,4 & -43,9 \\ \hline
-			& &  & 200 & -50,9 & -49,9 \\ \hline
+		\begin{tabular}{|c|c|c|c|c|c|c|c|} \hline
+			\multicolumn{4}{|c|}{$p$ = 160 \si{\pascal}}& 
+			\multicolumn{4}{c|}{$I_\text{v}$ = 40 \si{\milli\ampere} }  \\ 
+			\hline
+			$I_\text{v}$ [\si{\milli\ampere}] &  $V_\text{fl}$ [V] & 
+			$V_\text{p}$ [V] & $V_\text{p,d}$ [V] & $p$ [\si{\pascal}] &  
+			$V_\text{fl}$ [V] & $V_\text{p}$ [V] & $V_\text{p,d}$ \\ \hline
+			30 & -48,0 & -47,7 & -43,4 & 8 & -45,3 & -44,8 & -43,8 \\ \hline
+			40 & -43,8 & -43,4 & -39,7 & 16 & -45,8 & -45,2 & -44,4 \\ \hline
+			50 & -42,2 & -41,6 & -37,5 & 32 & -45,0 & -44,6 & -43,4 \\ \hline
+			& & & & 80 & -44,4 & -43,9 & -42,8 \\ \hline
+			& & & & 200 & -50,9 & -49,9 & -45,8 \\ \hline
 			
 		\end{tabular}
 	\end{table}
@@ -223,6 +245,15 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 			50 & 2,6 & 2,3 & 32 & 4,0 & 1,2\\ \hline
 			&  &  & 80 & 3,7 & 1,4 \\ \hline
 			& &  & 200 & 2,2 & 1,7 \\ \hline
+			$I_\text{v}$ [\si{\milli\ampere}] &  $T_\text{d}$ [eV] & 
+			$n_\text{e,d} [10^{14}\si{\per\meter\cubed}$] & $p$ [\si{\pascal}] 
+			&  $T_\text{d}$ [eV] & $n_\text{e,d} 
+			[10^{14}\si{\per\meter\cubed}]$ \\ \hline
+			30 & 2,4 & 4,0 & 8 & 4,4 & 1,1\\ \hline
+			40 & 2,4 & 5,4 & 16 & 4,0 & 1,3 \\ \hline
+			50 & 2,5 & 7,7 & 32 & 3,8 & 1,6\\ \hline
+			&  &  & 80 & 3,5 & 2,0 \\ \hline
+			& &  & 200 & 2,0 & 6,0 \\ \hline
 			
 		\end{tabular}
 	\end{table}
@@ -240,7 +271,9 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data1T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 160$ \si{\pascal} a $I_\text{v} = 30$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+	průsečíku asymptot, $p = 160$ \si{\pascal} a $I_\text{v} = 30$ 
+	\si{\milli\ampere}.}
 	\label{data1}
 \end{figure}
 
@@ -256,7 +289,8 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data0T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 160$ \si{\pascal} a 
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 160$ \si{\pascal} a 
 	$I_\text{v} = 40$ \si{\milli\ampere}.}
 	\label{data0}
 \end{figure}
@@ -274,7 +308,9 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data2T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 160$ \si{\pascal} a $I_\text{v} = 50$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 160$ \si{\pascal} a $I_\text{v} = 50$ 
+		\si{\milli\ampere}.}
 	\label{data2}
 \end{figure}
 
@@ -292,7 +328,9 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data3T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 320$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 320$ \si{\pascal} a $I_\text{v} = 40$ 
+		\si{\milli\ampere}.}
 	\label{data3}
 \end{figure}
 
@@ -309,7 +347,9 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data4T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 80$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 80$ \si{\pascal} a $I_\text{v} = 40$ 
+		\si{\milli\ampere}.}
 	\label{data4}
 \end{figure}
 
@@ -325,7 +365,9 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data5T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 32$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 32$ \si{\pascal} a $I_\text{v} = 40$ 
+		\si{\milli\ampere}.}
 	\label{data5}
 \end{figure}
 
@@ -342,7 +384,9 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data6T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 16$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 16$ \si{\pascal} a $I_\text{v} = 40$ 
+		\si{\milli\ampere}.}
 	\label{data6}
 \end{figure}
 
@@ -358,9 +402,166 @@ tlakem pozorujeme stejnou závislost, tedy klesající teplotu a rostoucí konce
 		\scalebox{.34}{\includegraphics{data7T.png}}
 		%\caption{$f(t) = \ln n$}
 	\end{subfigure}
-	\caption{Stanovení potenciálu plazmatu a elektronové teploty, $p = 8$ \si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí 
+		průsečíku asymptot, $p = 8$ \si{\pascal} a $I_\text{v} = 40$ 
+		\si{\milli\ampere}.}
 	\label{data7}
 \end{figure}
+
+
+
+%%DRUHÁ DERIVACE PLOTY
+\newpage
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph2.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph25.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 160$ 
+	\si{\pascal} a $I_\text{v} = 30$ \si{\milli\ampere}.}
+	\label{data1sec}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph4.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph26.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 160$ 
+	\si{\pascal} a 
+		$I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data0sec}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph6.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph27.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 160$ 
+	\si{\pascal} a $I_\text{v} = 50$ \si{\milli\ampere}.}
+	\label{data2sec}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph8.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph28.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 320$ 
+	\si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data3sec}
+\end{figure}
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph10.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph29.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 80$ 
+	\si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data4sec}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph12.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph30.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 32$ 
+	\si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data5sec}
+\end{figure}
+
+\newpage
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph14.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph31.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 16$ 
+	\si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data6sec}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph16.png}}
+		%\caption{$f(t) = 1/n$}
+	\end{subfigure}
+	\begin{subfigure}[b]{.49\textwidth}
+		\centering
+		\scalebox{.34}{\includegraphics{graph32.png}}
+		%\caption{$f(t) = \ln n$}
+	\end{subfigure}
+	\caption{Stanovení potenciálu plazmatu a elektronové teploty pomocí druhé 
+	derivace, $p = 8$ 
+	\si{\pascal} a $I_\text{v} = 40$ \si{\milli\ampere}.}
+	\label{data7sec}
+\end{figure}
+
 
 \section{Závěr}
 V této úloze jsme se seznámili s měřením pomocí Langmuirovy jednoduché válcové sondy. Naměřili jsme osm VA charakteristik pro různé
@@ -368,9 +569,10 @@ podmínky. Určili jsme plovoucí potenciál sondy, který se zvětšuje s rosto
 proudu nevykazoval žádný trend. Dále jsme určili potenciál plazmatu, ten je vždy větší než plovoucí potenciál a při změnách výbojového
 proudu a tlaku se chová obdobně jako plovoucí potenciál. Nakonec jsme získali elektronové teploty a spočítali elektronovou koncentraci. S rostoucím výbojovým
 proudem roste i koncentrace elektronů a jejich teplota klesá. S rostoucím tlakem jsme pozorovali stejnou závislost, tedy rostoucí
-koncentraci elektronů a~klesající elektronovou teplotu.
+koncentraci elektronů a~klesající elektronovou teplotu. Při vyhodnocování jsme 
+použili dvou metod určení potenciálu plazmatu, starší metody průsečíku asymptot 
+a modernější metody druhé derivace. Jejich výsledky jsou blízké.
 
-\newpage
 \begin{thebibliography}{10}
 	\bibitem{VA} Návod k praktiku: \textit{Diagnostika plazmatu doutnavého výboje pomocí 
 	elektrostatických sond: jednoduchá sonda.}
