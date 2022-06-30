@@ -130,11 +130,11 @@ opět pro $V_\text{{d}} = 0$. Dále platí
 	\label{sumaip}
 \end{equation}
 
-\subsection{Určení elektronové teploty z funkce $\tanh$}
+\subsection{Určení elektronové teploty z funkce tanh}
 Teplotu elektronů můžeme také určit z graficky
 vynesené závislosti
 \begin{equation}
-	i_\text{{d}} = I_0 \tanh\left( \frac{e V_\text{{d}} }{k T_e} \right) 
+	i_\text{{d}} = I_0 \tanh\left( \frac{e V_\text{{d}} }{k T_e} \right) + A V_\text{{d}} + B 
 	\label{tanh}
 \end{equation}
 
@@ -208,10 +208,11 @@ výboje za konstantního tlaku dojde ke snížení teploty i~koncentrace
 elektronů.
 \newpage
 Teplotu určíme i druhým způsobem, tedy pomocí rovnice
-\eqref{tanh}. Proložení charakteristik funkcí $\tanh$
-je vidět........XXXXXXXXXXXXXXX
+\eqref{tanh}. Proložení charakteristik funkcí \eqref{tanh}
+je vidět na obrázcích \ref{tanh1} až \ref{tanh4}.
 a dopočítaná koncentrace elektronů ze vztahu \eqref{ne}
-je v tabulce
+je v tabulce \ref{tab2}. Oproti rezistenční metodě jsou
+teploty z tanh fitu vyšší a koncentrace nižší.
 
 \newpage
 \begin{figure}[h!]
@@ -227,7 +228,7 @@ je v tabulce
 	\caption{VA charakteristika za podmínek $p$ = 32 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere}.}
 	\label{dvojna2}
 \end{figure}
-
+\newpage
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=130mm]{dvojna3.png}
@@ -243,31 +244,79 @@ je v tabulce
 \end{figure}
 
 \newpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=130mm]{tanh1.png}
+	\caption{VA charakteristika za podmínek $p$ = 8 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere} proložená funkcí podle rovnice \eqref{tanh}.}
+	\label{tanh1}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=130mm]{tanh2.png}
+	\caption{VA charakteristika za podmínek $p$ = 32 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere} proložená funkcí podle rovnice \eqref{tanh}.}
+	\label{tanh2}
+\end{figure}
+
+\newpage
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=130mm]{tanh3.png}
+	\caption{VA charakteristika za podmínek $p$ = 160 \si{\pascal}, $I_\text{{v}}$ = 55 \si{\milli\ampere} proložená funkcí podle rovnice \eqref{tanh}.}
+	\label{tanh3}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=130mm]{tanh4.png}
+	\caption{VA charakteristika za podmínek $p$ = 160 \si{\pascal}, $I_\text{{v}}$ = 30 \si{\milli\ampere} proložená funkcí podle rovnice \eqref{tanh}.}
+	\label{tanh4}
+\end{figure}
+
+\newpage
 \begin{center}
 	\begin{table}[h!]
 		\centering
-		\caption{Teploty a koncentrace elektronů.}
+		\caption{Teploty určené rezistenční metodou a koncentrace elektronů.}
 		\label{tab1}
 		\begin{tabular}{|c|c|c|c|c|c|} \hline
 			\multicolumn{3}{|c|}{$I_\text{v}$ = 55 \si{\milli\ampere}}& \multicolumn{3}{c|}{$p$ = 160 [\si{\pascal}] }  \\ \hline
-			$p$ [\si{\pascal}] & $T_\text{e}$ [\si{\electronvolt}]  & $n_\text{e}$ [$10^{14}$ \si{\per\meter\cubed}]& $I_\text{v}$ [\si{\milli\ampere}] & $T_\text{e}$ [\si{\electronvolt}] & $n_\text{e}$  [$10^{14}$ \si{\per\meter\cubed}]\\ \hline
-			8 & 0,91 & 1,68 & 30 & 0,92 & 4,87\\ \hline
-			32 & 0,57 & 6,04 &  &  &  \\ \hline
-			160 & 1,00 & 8,96 &  &  &  \\ \hline
+			$p$ [\si{\pascal}] & $T_\text{e}$ [\si{\electronvolt}]  & $n_\text{e}$ [$10^{12}$ \si{\per\meter\cubed}]& $I_\text{v}$ [\si{\milli\ampere}] & $T_\text{e}$ [\si{\electronvolt}] & $n_\text{e}$  [$  10^{12}$ \si{\per\meter\cubed}]\\ \hline
+			8 & 0,91 & 1,02 & 30 & 0,92 & 1,48\\ \hline
+			32 & 0,57 & 1,84 &  &  &  \\ \hline
+			160 & 1,00 & 2,72 &  &  &  \\ \hline
 			
 		\end{tabular}
 	\end{table}
 \end{center}
 
-\newpage
+\begin{center}
+	\begin{table}[h!]
+		\centering
+		\caption{Teploty z funkce tanh a koncentrace elektronů.}
+		\label{tab2}
+		\begin{tabular}{|c|c|c|c|c|c|} \hline
+			\multicolumn{3}{|c|}{$I_\text{v}$ = 55 \si{\milli\ampere}}& \multicolumn{3}{c|}{$p$ = 160 [\si{\pascal}] }  \\ \hline
+			$p$ [\si{\pascal}] & $T_\text{e}$ [\si{\electronvolt}]  & $n_\text{e}$ [$10^{12}$ \si{\per\meter\cubed}]& $I_\text{v}$ [\si{\milli\ampere}] & $T_\text{e}$ [\si{\electronvolt}] & $n_\text{e}$  [$  10^{12}$ \si{\per\meter\cubed}]\\ \hline
+			8 & 2,20 & 0,65 & 30 & 2,34 & 0,93\\ \hline
+			32 & 1,13 & 1,30 &  &  &  \\ \hline
+			160 & 2,51 &1,71 &  &  &  \\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{center}
+
 \section{Závěr}
 V~této úloze jsme se seznámili s~měřením důležitých veličin plazmatu pomocí dvojné sondy.
 Z~naměřených charakteristik za různých podmínek se nám povedlo určit teplotu
-elektronů~$T_\text{e}$ a jejich koncentraci $n_\text{e}$. Teplota elektronů s~rostoucím tlakem
+elektronů~$T_\text{e}$ a jejich koncentraci $n_\text{e}$. Teplota elektronů získaná
+rezistenční metodou s~rostoucím tlakem
 nevykazuje žádný trend, koncentrace elektronů však roste. Za sníženého proudu výbojem
-při udržování konstantního tlaku klesla teplota i koncentrace elektronů.
+při udržování konstantního tlaku klesla teplota i koncentrace elektronů. Obdobný vývoj
+měly hodnoty získané z proložení charakteristik funkcí $\tanh$, teploty však byly vyšší
+a koncentrace nižší.
 
-\newpage
+
 \begin{thebibliography}{10}
 	\bibitem{navod} Návod k praktiku: \textit{Studium kladného sloupce doutnavého výboje pomocí elektrostatických sond: dvojná sonda.}
 	
