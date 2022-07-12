@@ -143,7 +143,8 @@ kde $I$ je výbojový proud $S = \pi d^2/4$ je průřez zářivky.
 \section{Měření a výsledky}
 Měřící aparatura se skládá ze zářivky procházející vlnovodem. Uvnitř ní je
 zapálený doutnavý výboj v~argonu a parách rtuti 
-za sníženého tlaku, typicky kolem 400\,\si{\pascal}. Schéma aparatury je na obr.
+za sníženého tlaku, typicky kolem $10^2$\,\si{\pascal}. Schéma aparatury je na 
+obr.
 \ref{schema}. Důležitým prvkem v~zapojení je Vector Network Analyzer (VNA),
 který zastává funkci vysokofrekvenčního zdroje i detektoru.
 V~klasickém interferometrickém experimentu je signál ze zdroje rozdělený do
@@ -182,10 +183,13 @@ měření k~nejbližšímu s~nulovým proudem. Tímto způsobem tedy zkoumáme v
 
 Ve výpočtech vystupuje veličina $\Delta z$, kterou jsme obecně označili jako 
 úsek dráhy.
-V~našem případě se jedná o~tloušťku plazmatu, kterou je potřeba odhadnout. To provedeme
-pomocí geometrické úvahy ze znalosti příčného rozměru vlnovodu $a = 
-86$\,\si{\milli\meter},
-průměru zářivky $d$~=~$18$\,\si{\milli\meter}, délky zářivky $l = a/\sin\alpha$ 
+V~našem případě se jedná o~tloušťku vrstvy plazmatu, kterou je potřeba 
+odhadnout. To provedeme
+pomocí geometrické úvahy ze znalosti rozměrů vlnovodu $a = 
+86$\,\si{\milli\meter}, $b = 
+43$\,\si{\milli\meter},
+průměru zářivky $d$~=~$18$\,\si{\milli\meter}, délky zářivky $l = 
+a/\!\sin\alpha$ 
 a úhlu mezi 
 zářivkou a vlnovodem 
 $\alpha = 35^{\circ}$. Za
@@ -196,7 +200,7 @@ podél
 nejdelšího rozměru vlnovodu je
 
 \begin{equation}
-	\Delta z~= \frac{\pi d^2}{4a\sin\alpha} = 5,2\,\si{\milli\meter}
+	\Delta z~= \frac{\pi d^2}{4b\sin\alpha} = 10,3\,\si{\milli\meter}
 	%\frac{V_v}{ab} = \frac{l \pi d^2}{4ab} = \frac{b \pi d^2}{4ab\sin\alpha} =
 \end{equation}
 
@@ -217,9 +221,9 @@ v~závislosti na frekvenci pro 7 různých proudů $I$ tekoucích plazmatem a pr
 širší a užší oblast frekvencí. Pozorujeme s~rostoucím proudem vyšší fázový 
 posuv. Z~něj jsme dále vypočítali koncentraci elektronů v~plazmatu dle vztahu 
 \eqref{eq:koncentrace} a její závislost na proudu vynesli do 
-obr.~\ref{koncnai}. Pro proudy $I$~=~$0,4$--$3$\,\si{\milli\ampere} se 
+obr.~\ref{koncnai}. Pro proudy $I$~=~$0,2$--$3$\,\si{\milli\ampere} se 
 koncentrace 
-pohybuje řádově $n_e \approx 10^{15}$--$10^{16}$\,\si{\cubic\per\meter}. 
+pohybuje řádově $n_e \approx 10^{15}$\,\si{\cubic\per\meter}. 
 Typické 
 hodnoty pro doutnavý výboj
 $n_{e,\text{typ}}$~$\approx$~$10^{15}$--$10^{17}$\,\si{\cubic\per\meter} dle
@@ -281,8 +285,8 @@ v~databázi \cite{lxcat} pro intenzitu elektrického pole $E =
 VNA jsme na\-mě\-ři\-li $S_{21}$ parametr, který je závislý na interakci 
 elektromagnetického záření s~plazmatem. Z~něj jsme následně určili posuv 
 fáze v~závislosti na frekvenci a koncentraci elektronů uvnitř zářivky. Ta 
-vyšla pro proudy $I$~=~$0,4-3$\,\si{\milli\ampere} řádově $n_e \approx 
-10^{15}-10^{16}$\,\si{\cubic\per\meter}. Typické 
+vyšla pro proudy $I$~=~$0,2-3$\,\si{\milli\ampere} řádově $n_e \approx 
+10^{15}$\,\si{\cubic\per\meter}. Typické 
 hodnoty $n_{e,\text{typ}}$~$\approx$~$10^{15}-10^{17}$\,\si{\cubic\per\meter} 
 dle 
 \cite{conc} odpovídají měření. Driftová rychlost elektronů vyšla 
