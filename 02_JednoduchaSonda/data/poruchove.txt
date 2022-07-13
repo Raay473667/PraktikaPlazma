@@ -1,0 +1,33 @@
+po 5sec přepínáme střídavý, vyjde zubatá, proložit třeba parabolou (zuby na proudu)
+nastavim motor do středu (3), nastavím proud aby byl nulav - jednoduchá sonda
+
+
+JEDNODUCHA SONDA
+1.měření 
+50Pa(argon)
+55mA
+začali jsme zapojení
+25-30s nezapojené
+0-5zapojené 5-10 nezapojené
+4:30 až 4:45 řazení a bylo zastrčeno, 4:45 - vytaženo
+14:39:00 = 11:11 na mobilu (cca kolem 9min jsem vypli)
+
+2. měření
+50Pa
+30mA
+nastavíme floating na trojce na nule
+0-5zapojeno 5-10vypojeno
+14:44:00 = 00:40
+tentokrát jede motor z druhé strany!
+4:56 se to rozjelo zpět, v pauze pořád zapojování a vypojování, 
+cca 4:30-4:56 jenom zapojování/vypojování ale motor stál/blbnul
+9:30 zastrčeno 9:27 dojelo na konec
+mimochodem! na konci nebyla na trojce nula (možná zbytkový vzduch - změna atmosféry)
+
+3. měření
+10Pa
+55mA
+zase začátek zapojen
+15:06:13 = 2:50
+4:35 vytaženo, pak zařazeno, 4:40 zapojeno
+9:10 konec

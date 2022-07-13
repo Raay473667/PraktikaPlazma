@@ -114,6 +114,28 @@ napětí a přitahuje tak elektrony. U válcové sondy nejeví tato oblast nasyc
 	\caption{VA charakteristika jednoduché rovinné sondy \cite{VA}.}
 	\label{VA}
 \end{figure}	
+\subsection{Rozdělovací funkce energie}
+V předchozí části předpokládáme Maxwellovo rozdělení energie elektronů.
+Zdali tento předpoklad platí dokázat Druyvesteynovým vztahem:
+\begin{equation}
+	f(\vert U_s\vert) = 
+	\frac{1}{A}\sqrt{\left(\frac{8m_\text{e}}{e^3}\right)} \sqrt{\vert 
+	U_s\vert} \frac{\text{d}^2i_\text{e}}{\text{d}U^2_\text{s}}
+\label{Druyvesteyn}
+\end{equation}
+Existuje několik metod, jak získat ze sondové charakteristiky funkci 
+$\frac{\text{d}^2i_\text{e}}{\text{d}U^2_\text{s}}$, která udává rozdělovací 
+funkci. Jednou z možností je přiložení slabého střídavého napětí 
+$U=\varepsilon\sin(\omega t)$, přičemž musí platit 
+$\varepsilon/U_\text{s}\ll1$. Složka stejnosměrného proudu sondy vzroste o 
+hodnotu 
+\begin{equation}
+\Delta i \approx 
+\frac{\varepsilon^2}{4}\frac{\text{d}^2i_\text{e}}{\text{d}U^2_\text{s}}
+\label{delta i}
+\end{equation}
+Rozdělovací funkce $f(\vert U_s\vert)$ je tedy úměrná $\sqrt{\vert 
+U_s\vert}\Delta i$. Tuto závislost graficky zobrazíme.
 \newpage
 \section{Měření a výsledky}
 Měření provádíme na aparatuře, jejíž schéma je vidět na obr. \ref{schema}. Výbojka je čerpaná rotační olejovou vývěvou. Tlak
@@ -566,7 +588,35 @@ $10^{14}$\,\si{\per\cubic\meter}.
 	\label{data7sec}
 \end{figure}
 
+\clearpage
+\subsection{Rozdělovací funkce energií}
+Voltampérovou charakteristiku bez a s poruchovým napětím měříme současně tak, 
+že periodicky připojíme a odpojíme poruchové napětí. Z těchto dvou 
+charakteristik určíme příslušné plovoucí a plazmové potenciály podobně jako v 
+předchozí části.
 
+\begin{center}
+	\begin{table}[h!]
+		\centering
+		\caption{Plovoucí a plazmové potenciály s a bez poruchového napětí}
+		\label{tab3}
+		\begin{tabular}{|c|c|c|c|c|c|} \hline
+			&&\multicolumn{2}{c|}{s poruchovým}&\multicolumn{2}{c|}{bez 
+			poruchového}\\ 
+			\hline
+			$p$ [\si{\pascal}] & $I_\text{v}$ [\si{\milli\ampere}] &  
+			$V_\text{fl}$ [V] & 
+			$V_\text{p}$ [V]  &  
+			$V_\text{fl}$ [V] & $V_\text{p}$ [V]  \\ \hline
+			80&55&-43,4&&-42,9&\\ \hline
+			80&30&-47,7&&-47,3&\\ \hline
+			16&55&-44,3&&-44,0&\\ \hline
+			
+		\end{tabular}
+	\end{table}
+\end{center}
+
+\clearpage
 \section{Závěr}
 V této úloze jsme se seznámili s měřením pomocí Langmuirovy jednoduché válcové sondy. Naměřili jsme osm VA charakteristik pro různé
 podmínky. Určili jsme plovoucí potenciál sondy, který se zvětšuje s rostoucím výbojovým proudem, při změnách tlaku za konstantního
