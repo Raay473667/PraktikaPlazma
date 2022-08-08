@@ -111,16 +111,17 @@ Teplotu elektronů můžeme získat ze vztahu
 \end{equation}
 kde $G$ je 
 \begin{equation}
-	G = \left[ \frac{i_\text{{e2}}}{\sum i_\text{{p}}}\right] 
+	G = \left[ \frac{i_\text{{e2}}}{\sum 
+	i_\text{{p}}}\right]_{V_\text{d}=0}
 	\label{G}
 \end{equation}
-pro $V_\text{{d}} = 0$ a $R_0$ je tzv. ekvivalentní odpor sondy
+a $R_0$ je tzv. ekvivalentní odpor sondy
 \begin{equation}
-	R_0 = \left[ \frac{\text{d} V_\text{d}} {\text{d}i_\text{d}}
-	\right] 
+	R_0 = \left[ \frac{\text{d} V_\text{d}} 
+	{\text{d}i_\text{d}}\right]_{V_\text{d}=0}	 
 	\label{R}
 \end{equation}
-opět pro $V_\text{{d}} = 0$. Dále platí
+Dále platí
 \begin{equation}
 	i_\text{{e2}} = |i_\text{{p2}}| + i_\text{{d}}
 	\label{ie2}
@@ -134,7 +135,8 @@ opět pro $V_\text{{d}} = 0$. Dále platí
 Teplotu elektronů můžeme také určit z graficky
 vynesené závislosti
 \begin{equation}
-	i_\text{{d}} = I_0 \tanh\left( \frac{e V_\text{{d}} }{k T_e} \right) + A V_\text{{d}} + B 
+	i_\text{{d}} = I_0 \tanh\left( \frac{e V_\text{{d}} }{k T_\text{e}} \right) 
+	+ A V_\text{{d}} + B 
 	\label{tanh}
 \end{equation}
 
@@ -149,8 +151,9 @@ lze určit z~rovnice
 \end{equation}
 kde $S$ je plocha sondy a $\left\langle  v_\text{{p}} \right\rangle$ získáme jako
 \begin{equation}
-	\left\langle v_\text{{p}} \right\rangle = \left( \frac{8 kT_\text{{p}}}{\pi 
-	M} \right) 
+	\left\langle v_\text{{p}} \right\rangle = \sqrt{\frac{8 
+	kT_\text{{p}}}{\pi 
+	M}  }
 	\label{vp}
 \end{equation}
 kde $T_\text{p}$ je teplota iontů a $M$ je hmotnost iontu.
